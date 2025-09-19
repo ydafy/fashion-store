@@ -1,0 +1,85 @@
+{
+    "history": {
+        "title": "Mis Pedidos",
+        "error": {
+            "title": "Error al Cargar Pedidos",
+            "message": "No pudimos obtener tu historial de pedidos."
+        },
+        "empty": {
+            "title": "Sin Historial de Pedidos",
+            "subtitle": "Cuando realices tu primer pedido, aparecerá aquí."
+        }
+    },
+    "detail": {
+        "headerTitle": "Detalle del Pedido",
+        "productsTitle": "Productos ({{count}})",
+        "errors": {
+            "genericLoad": "Ocurrió un error al cargar el pedido.",
+            "notFoundTitle": "Pedido no Encontrado",
+            "notFoundMessage": "No pudimos encontrar los detalles de este pedido. Por favor, intenta de nuevo."
+        },
+        "reorder": {
+            "button": "Volver a Pedir",
+            "successTitle": "Productos Añadidos",
+            "successMessage": "{{count}} producto(s) añadidos al carrito.",
+            "partialFailureTitle": "Atención",
+            "partialFailureMessage": "Algunos productos no se pudieron añadir. Revisa el carrito.",
+            "genericError": "Ocurrió un problema al reordenar."
+        }
+    },
+    "productItem": {
+        "colorLabel": "Color",
+        "sizeLabel": "Talla",
+        "quantityLabel": "Cantidad",
+        "priceLabel": "Precio Unitario",
+        "accessibilityLabel": "{{name}}, {{quantity}} unidad(es), color {{color}}, talla {{size}}, a {{price}} cada una."
+    },
+    "infoSection": {
+        "title": "Información del Pedido",
+        "orderIdLabel": "ID Pedido:",
+        "dateLabel": "Fecha:",
+        "statusLabel": "Estado:",
+        "shippingMethodLabel": "Método de Envío:"
+    },
+    "status": {
+        "pending": "Pendiente",
+        "processing": "Procesando",
+        "shipped": "Enviado",
+        "delivered": "Entregado",
+        "cancelled": "Cancelado",
+        "unknown": "Desconocido"
+    },
+    "shippingMethod": {
+        "delivery": "Envío a Domicilio",
+        "pickup": "Recogida en Tienda"
+    },
+    "shippingSection": {
+        "deliveryTitle": "Dirección de Envío",
+        "pickupTitle": "Información de Recogida",
+        "phoneLabel": "Tel",
+        "instructionsLabel": "Instrucciones",
+        "hoursLabel": "Horario",
+        "pickupContactTitle": "Contacto de Recogida",
+        "contactNameLabel": "Nombre",
+        "contactEmailLabel": "Email",
+        "contactPhoneLabel": "Teléfono",
+        "trackingTitle": "Seguimiento del Paquete",
+        "providerLabel": "Proveedor",
+        "trackingNumberLabel": "Nº Seguimiento",
+        "trackButton": "Rastrear Paquete",
+        "errors": {
+            "cantOpenUrlTitle": "Error",
+            "cantOpenUrlMessage": "No se puede abrir la URL de seguimiento: {{url}}",
+            "noUrlTitle": "Información no disponible",
+            "noUrlMessage": "No hay una URL de seguimiento para este pedido."
+        }
+    },
+    "listItem": {
+        "orderIdLabel": "Pedido #{{id}}",
+        "totalLabel": "Total",
+        "itemCount_one": "1 artículo",
+        "itemCount_other": "{{count}} artículos",
+        "viewDetails": "Ver Detalles",
+        "accessibilityLabel": "Pedido número {{orderId}}, realizado el {{date}}. Total de {{total}}, con {{itemCount}} artículos. Estado actual: {{status}}. Toca para ver detalles."
+    }
+}

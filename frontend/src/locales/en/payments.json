@@ -1,0 +1,39 @@
+{
+    "savedMethods": "Saved Payment Methods",
+    "addNew": "Add New Payment Method",
+    "delete": {
+        "title": "Delete Payment Method",
+        "message": "Are you sure you want to delete the card ending in •••• {{last4}}?"
+    },
+    "empty": {
+        "title": "No Payment Methods",
+        "subtitle": "Add a payment method for a faster checkout."
+    },
+    "cardEndingIn": "card ending in",
+    "expiresOn": "Expires",
+    "isDefault": "Default",
+    "form": {
+        "cardNumber": "Card Number",
+        "expiryDate": "Expiry Date",
+        "cvv": "CVV",
+        "cardHolderName": "Name on Card",
+        "nickname": "Nickname",
+        "setDefault": "Set as default payment method",
+        "expiryPlaceholder": "MM/YY",
+        "cardHolderPlaceholder": "Name as it appears on card",
+        "nicknamePlaceholder": "e.g., Work Card"
+    },
+    "add": {
+        "successTitle": "Card Added",
+        "successMessage": "Your new payment method has been saved.",
+        "errorMessage": "There was a problem saving your card. Please try again.",
+        "successMessageCheckout": "It's now available for your next purchase.",
+        "saveErrorTitle": "Card Not Saved",
+        "saveErrorMessage": "We couldn't save your card, but your order is being processed."
+    },
+    "cvvHelp": {
+        "title": "What is a CVV?",
+        "message": "It's the 3-digit security code on the back of your card. For American Express, it's 4 digits on the front.",
+        "accessibilityLabel": "More information about the CVV code"
+    }
+}

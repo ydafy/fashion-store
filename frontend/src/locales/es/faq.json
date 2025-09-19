@@ -1,0 +1,32 @@
+{
+    "categories": {
+        "shipping": "Envíos y Entregas",
+        "returns": "Devoluciones y Reembolsos",
+        "payments": "Pagos y Promociones",
+        "account": "Gestión de Cuenta"
+    },
+    "shipping": {
+        "q1": "¿Cuáles son mis opciones de envío?",
+        "a1": "Ofrecemos envío estándar, exprés y al día siguiente. Los costos y tiempos de entrega varían según tu ubicación.",
+        "q2": "¿Cómo puedo rastrear mi pedido?",
+        "a2": "Una vez que tu pedido haya sido enviado, recibirás un correo electrónico con un número de seguimiento. También puedes encontrar la información de seguimiento en tu historial de pedidos.",
+        "q3": "¿Hacen envíos internacionales?",
+        "a3": "Sí, enviamos a más de 100 países. Las tarifas y tiempos de envío internacional se calcularán al momento de pagar."
+    },
+    "returns": {
+        "q1": "¿Cuál es su política de devoluciones?",
+        "a1": "Aceptamos devoluciones dentro de los 30 días posteriores a la entrega para un reembolso completo. Los artículos deben estar en su estado original, sin usar y con las etiquetas puestas.",
+        "q2": "¿Cómo inicio una devolución?",
+        "a2": "Puedes iniciar una devolución desde la página de tu historial de pedidos. Simplemente selecciona el pedido que deseas devolver y sigue las instrucciones en pantalla."
+    },
+    "payments": {
+        "q1": "¿Qué métodos de pago aceptan?",
+        "a1": "Aceptamos las principales tarjetas de crédito (Visa, MasterCard, American Express), así como PayPal y Apple Pay."
+    },
+    "account": {
+        "q1": "¿Cómo cambio mi contraseña?",
+        "a1": "Puedes cambiar tu contraseña navegando a Perfil > Configuración > Cambiar Contraseña. Necesitarás ingresar tu contraseña actual para realizar este cambio."
+    },
+    "feedbackPrompt": "¿Fue útil esta respuesta?",
+    "feedbackThanks": "Gracias por tu opinion"
+}

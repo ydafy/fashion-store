@@ -1,0 +1,32 @@
+{
+    "categories": {
+        "shipping": "Shipping & Delivery",
+        "returns": "Returns & Refunds",
+        "payments": "Payments & Promotions",
+        "account": "Account Management"
+    },
+    "shipping": {
+        "q1": "What are my shipping options?",
+        "a1": "We offer standard, expedited, and next-day shipping. Costs and delivery times vary depending on your location.",
+        "q2": "How can I track my order?",
+        "a2": "Once your order has shipped, you will receive an email with a tracking number. You can also find the tracking information in your order history.",
+        "q3": "Do you ship internationally?",
+        "a3": "Yes, we ship to over 100 countries. International shipping rates and times will be calculated at checkout."
+    },
+    "returns": {
+        "q1": "What is your return policy?",
+        "a1": "We accept returns within 30 days of delivery for a full refund. Items must be in their original condition, unworn, with tags attached.",
+        "q2": "How do I start a return?",
+        "a2": "You can start a return from your order history page. Simply select the order you wish to return and follow the on-screen instructions."
+    },
+    "payments": {
+        "q1": "What payment methods do you accept?",
+        "a1": "We accept all major credit cards (Visa, MasterCard, American Express) as well as PayPal and Apple Pay."
+    },
+    "account": {
+        "q1": "How do I change my password?",
+        "a1": "You can change your password by navigating to Profile > Settings > Change Password. You will need to enter your current password to make this change."
+    },
+    "feedbackPrompt": "Was this answer helpful?",
+    "feedbackThanks": "Thanks for the feedback"
+}

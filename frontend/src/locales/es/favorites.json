@@ -1,0 +1,23 @@
+{
+    "screenTitle": "Favoritos ({{count}})",
+    "removeAlert": {
+        "title": "Quitar de Favoritos",
+        "message": "¿Seguro que quieres quitar \"{{name}}\" de tus favoritos?",
+        "removeButton": "Quitar"
+    },
+    "error": {
+        "title": "Error al Cargar Favoritos",
+        "message": "No pudimos obtener tus productos favoritos. Por favor, intenta de nuevo."
+    },
+    "empty": {
+        "title": "Aún no tienes favoritos",
+        "subtitle": "Toca el corazón en los productos que te encanten para guardarlos aquí.",
+        "exploreButton": "Explorar Productos"
+    },
+    "previewItem": {
+        "accessibilityLabel": "Favorito: {{name}}, precio {{price}}. Toca para ver detalles."
+    },
+    "preview": {
+        "title": "Favoritos ({{count}})"
+    }
+}

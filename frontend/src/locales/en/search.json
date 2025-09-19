@@ -1,0 +1,15 @@
+{
+    "placeholder": "Search products...",
+    "initial": {
+        "title": "Find what you're looking for",
+        "subtitle": "Search for products, brands, and more."
+    },
+    "empty": {
+        "title": "No results found",
+        "subtitle": "We couldn't find any products matching \"{{term}}\"."
+    },
+    "recent": {
+        "title": "Recent",
+        "clear": "Clear"
+    }
+}

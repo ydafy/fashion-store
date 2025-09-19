@@ -1,0 +1,11 @@
+{
+  "github.copilot.editor.exclude": {
+    "**/.expo/**": true,
+    "**/node_modules/**": true,
+    "**/dist/**": true,
+    "**/build/**": true,
+    "**/*.lock": true,
+    "**/mcp-server/**": true, // Para que no se confunda con el código del servidor MCP
+    "**/gemini-agent/**": true // Ni con el del agente
+  }
+}

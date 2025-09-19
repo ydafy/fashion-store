@@ -1,0 +1,13 @@
+{
+    "myAddressDefault": "Mi Dirección",
+    "selectAddressPrompt": "Seleccionar Dirección",
+    "favoritesLabel": "Ver favoritos",
+    "addressActionLabel": "Cambiar dirección, actual: {{address}}",
+    "addCard": "Añadir Tarjeta",
+    "payments": "Pagos",
+    "settings": "Configuracion",
+    "changeEmail": "Cambiar correo",
+    "editPhoneTitle": "Cambiar telefono",
+    "editProfileTitle": "Editar perfil",
+    "newArrivals": "Novedades"
+}

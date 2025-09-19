@@ -1,0 +1,42 @@
+[
+    {
+        "id": "look_01",
+        "title": "Look Urbano de Otoño",
+        "imageUri": "https://images.pexels.com/photos/1100779/pexels-photo-1100779.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+        "productIds": [
+            "prod_001",
+            "prod_004",
+            "prod_007"
+        ]
+    },
+    {
+        "id": "look_02",
+        "title": "Esenciales de Verano",
+        "imageUri": "https://images.pexels.com/photos/2043590/pexels-photo-2043590.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+        "productIds": [
+            "prod_002",
+            "prod_005",
+            "prod_008"
+        ]
+    },
+    {
+        "id": "look_03",
+        "title": "Estilo Nocturno",
+        "imageUri": "https://images.pexels.com/photos/1126993/pexels-photo-1126993.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+        "productIds": [
+            "prod_003",
+            "prod_006",
+            "prod_009"
+        ]
+    },
+    {
+        "id": "look_04",
+        "title": "Aventura al Aire Libre",
+        "imageUri": "https://images.pexels.com/photos/1496373/pexels-photo-1496373.jpeg?auto=compress&cs=tinysrgb&w=1260&h=750&dpr=2",
+        "productIds": [
+            "prod_010",
+            "prod_011",
+            "prod_012"
+        ]
+    }
+]

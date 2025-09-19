@@ -1,0 +1,13 @@
+{
+    "myAddressDefault": "My Address",
+    "selectAddressPrompt": "Select Address",
+    "favoritesLabel": "View favorites",
+    "addressActionLabel": "Change address, current: {{address}}",
+    "addCard": "Add Card",
+    "payments": "Payments",
+    "settings": "Settings",
+    "changeEmail": "Change Email",
+    "editPhoneTitle": "Change Phone",
+    "editProfileTitle": "Edit profile",
+    "newArrivals": "New Arrivals"
+}

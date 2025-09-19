@@ -1,0 +1,94 @@
+{
+    "bestSellers": {
+        "title": "Best Sellers",
+        "hubs": [
+            {
+                "id": "hub_winter_bestsellers",
+                "mainPanel": {
+                    "id": "panel_winter_main",
+                    "title": "Invierno",
+                    "icon": "Snowflake",
+                    "imageUrl": "https://images.pexels.com/photos/700535/pexels-photo-700535.jpeg",
+                    "action": {
+                        "type": "FILTER_BY_TAG",
+                        "payload": {
+                            "tag": "attr-winter",
+                            "isBestSeller": true
+                        }
+                    }
+                },
+                "secondaryPanels": [
+                    {
+                        "id": "panel_winter_jackets",
+                        "title": "Chamarras",
+                        "icon": "Hoodie",
+                        "action": {
+                            "type": "FILTER_BY_CATEGORY",
+                            "payload": {
+                                "tag": "attr-winter",
+                                "categoryId": "sub-cat-chamarras",
+                                "isBestSeller": true
+                            }
+                        }
+                    },
+                    {
+                        "id": "panel_winter_casual",
+                        "title": "Pants",
+                        "icon": "Pants",
+                        "action": {
+                            "type": "FILTER_BY_CATEGORY",
+                            "payload": {
+                                "tag": "attr-winter",
+                                "categoryId": "sub-cat-pantalones",
+                                "isBestSeller": true
+                            }
+                        }
+                    }
+                ]
+            },
+            {
+                "id": "hub_summer_bestsellers",
+                "mainPanel": {
+                    "id": "panel_summer_main",
+                    "title": "Verano",
+                    "icon": "TreePalm",
+                    "imageUrl": "https://images.pexels.com/photos/6260568/pexels-photo-6260568.jpeg",
+                    "action": {
+                        "type": "FILTER_BY_TAG",
+                        "payload": {
+                            "tag": "attr-summer",
+                            "isBestSeller": true
+                        }
+                    }
+                },
+                "secondaryPanels": [
+                    {
+                        "id": "panel_summer_tshirts",
+                        "title": "Camisetas",
+                        "icon": "TShirt",
+                        "action": {
+                            "type": "FILTER_BY_CATEGORY",
+                            "payload": {
+                                "tag": "attr-summer",
+                                "categoryId": "sub-cat-camisetas",
+                                "isBestSeller": true
+                            }
+                        }
+                    },
+                    {
+                        "id": "panel_summer_oversize",
+                        "title": "Dresses",
+                        "icon": "Dress",
+                        "action": {
+                            "type": "FILTER_BY_TAG",
+                            "payload": {
+                                "tag": "sub-cat-vestidos",
+                                "isBestSeller": true
+                            }
+                        }
+                    }
+                ]
+            }
+        ]
+    }
+}

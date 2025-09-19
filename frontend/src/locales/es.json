@@ -1,0 +1,552 @@
+{
+    "common": {
+        "appName": "Mi App de E-Commerce",
+        "loading": "Cargando...",
+        "error": "Error",
+        "retry": "Reintentar",
+        "save": "Guardar",
+        "cancel": "Cancelar",
+        "submit": "Enviar",
+        "ok": "Aceptar",
+        "viewAll": "Ver todos",
+        "shopNowButton": "Comprar",
+        "free": "Gratis",
+        "comingSoon": "Esta sección estará disponible próximamente.",
+        "genericError": "Ocurrió un error inesperado.",
+        "selected": "seleccionado",
+        "available": "disponible",
+        "unavailable": "no disponible",
+        "search": "Buscar",
+        "filter": "Filtrar",
+        "expand": "expandir",
+        "collapse": "contraer"
+    },
+    "auth": {
+        "loginTitle": "Iniciar Sesión",
+        "registerTitle": "Registrarse",
+        "emailLabel": "Correo Electrónico",
+        "passwordLabel": "Contraseña",
+        "loginButton": "Iniciar Sesión",
+        "registerButton": "Crear Cuenta",
+        "logoutButton": "Cerrar Sesión",
+        "forgotPasswordLink": "¿Olvidaste tu contraseña?",
+        "orLoginWith": "O inicia sesión con",
+        "noAccountPrompt": "¿No tienes una cuenta?",
+        "signUpLinkText": "Regístrate",
+        "fullNameLabel": "Nombre Completo",
+        "fullNamePlaceholder": "Ingresa tu nombre completo",
+        "emailPlaceholder": "Ingresa tu correo",
+        "phoneLabel": "Teléfono",
+        "phonePlaceholder": "Ingresa tu teléfono",
+        "passwordPlaceholder": "Ingresa tu contraseña",
+        "confirmPasswordLabel": "Confirmar Contraseña",
+        "confirmPasswordPlaceholder": "Confirma tu contraseña",
+        "agreeToTerms": "Acepto los Términos y Condiciones y la Política de Privacidad",
+        "alreadyHaveAccountPrompt": "¿Ya tienes una cuenta?",
+        "logInLinkText": "Inicia sesión",
+        "brandTextRegister": "ÚNETE AL CLUB",
+        "forgotPasswordTitle": "Restablecer Contraseña",
+        "forgotPasswordInstructions": "Ingresa tu correo electrónico y te enviaremos instrucciones para restablecer tu contraseña.",
+        "sendResetLinkButton": "Enviar Enlace",
+        "alerts": {
+            "incompleteFieldsTitle": "Campos incompletos",
+            "incompleteFieldsMessage": "Por favor, completa todos los campos.",
+            "loginErrorTitle": "Error de Inicio de Sesión",
+            "notAvailableTitle": "Función no disponible",
+            "passwordRecoveryNotImplemented": "La recuperación de contraseña aún no está implementada.",
+            "genericLoginError": "No se pudo iniciar sesión. Verifica tus credenciales.",
+            "termsRequiredTitle": "Términos y Condiciones",
+            "termsRequiredMessage": "Debes aceptar los términos y condiciones para registrarte.",
+            "registrationErrorTitle": "Error de Registro",
+            "reviewFieldsAndTermsMessage": "Por favor, revisa todos los campos y acepta los términos.",
+            "passwordResetRequestedTitle": "Solicitud Enviada",
+            "passwordResetRequestedMessage": "Si una cuenta con ese correo electrónico existe, hemos enviado instrucciones para restablecer tu contraseña a dicha dirección.",
+            "passwordResetErrorTitle": "Error al Solicitar Restablecimiento",
+            "genericApiError": "Ocurrió un error inesperado al procesar tu solicitud. Por favor, intenta de nuevo.",
+            "invalidCredentials": "Correo o contraseña incorrectos",
+            "socialLoginError": "Error al iniciar sesión con {{provider}}. Por favor, intenta de nuevo.",
+            "registrationSuccessTitle": "¡Registro Exitoso!",
+            "registrationSuccessMessageVerifyEmail": "Hemos enviado un correo de verificación a tu dirección. Por favor, revisa tu bandeja de entrada para activar tu cuenta."
+        }
+    },
+    "profile": {
+        "screenTitle": "Perfil",
+        "favoritesTitle": "Favoritos",
+        "verifyEmailPrompt": "Por favor, verifica tu correo electrónico para acceder a todas las funciones.",
+        "resendVerificationLink": "Reenviar correo",
+        "editProfileButton": "Editar perfil",
+        "logoutButton": "Cerrar Sesión",
+        "simulateVerification": "Simular Verif.",
+        "alerts": {
+            "verificationEmailSentTitle": "Correo Enviado",
+            "verificationEmailSentMessage": "Hemos reenviado el correo de verificación a {{email}}.",
+            "verificationEmailSentError": "No se pudo reenviar el correo. Intenta de nuevo."
+        },
+        "options": {
+            "orders": "Pedidos",
+            "addresses": "Direcciones",
+            "paymentMethods": "Pagos",
+            "settings": "Configuración",
+            "help": "Ayuda"
+        }
+    },
+    "errors": {
+        "required": "Este campo es requerido",
+        "nameRequired": "Nombre es requerido",
+        "emailRequired": "Correo es requerido",
+        "emailInvalid": "Formato de correo inválido",
+        "phoneRequired": "Teléfono es requerido",
+        "passwordRequired": "Contraseña es requerida",
+        "confirmPasswordRequired": "Confirmar contraseña es requerido",
+        "passwordsDoNotMatch": "Las contraseñas no coinciden",
+        "passwordTooShort": "La contraseña debe tener al menos 8 caracteres",
+        "passwordMinLength": "La contraseña debe tener al menos 8 caracteres",
+        "passwordNeedsUppercase": "La contraseña debe contener al menos una mayúscula",
+        "passwordNeedsLowercase": "La contraseña debe contener al menos una minúscula",
+        "passwordNeedsNumber": "La contraseña debe contener al menos un número",
+        "termsRequired": "Debes aceptar los términos y condiciones",
+        "emailForPasswordResetRequired": "Se requiere un correo para restablecer la contraseña.",
+        "cardHolderNameRequired": "Nombre del titular es requerido",
+        "cardNumberRequired": "Número de tarjeta es requerido",
+        "cardNumberInvalid": "Número de tarjeta inválido",
+        "cardExpiryRequired": "Fecha de expiración es requerida",
+        "cardExpiryInvalid": "Fecha inválida o pasada (MM/AA)",
+        "cardCvvRequired": "CVV es requerido",
+        "cardCvvInvalid": "CVV inválido (3-4 dígitos)",
+        "addressRequired": "Por favor, selecciona una dirección de envío",
+        "pickupLocationRequired": "Por favor, selecciona un punto de recogida",
+        "address": {
+            "labelRequired": "La etiqueta es requerida",
+            "recipientNameRequired": "El nombre del destinatario es requerido",
+            "phoneRequired": "El teléfono es requerido",
+            "phoneInvalid": "El teléfono debe tener 10 dígitos",
+            "streetRequired": "La calle y número son requeridos",
+            "cityRequired": "La ciudad es requerida",
+            "stateRequired": "El estado es requerido",
+            "countryRequired": "El país es requerido",
+            "postalCodeRequired": "El código postal es requerido",
+            "postalCodeInvalid": "El código postal debe tener 5 dígitos"
+        }
+    },
+    "checkout": {
+        "productCount_one": "1 producto en tu resumen",
+        "productCount_other": "{{count}} productos en tu resumen",
+        "summaryTitle": "Productos en tu pedido",
+        "authRequiredTitle": "Autenticación Requerida",
+        "authRequiredMessage": "Debes iniciar sesión para completar tu pedido.",
+        "emailVerificationRequiredTitle": "Verificación de Correo Requerida",
+        "emailVerificationRequiredMessage": "Debes verificar tu correo electrónico antes de poder realizar un pedido. ¿Deseas reenviar el correo de verificación?",
+        "addressRequiredTitle": "Dirección Requerida",
+        "addressRequiredMessage": "Por favor, selecciona o añade una dirección de envío.",
+        "orderConfirmedTitle": "¡Pedido Confirmado!",
+        "orderConfirmedMessage": "Tu pedido #{{orderId}} ha sido procesado.",
+        "errors": {
+            "fetchPickupLocationsError": "No se pudo obtener puntos de recogida.",
+            "genericPickupError": "Error al cargar puntos de recogida.",
+            "createOrderTitle": "Error de Pedido",
+            "createOrderError": "No se pudo crear el pedido.",
+            "genericCreateOrderError": "No se pudo procesar tu pedido. Intenta de nuevo más tarde."
+        },
+        "content": {
+            "mainTitle": "Finalizar Compra",
+            "deliveryMethod": "Entrega a Domicilio",
+            "pickupMethod": "Recoger en Punto",
+            "shippingDetailsTitle": "Detalles de Envío",
+            "pickupDetailsTitle": "Detalles de Recogida",
+            "noPickupLocations": "No hay puntos de recogida disponibles.",
+            "pickupContactTitle": "Datos de Contacto para la Recogida",
+            "paymentTitle": "Pago",
+            "paymentMethod": "Forma de pago",
+            "cardPayment": "Tarjeta de crédito o débito",
+            "costSummaryTitle": "Resumen de Costos",
+            "subtotal": "Subtotal",
+            "shipping": "Envío",
+            "taxes": "Impuestos (IVA {{rate}}%)",
+            "total": "Total",
+            "confirmOrderButton": "Confirmar Pedido",
+            "noPickupLocationsSubtext": "Por favor, intenta con entrega a domicilio o vuelve a consultar más tarde.",
+            "paymentMethodHint": "Selecciona tarjeta de crédito o débito como tu forma de pago."
+        },
+        "placeholders": {
+            "pickupName": "Nombre completo de quien recoge",
+            "pickupEmail": "Correo electrónico de contacto",
+            "pickupPhone": "Teléfono de contacto",
+            "cardHolderName": "Nombre del titular",
+            "cardNumber": "Número de tarjeta",
+            "cardExpiry": "MM/AA",
+            "cardCvv": "CVV"
+        },
+        "paymentForm": {
+            "title": "Detalles de la Tarjeta",
+            "saveCardLabel": "Guardar tarjeta para próximo pedido",
+            "setDefaultCardLabel": "Establecer como tarjeta predeterminada"
+        },
+        "summaryItem": {
+            "variant": "{{color}} - Talla: {{size}}",
+            "quantity": "Cantidad: {{count}}",
+            "accessibilityLabel": "{{name}}, cantidad {{quantity}}, color {{color}}, talla {{size}}. Subtotal: {{subtotal}}."
+        }
+    },
+    "passwordStrength": {
+        "tooShort": "Muy corta",
+        "weak": "Muy debil",
+        "medium": "Normal",
+        "strong": "Fuerte",
+        "veryStrong": "Muy Fuerte"
+    },
+    "productDetail": {
+        "alerts": {
+            "shareErrorNoInfo": "No hay información del producto para compartir."
+        },
+        "carousel": {
+            "accessibilityLabel": "Carrusel de imágenes para {{name}}",
+            "imageAccessibilityLabel": "Imagen {{index}} de {{total}} de {{name}}"
+        },
+        "toasts": {
+            "incompleteSelectionTitle": "Selección Incompleta",
+            "incompleteSelectionMessageSize": "Por favor, selecciona una talla.",
+            "colorVariantNotFound": "Variante de color no encontrada.",
+            "notAvailableTitle": "No Disponible",
+            "sizeNotAvailable": "La talla seleccionada no está disponible.",
+            "addedToCartSuccessTitle": "¡Añadido!",
+            "addedToCartSuccessMessage": "{{productName}} se añadió al carrito.",
+            "addToCartErrorGeneral": "No se pudo añadir {{productName}}. Intenta de nuevo.",
+            "addToCartErrorProblem": "Ocurrió un problema al añadir al carrito.",
+            "selectColorFirstTitle": "Selecciona un color",
+            "selectColorFirstMessageFavorites": "Debes elegir un color para guardarlo en favoritos."
+        },
+        "stockMessages": {
+            "unavailableInColor": "No disponible en {{colorName}}",
+            "lowStockInSize": "¡Pocas unidades disponibles en talla {{sizeName}}!"
+        },
+        "accordion": {
+            "fabricTitle": "Composición y Tejido",
+            "careTitle": "Instrucciones de Cuidado"
+        },
+        "outOfStockModal": {
+            "title": "Producto Agotado",
+            "message": "Este artículo no está disponible por el momento."
+        },
+        "actions": {
+            "addToCartButton": "Añadir al Carrito",
+            "favoriteAddedToast": "Añadido a Favoritos",
+            "favoriteRemovedToast": "Eliminado de Favoritos",
+            "favoriteErrorToastTitle": "Error de Favoritos",
+            "favoriteErrorToastMessage": "No se pudo actualizar favoritos.",
+            "addFavoriteLabel": "Añadir a favoritos",
+            "removeFavoriteLabel": "Quitar de favoritos"
+        },
+        "variants": {
+            "colorsTitle": "Colores",
+            "sizesTitle": "Tallas",
+            "colorAccessibilityLabel": "Color {{colorName}}, estado: {{status}}",
+            "sizeAccessibilityLabel": "Talla {{sizeName}}, estado: {{status}}"
+        },
+        "priceDisplay": {
+            "title": "Precio",
+            "discountBadge": "-{{discount}}%",
+            "saleAccessibilityLabel": "Precio en oferta: {{price}}. Precio original: {{originalPrice}}.",
+            "regularAccessibilityLabel": "Precio: {{price}}."
+        },
+        "primaryInfo": {
+            "ratingCountText": "({{count}} valoraciones)",
+            "ratingAccessibilityLabel": "Calificación: {{rating}} de 5, basado en {{count}} valoraciones"
+        },
+        "description": {
+            "title": "Descripción"
+        },
+        "header": {
+            "backButtonLabel": "Volver",
+            "shareButtonLabel": "Compartir producto"
+        }
+    },
+    "productShare": {
+        "modal": {
+            "messagesOption": "Mensajes",
+            "otherOption": "Otro...",
+            "shareErrorTitle": "Error al Compartir",
+            "cannotOpenMessagesApp": "No se puede abrir la aplicación de mensajes en {{platform}}.",
+            "problemOpeningMessages": "Ocurrió un problema al intentar abrir mensajes. Usando opción de compartir general.",
+            "shareErrorNoInfo": "No hay información del producto para compartir.",
+            "usingGenericShare": "No se pudo abrir mensajes. Usando opción de compartir general."
+        },
+        "preview": {
+            "loadingInfo": "Cargando información del producto...",
+            "categoryLabel": "Categoría: ",
+            "accessibilityLabel": "Vista previa del producto a compartir: {{name}}, categoría {{category}}."
+        },
+        "shareMessage": "¡Mira este producto: {{productName}}! {{productUrl}}",
+        "shareTitle": "Mira: {{productName}}"
+    },
+    "productCard": {
+        "badge": {
+            "sale": "Oferta",
+            "discountOff": "{{discount}}% MENOS",
+            "new": "Nuevo",
+            "topSeller": "Más Vendido",
+            "lowStock": "Pocas Unidades",
+            "outOfStock": "Agotado"
+        },
+        "toasts": {
+            "favoriteErrorMessage": "No se pudo actualizar favoritos.",
+            "favoriteErrorTitle": "Error favoritos"
+        }
+    },
+    "header": {
+        "myAddressDefault": "Mi Dirección",
+        "selectAddressPrompt": "Seleccionar Dirección",
+        "favoritesLabel": "Ver favoritos",
+        "addressActionLabel": "Cambiar dirección, actual: {{address}}"
+    },
+    "home": {
+        "recommended": {
+            "titleDefault": "Recomendaciones",
+            "viewMore": "Ver Más",
+            "emptyMessage": "No hay recomendaciones por ahora."
+        },
+        "collections": {
+            "titleDefault": "Colecciones",
+            "emptyMessage": "No hay colecciones disponibles en este momento."
+        },
+        "errors": {
+            "loadContentErrorTitle": "¡Vaya! Hubo un Error",
+            "loadContentErrorGeneric": "Error al cargar el contenido principal. Por favor, intenta de nuevo."
+        }
+    },
+    "cart": {
+        "title": "Mi Carrito ({{count}})",
+        "emptyMessage": "Tu carrito está vacío.",
+        "emptySubtitle": "Los productos que añadas aparecerán aquí.",
+        "subtotalLabel": "Subtotal:",
+        "shippingLabel": "Envío:",
+        "totalLabel": "Total:",
+        "checkoutButton": "Proceder al Pago",
+        "alerts": {
+            "addressRequiredTitle": "Dirección Requerida",
+            "addressRequiredMessage": "Por favor, selecciona una dirección de envío desde la pantalla de inicio antes de proceder.",
+            "emptyCartTitle": "Carrito Vacío",
+            "emptyCartMessage": "No puedes proceder al pago con un carrito vacío."
+        },
+        "item": {
+            "colorLabel": "Color:",
+            "sizeLabel": "Talla:",
+            "pricePerUnitLabel": "Precio:",
+            "eachSuffix": "c/u",
+            "quantityLabel": "Cant:",
+            "changeQuantity": "Cambiar cantidad",
+            "accessibilityLabel": "{{name}}, cantidad {{quantity}}, subtotal {{subtotal}}",
+            "modal": {
+                "removeItemButton": "Eliminar artículo"
+            }
+        }
+    },
+    "orderSummary": {
+        "title": "Resumen del Pedido",
+        "subtotalLabel": "Subtotal:",
+        "shippingLabel": "Envío:",
+        "totalLabel": "Total del Pedido:",
+        "taxLabel": "Impuestos:"
+    },
+    "address": {
+        "add": {
+            "title": "Añadir Nueva Dirección",
+            "saveButton": "Guardar Dirección"
+        },
+        "edit": {
+            "title": "Editar Dirección",
+            "saveButton": "Actualizar Dirección"
+        },
+        "form": {
+            "label": "Etiqueta *",
+            "recipientName": "Nombre del Destinatario *",
+            "phone": "Teléfono de Contacto *",
+            "street": "Calle y Número *",
+            "details": "Interior / Depto / Colonia (Opcional)",
+            "country": "País *",
+            "state": "Estado / Provincia *",
+            "city": "Ciudad / Municipio *",
+            "postalCode": "Código Postal *",
+            "instructions": "Instrucciones de Entrega (Opcional)"
+        },
+        "placeholders": {
+            "label": "Ej: Casa, Oficina",
+            "recipientName": "Nombre completo",
+            "phone": "10 dígitos",
+            "street": "Av. Siempreviva 742",
+            "details": "Piso 5, Depto B",
+            "selectCountry": "Selecciona un país...",
+            "selectState": "Selecciona un estado...",
+            "selectCity": "Selecciona una ciudad...",
+            "postalCode": "5 dígitos",
+            "instructions": "Dejar en recepción, llamar al llegar..."
+        },
+        "delete": {
+            "confirmTitle": "Confirmar Eliminación",
+            "confirmMessage": "¿Seguro que quieres eliminar la dirección \"{{label}}\"?",
+            "deleteButton": "Eliminar"
+        },
+        "modal": {
+            "title": "Mis Direcciones",
+            "addButton": "Añadir Nueva Dirección",
+            "loadError": "Error al cargar direcciones: {{error}}",
+            "emptyTitle": "Sin Direcciones",
+            "emptySubtitle": "Aún no has guardado ninguna dirección. ¡Añade una para empezar!",
+            "limitReached": "Se muestra un máximo de {{max}} direcciones."
+        },
+        "listItem": {
+            "addressDetails": "Detalles de la dirección",
+            "selected": "Seleccionado",
+            "editButtonLabel": "Editar dirección {{label}}",
+            "deleteButtonLabel": "Eliminar dirección {{label}}",
+            "isDefault": "Dirección predeterminada",
+            "setDefault": "Marcar dirección {{label}} como predeterminada"
+        }
+    },
+    "favorites": {
+        "screenTitle": "Favoritos ({{count}})",
+        "removeAlert": {
+            "title": "Quitar de Favoritos",
+            "message": "¿Seguro que quieres quitar \"{{name}}\" de tus favoritos?",
+            "removeButton": "Quitar"
+        },
+        "error": {
+            "title": "Error al Cargar Favoritos",
+            "message": "No pudimos obtener tus productos favoritos. Por favor, intenta de nuevo."
+        },
+        "empty": {
+            "title": "Aún no tienes favoritos",
+            "subtitle": "Toca el corazón en los productos que te encanten para guardarlos aquí.",
+            "exploreButton": "Explorar Productos"
+        },
+        "previewItem": {
+            "accessibilityLabel": "Favorito: {{name}}, precio {{price}}. Toca para ver detalles."
+        },
+        "preview": {
+            "title": "Favoritos ({{count}})"
+        }
+    },
+    "orders": {
+        "history": {
+            "title": "Mis Pedidos",
+            "error": {
+                "title": "Error al Cargar Pedidos",
+                "message": "No pudimos obtener tu historial de pedidos."
+            },
+            "empty": {
+                "title": "Sin Historial de Pedidos",
+                "subtitle": "Cuando realices tu primer pedido, aparecerá aquí."
+            }
+        },
+        "detail": {
+            "headerTitle": "Detalle del Pedido",
+            "productsTitle": "Productos ({{count}})",
+            "errors": {
+                "genericLoad": "Ocurrió un error al cargar el pedido.",
+                "notFoundTitle": "Pedido no Encontrado",
+                "notFoundMessage": "No pudimos encontrar los detalles de este pedido. Por favor, intenta de nuevo."
+            },
+            "reorder": {
+                "button": "Volver a Pedir",
+                "successTitle": "Productos Añadidos",
+                "successMessage": "{{count}} producto(s) añadidos al carrito.",
+                "partialFailureTitle": "Atención",
+                "partialFailureMessage": "Algunos productos no se pudieron añadir. Revisa el carrito.",
+                "genericError": "Ocurrió un problema al reordenar."
+            }
+        },
+        "productItem": {
+            "colorLabel": "Color",
+            "sizeLabel": "Talla",
+            "quantityLabel": "Cantidad",
+            "priceLabel": "Precio Unitario",
+            "accessibilityLabel": "{{name}}, {{quantity}} unidad(es), color {{color}}, talla {{size}}, a {{price}} cada una."
+        },
+        "infoSection": {
+            "title": "Información del Pedido",
+            "orderIdLabel": "ID Pedido:",
+            "dateLabel": "Fecha:",
+            "statusLabel": "Estado:",
+            "shippingMethodLabel": "Método de Envío:"
+        },
+        "status": {
+            "pending": "Pendiente",
+            "processing": "Procesando",
+            "shipped": "Enviado",
+            "delivered": "Entregado",
+            "cancelled": "Cancelado",
+            "unknown": "Desconocido"
+        },
+        "shippingMethod": {
+            "delivery": "Envío a Domicilio",
+            "pickup": "Recogida en Tienda"
+        },
+        "shippingSection": {
+            "deliveryTitle": "Dirección de Envío",
+            "pickupTitle": "Información de Recogida",
+            "phoneLabel": "Tel",
+            "instructionsLabel": "Instrucciones",
+            "hoursLabel": "Horario",
+            "pickupContactTitle": "Contacto de Recogida",
+            "contactNameLabel": "Nombre",
+            "contactEmailLabel": "Email",
+            "contactPhoneLabel": "Teléfono",
+            "trackingTitle": "Seguimiento del Paquete",
+            "providerLabel": "Proveedor",
+            "trackingNumberLabel": "Nº Seguimiento",
+            "trackButton": "Rastrear Paquete",
+            "errors": {
+                "cantOpenUrlTitle": "Error",
+                "cantOpenUrlMessage": "No se puede abrir la URL de seguimiento: {{url}}",
+                "noUrlTitle": "Información no disponible",
+                "noUrlMessage": "No hay una URL de seguimiento para este pedido."
+            }
+        },
+        "listItem": {
+            "orderIdLabel": "Pedido #{{id}}",
+            "totalLabel": "Total",
+            "itemCount_one": "1 artículo",
+            "itemCount_other": "{{count}} artículos",
+            "viewDetails": "Ver Detalles",
+            "accessibilityLabel": "Pedido número {{orderId}}, realizado el {{date}}. Total de {{total}}, con {{itemCount}} artículos. Estado actual: {{status}}. Toca para ver detalles."
+        }
+    },
+    "quickadd": {
+        "sizeTitle": "Talla",
+        "addToCartButton": "Agregar a la bolsa de compra",
+        "successToast": "¡Añadido al carrito!",
+        "selectSizeToast": "Por favor, selecciona una talla",
+        "viewInCartButton": "Ver en la bolsa"
+    },
+    "shop": {
+        "title": "Comprar",
+        "categories": {
+            "clothing": "Ropa",
+            "footwear": "Calzado",
+            "accessories": "Accesorios"
+        },
+        "subcategories": {
+            "tops": "Tops",
+            "dresses": "Vestidos",
+            "bottoms": "Pantalones y Faldas",
+            "outerwear": "Abrigos y Chamarras",
+            "sneakers": "Tenis",
+            "boots": "Botas",
+            "bags": "Bolsas",
+            "hats": "Gorras y Sombreros"
+        },
+        "filters": {
+            "categoryTitle": "Categorías",
+            "allCategories": "Todas",
+            "clearButton": "Limpiar",
+            "applyButton": "Aplicar Filtros",
+            "onSaleTitle": "Ofertas",
+            "onSaleLabel": "Mostrar solo productos en oferta",
+            "sortBy": {
+                "title": "Ordenar por",
+                "relevance": "Relevancia",
+                "priceAsc": "Precio: Menor a Mayor",
+                "priceDesc": "Precio: Mayor a Menor"
+            }
+        }
+    }
+}

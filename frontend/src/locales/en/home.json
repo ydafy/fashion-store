@@ -1,0 +1,29 @@
+{
+    "recommended": {
+        "titleDefault": "Recommendations",
+        "viewMore": "View More",
+        "emptyMessage": "No recommendations for now."
+    },
+    "collections": {
+        "titleDefault": "Collections",
+        "emptyMessage": "No collections available at the moment."
+    },
+    "errors": {
+        "loadContentErrorTitle": "Oops! An Error Occurred",
+        "loadContentErrorGeneric": "Error loading main content. Please try again."
+    },
+    "HerroCarousel": {
+        "newArrivalsTitle": "New In The Shop"
+    },
+    "community": {
+        "sectionHeader": {
+            "title": "Our community"
+        },
+        "infoModal": {
+            "title": "Want to be featured?",
+            "message": "We love seeing our style in the real world! For a chance to be featured in our gallery, just upload your photo to Instagram, tag our account {{handle}}, and use the hashtag {{hashtag}}. We can't wait to see your look!"
+        },
+        "photoBy": "Photo by {{handle}}",
+        "shopTheLook": "Product modeled in the image"
+    }
+}

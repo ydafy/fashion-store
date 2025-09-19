@@ -1,0 +1,15 @@
+{
+    "placeholder": "Buscar productos...",
+    "initial": {
+        "title": "Encuentra lo que buscas",
+        "subtitle": "Busca productos, marcas y más."
+    },
+    "recent": {
+        "title": "Reciente",
+        "clear": "Limpiar"
+    },
+    "empty": {
+        "title": "No se encontraron resultados",
+        "subtitle": "No pudimos encontrar productos que coincidan con \"{{term}}\"."
+    }
+}

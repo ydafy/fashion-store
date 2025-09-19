@@ -1,0 +1,85 @@
+{
+    "history": {
+        "title": "My Orders",
+        "error": {
+            "title": "Error Loading Orders",
+            "message": "We couldn't get your order history."
+        },
+        "empty": {
+            "title": "No Order History",
+            "subtitle": "When you place your first order, it will appear here."
+        }
+    },
+    "detail": {
+        "headerTitle": "Order Details",
+        "productsTitle": "Products ({{count}})",
+        "errors": {
+            "genericLoad": "An error occurred while loading the order.",
+            "notFoundTitle": "Order Not Found",
+            "notFoundMessage": "We couldn't find the details for this order. Please try again."
+        },
+        "reorder": {
+            "button": "Reorder",
+            "successTitle": "Products Added",
+            "successMessage": "{{count}} product(s) added to your cart.",
+            "partialFailureTitle": "Attention",
+            "partialFailureMessage": "Some products could not be added. Please check your cart.",
+            "genericError": "There was a problem reordering."
+        }
+    },
+    "productItem": {
+        "colorLabel": "Color",
+        "sizeLabel": "Size",
+        "quantityLabel": "Quantity",
+        "priceLabel": "Unit Price",
+        "accessibilityLabel": "{{name}}, {{quantity}} unit(s), color {{color}}, size {{size}}, at {{price}} each."
+    },
+    "infoSection": {
+        "title": "Order Information",
+        "orderIdLabel": "Order ID:",
+        "dateLabel": "Date:",
+        "statusLabel": "Status:",
+        "shippingMethodLabel": "Shipping Method:"
+    },
+    "status": {
+        "pending": "Pending",
+        "processing": "Processing",
+        "shipped": "Shipped",
+        "delivered": "Delivered",
+        "cancelled": "Cancelled",
+        "unknown": "Unknown"
+    },
+    "shippingMethod": {
+        "delivery": "Home Delivery",
+        "pickup": "Store Pickup"
+    },
+    "shippingSection": {
+        "deliveryTitle": "Shipping Address",
+        "pickupTitle": "Pickup Information",
+        "phoneLabel": "Phone",
+        "instructionsLabel": "Instructions",
+        "hoursLabel": "Hours",
+        "pickupContactTitle": "Pickup Contact",
+        "contactNameLabel": "Name",
+        "contactEmailLabel": "Email",
+        "contactPhoneLabel": "Phone",
+        "trackingTitle": "Package Tracking",
+        "providerLabel": "Provider",
+        "trackingNumberLabel": "Tracking #",
+        "trackButton": "Track Package",
+        "errors": {
+            "cantOpenUrlTitle": "Error",
+            "cantOpenUrlMessage": "Cannot open tracking URL: {{url}}",
+            "noUrlTitle": "Information unavailable",
+            "noUrlMessage": "There is no tracking URL for this order."
+        }
+    },
+    "listItem": {
+        "orderIdLabel": "Order #{{id}}",
+        "totalLabel": "Total",
+        "itemCount_one": "1 item",
+        "itemCount_other": "{{count}} items",
+        "viewDetails": "View Details",
+        "accessibilityLabel": "Order number {{orderId}}, placed on {{date}}. Total of {{total}}, with {{itemCount}} items. Current status: {{status}}. Tap for details."
+    }
+}

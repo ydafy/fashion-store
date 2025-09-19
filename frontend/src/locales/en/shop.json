@@ -1,0 +1,77 @@
+{
+    "title": "Shop",
+    "quickFilters": {
+        "title": "For what occasion?"
+    },
+    "saleMosaic": {
+        "title": "On Sale",
+        "cardA11yHint": "Opens product details"
+    },
+    "productStrip": {
+        "newArrivalsTitle": "New Arrivals",
+        "recentlyViewedTitle": "Recently Viewed",
+        "a11yLabel": {
+            "newArrivals": "New arrivals products carousel",
+            "recentlyViewed": "Recently viewed products carousel"
+        }
+    },
+    "errors": {
+        "newArrivalsLoadFailed": "Could not load new arrivals",
+        "recentlyViewedLoadFailed": "Could not load recently viewed items",
+        "tryAgainLater": "Please try again later"
+    },
+    "noNewArrivals": "No new arrivals at the moment",
+    "editorials": {
+        "title": "Editorials",
+        "error": "Could not load editorial content",
+        "cardA11yLabel": "Editorial: {{title}}",
+        "cardA11yHint": "Opens related products section",
+        "loadingA11yLabel": "Loading editorial content",
+        "a11yLabel": "Editorial sections carousel"
+    },
+    "colorFilter": {
+        "title": "Find your Tone",
+        "resultsTitle": "Results for: {{color}}"
+    },
+    "categories": {
+        "title": "Categories",
+        "clothing": "Clothing",
+        "footwear": "Footwear",
+        "accessories": "Accessories"
+    },
+    "subcategories": {
+        "tops": "Tops",
+        "dresses": "Dresses",
+        "bottoms": "Bottoms",
+        "outerwear": "Outerwear",
+        "sneakers": "Sneakers",
+        "boots": "Boots",
+        "bags": "Bags",
+        "hats": "Hats & Beanies"
+    },
+    "filters": {
+        "categoryTitle": "Categories",
+        "allCategories": "All",
+        "clearButton": "Clear",
+        "applyButton": "Apply Filters",
+        "onSaleTitle": "Deals",
+        "onSaleLabel": "Show only products on sale",
+        "colorTitle": "Colors",
+        "sizeTitle": "Sizes",
+        "priceRangeTitle": "Price range",
+        "sortBy": {
+            "title": "Sort By",
+            "relevance": "Relevance",
+            "priceAsc": "Price: Low to High",
+            "priceDesc": "Price: High to Low"
+        }
+    },
+    "grid": {
+        "errorTitle": "Error Loading Products",
+        "emptyMessage": "No products found",
+        "emptySubtext": "Try different filters or search terms."
+    },
+    "search": {
+        "resultsFor": "Results for: \"{{query}}\""
+    }
+}

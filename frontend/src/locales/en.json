@@ -1,0 +1,550 @@
+{
+    "common": {
+        "appName": "My E-Commerce App",
+        "loading": "Loading...",
+        "error": "Error",
+        "retry": "Retry",
+        "save": "Save",
+        "cancel": "Cancel",
+        "submit": "Submit",
+        "ok": "OK",
+        "viewAll": "View All",
+        "shopNowButton": "Shop Now",
+        "free": "Free",
+        "comingSoon": "This section will be available soon.",
+        "genericError": "An unexpected error occurred.",
+        "selected": "selected",
+        "available": "available",
+        "unavailable": "unavailable",
+        "search": "Search",
+        "filter": "Filter",
+        "expand": "expand",
+        "collapse": "collapse"
+    },
+    "auth": {
+        "loginTitle": "Login",
+        "registerTitle": "Create Account",
+        "emailLabel": "Email",
+        "passwordLabel": "Password",
+        "loginButton": "Log In",
+        "registerButton": "Create Account",
+        "logoutButton": "Log Out",
+        "forgotPasswordLink": "Forgot password?",
+        "orLoginWith": "Or log in with",
+        "noAccountPrompt": "Don't have an account?",
+        "signUpLinkText": "Sign up",
+        "fullNameLabel": "Full Name",
+        "fullNamePlaceholder": "Enter your full name",
+        "emailPlaceholder": "Enter your email",
+        "phoneLabel": "Phone",
+        "phonePlaceholder": "Enter your phone",
+        "passwordPlaceholder": "Enter your password",
+        "confirmPasswordLabel": "Confirm Password",
+        "confirmPasswordPlaceholder": "Confirm your password",
+        "agreeToTerms": "I agree to the Terms & Conditions and Privacy Policy",
+        "alreadyHaveAccountPrompt": "Already have an account?",
+        "logInLinkText": "Log in",
+        "brandTextRegister": "JOIN THE CLUB",
+        "forgotPasswordTitle": "Reset Password",
+        "forgotPasswordInstructions": "Enter your email address and we'll send you instructions to reset your password.",
+        "sendResetLinkButton": "Send Reset Link",
+        "alerts": {
+            "incompleteFieldsTitle": "Incomplete Fields",
+            "incompleteFieldsMessage": "Please fill in all fields.",
+            "loginErrorTitle": "Login Error",
+            "notAvailableTitle": "Feature Not Available",
+            "passwordRecoveryNotImplemented": "Password recovery is not yet implemented.",
+            "genericLoginError": "Could not log in. Please check your credentials.",
+            "termsRequiredTitle": "Terms & Conditions",
+            "termsRequiredMessage": "You must accept the terms and conditions to register.",
+            "registrationErrorTitle": "Registration Error",
+            "reviewFieldsAndTermsMessage": "Please review all fields and accept the terms.",
+            "passwordResetRequestedTitle": "Request Sent",
+            "passwordResetRequestedMessage": "If an account with that email exists, we've sent instructions to reset your password to that address.",
+            "passwordResetErrorTitle": "Password Reset Error",
+            "genericApiError": "An unexpected error occurred while processing your request. Please try again.",
+            "invalidCredentials": "Incorrect password or email",
+            "socialLoginError": "Error logging in with {{provider}}. Please try again.",
+            "registrationSuccessTitle": "Registration Successful!",
+            "registrationSuccessMessageVerifyEmail": "We've sent a verification email to your address. Please check your inbox to activate your account."
+        }
+    },
+    "profile": {
+        "screenTitle": "Profile",
+        "favoritesTitle": "Favorites",
+        "verifyEmailPrompt": "Please verify your email address to access all features.",
+        "resendVerificationLink": "Resend email",
+        "editProfileButton": "Edit profile",
+        "logoutButton": "Log Out",
+        "simulateVerification": "Sim. Verify",
+        "alerts": {
+            "verificationEmailSentTitle": "Email Sent",
+            "verificationEmailSentMessage": "We've resent the verification email to {{email}}.",
+            "verificationEmailSentError": "Could not resend email. Please try again."
+        },
+        "options": {
+            "orders": "Orders",
+            "addresses": "Addresses",
+            "paymentMethods": "Payments",
+            "settings": "Settings",
+            "help": "Help"
+        }
+    },
+    "errors": {
+        "required": "This field is required",
+        "nameRequired": "Name is required",
+        "emailRequired": "Email is required",
+        "emailInvalid": "Invalid email format",
+        "phoneRequired": "Phone is required",
+        "passwordRequired": "Password is required",
+        "confirmPasswordRequired": "Confirm password is required",
+        "passwordsDoNotMatch": "Passwords do not match",
+        "passwordTooShort": "Password must be at least 8 characters",
+        "passwordMinLength": "The password must be at least 8 characters long.",
+        "passwordNeedsUppercase": "The password must contain at least one capital letter.",
+        "passwordNeedsLowercase": "The password must contain at least one lowercase letter",
+        "passwordNeedsNumber": "The password must contain at least one number",
+        "termsRequired": "You must accept the terms and conditions",
+        "emailForPasswordResetRequired": "An email is required to reset your password.",
+        "cardHolderNameRequired": "Cardholder name is required",
+        "cardNumberRequired": "Card number is required",
+        "cardNumberInvalid": "Invalid card number",
+        "cardExpiryRequired": "Expiry date is required",
+        "cardExpiryInvalid": "Invalid or past date (MM/YY)",
+        "cardCvvRequired": "CVV is required",
+        "cardCvvInvalid": "Invalid CVV (3-4 digits)",
+        "addressRequired": "Please select a shipping address",
+        "pickupLocationRequired": "Please select a pickup location",
+        "address": {
+            "labelRequired": "Label is required",
+            "recipientNameRequired": "Recipient name is required",
+            "phoneRequired": "Phone is required",
+            "phoneInvalid": "Phone must be 10 digits",
+            "streetRequired": "Street and number are required",
+            "cityRequired": "City is required",
+            "stateRequired": "State is required",
+            "countryRequired": "Country is required",
+            "postalCodeRequired": "Postal code is required",
+            "postalCodeInvalid": "Postal code must be 5 digits"
+        }
+    },
+    "checkout": {
+        "productCount_one": "1 product in your summary",
+        "productCount_other": "{{count}} products in your summary",
+        "summaryTitle": "Products in your order",
+        "authRequiredTitle": "Authentication Required",
+        "authRequiredMessage": "You must be logged in to complete your order.",
+        "emailVerificationRequiredTitle": "Email Verification Required",
+        "emailVerificationRequiredMessage": "You must verify your email before placing an order. Would you like to resend the verification email?",
+        "addressRequiredTitle": "Address Required",
+        "addressRequiredMessage": "Please select or add a shipping address.",
+        "orderConfirmedTitle": "Order Confirmed!",
+        "orderConfirmedMessage": "Your order #{{orderId}} has been processed.",
+        "errors": {
+            "fetchPickupLocationsError": "Could not fetch pickup locations.",
+            "genericPickupError": "Error loading pickup locations.",
+            "createOrderTitle": "Order Error",
+            "createOrderError": "Could not create the order.",
+            "genericCreateOrderError": "Could not process your order. Please try again later."
+        },
+        "content": {
+            "mainTitle": "Checkout",
+            "deliveryMethod": "Home Delivery",
+            "pickupMethod": "Store Pickup",
+            "shippingDetailsTitle": "Shipping Details",
+            "pickupDetailsTitle": "Pickup Details",
+            "noPickupLocations": "No pickup locations available.",
+            "pickupContactTitle": "Pickup Contact Information",
+            "paymentTitle": "Payment",
+            "paymentMethod": "Payment method",
+            "cardPayment": "Credit or debit card",
+            "costSummaryTitle": "Cost Summary",
+            "subtotal": "Subtotal",
+            "shipping": "Shipping",
+            "taxes": "Taxes (VAT {{rate}}%)",
+            "total": "Total",
+            "confirmOrderButton": "Confirm Order",
+            "noPickupLocationsSubtext": "Please try home delivery or check back later.",
+            "paymentMethodHint": "Selects credit or debit card as your payment method."
+        },
+        "placeholders": {
+            "pickupName": "Full name of person picking up",
+            "pickupEmail": "Contact email",
+            "pickupPhone": "Contact phone",
+            "cardHolderName": "Name on card",
+            "cardNumber": "Card number",
+            "cardExpiry": "MM/YY",
+            "cardCvv": "CVV"
+        },
+        "paymentForm": {
+            "title": "Card Details",
+            "saveCardLabel": "Save card for next time",
+            "setDefaultCardLabel": "Set as default card"
+        },
+        "summaryItem": {
+            "variant": "{{color}} - Size: {{size}}",
+            "quantity": "Quantity: {{count}}",
+            "accessibilityLabel": "{{name}}, quantity {{quantity}}, color {{color}}, size {{size}}. Subtotal: {{subtotal}}."
+        }
+    },
+    "passwordStrength": {
+        "tooShort": "To Short",
+        "weak": "To weak",
+        "medium": "Average",
+        "strong": "Strong",
+        "veryStrong": "Very strong"
+    },
+    "productDetail": {
+        "alerts": {
+            "shareErrorNoInfo": "No product information available to share."
+        },
+        "carousel": {
+            "accessibilityLabel": "Image carousel for {{name}}",
+            "imageAccessibilityLabel": "Image {{index}} of {{total}} for {{name}}"
+        },
+        "toasts": {
+            "incompleteSelectionTitle": "Incomplete Selection",
+            "incompleteSelectionMessageSize": "Please select a size.",
+            "colorVariantNotFound": "Color variant not found.",
+            "notAvailableTitle": "Not Available",
+            "sizeNotAvailable": "The selected size is not available.",
+            "addedToCartSuccessTitle": "Added!",
+            "addedToCartSuccessMessage": "{{productName}} was added to your cart.",
+            "addToCartErrorGeneral": "Could not add {{productName}}. Please try again.",
+            "addToCartErrorProblem": "There was a problem adding to cart.",
+            "selectColorFirstTitle": "Select a color",
+            "selectColorFirstMessageFavorites": "You must choose a color to save it to favorites."
+        },
+        "stockMessages": {
+            "unavailableInColor": "Not available in {{colorName}}",
+            "lowStockInSize": "Few units left in size {{sizeName}}!"
+        },
+        "accordion": {
+            "fabricTitle": "Composition & Fabric",
+            "careTitle": "Care Instructions"
+        },
+        "outOfStockModal": {
+            "title": "Product Out of Stock",
+            "message": "This item is currently unavailable."
+        },
+        "actions": {
+            "addToCartButton": "Add to Cart",
+            "favoriteAddedToast": "Added to Favorites",
+            "favoriteRemovedToast": "Removed from Favorites",
+            "favoriteErrorToastTitle": "Favorite Error",
+            "favoriteErrorToastMessage": "Failed to update favorites.",
+            "addFavoriteLabel": "Add to favorites",
+            "removeFavoriteLabel": "Remove from favorites"
+        },
+        "variants": {
+            "colorsTitle": "Colors",
+            "sizesTitle": "Sizes",
+            "colorAccessibilityLabel": "Color {{colorName}}, status: {{status}}",
+            "sizeAccessibilityLabel": "Size {{sizeName}}, status: {{status}}"
+        },
+        "priceDisplay": {
+            "title": "Price",
+            "discountBadge": "-{{discount}}%",
+            "saleAccessibilityLabel": "Sale price: {{price}}. Original price: {{originalPrice}}.",
+            "regularAccessibilityLabel": "Price: {{price}}."
+        },
+        "primaryInfo": {
+            "ratingCountText": "({{count}} ratings)",
+            "ratingAccessibilityLabel": "Rating: {{rating}} out of 5, based on {{count}} ratings"
+        },
+        "description": {
+            "title": "Description"
+        },
+        "header": {
+            "backButtonLabel": "Go back",
+            "shareButtonLabel": "Share product"
+        }
+    },
+    "productShare": {
+        "modal": {
+            "messagesOption": "Messages",
+            "otherOption": "Other...",
+            "shareErrorTitle": "Sharing Error",
+            "cannotOpenMessagesApp": "Cannot open messaging app on {{platform}}.",
+            "problemOpeningMessages": "There was a problem trying to open messages. Using general sharing option."
+        },
+        "preview": {
+            "loadingInfo": "Loading product information...",
+            "categoryLabel": "Category: ",
+            "accessibilityLabel": "Preview of product to share: {{name}}, category {{category}}."
+        },
+        "shareMessage": "Check out this product: {{productName}}! {{productUrl}}",
+        "shareTitle": "Check out: {{productName}}"
+    },
+    "productCard": {
+        "badge": {
+            "sale": "Sale",
+            "discountOff": "{{discount}}% OFF",
+            "new": "New",
+            "topSeller": "Top Seller",
+            "lowStock": "Low Stock",
+            "outOfStock": "Out of Stock"
+        },
+        "toasts": {
+            "favoriteErrorTitle": "Favorite Error",
+            "favoriteErrorMessage": "Could not update favorites."
+        }
+    },
+    "header": {
+        "myAddressDefault": "My Address",
+        "selectAddressPrompt": "Select Address",
+        "favoritesLabel": "View favorites",
+        "addressActionLabel": "Change address, current: {{address}}"
+    },
+    "home": {
+        "recommended": {
+            "titleDefault": "Recommendations",
+            "viewMore": "View More",
+            "emptyMessage": "No recommendations for now."
+        },
+        "collections": {
+            "titleDefault": "Collections",
+            "emptyMessage": "No collections available at the moment."
+        },
+        "errors": {
+            "loadContentErrorTitle": "Oops! An Error Occurred",
+            "loadContentErrorGeneric": "Error loading main content. Please try again."
+        }
+    },
+    "cart": {
+        "title": "My Cart ({{count}})",
+        "emptyMessage": "Your cart is empty.",
+        "emptySubtitle": "Products you add will appear here.",
+        "subtotalLabel": "Subtotal:",
+        "shippingLabel": "Shipping:",
+        "totalLabel": "Total:",
+        "checkoutButton": "Proceed to Checkout",
+        "alerts": {
+            "addressRequiredTitle": "Address Required",
+            "addressRequiredMessage": "Please select a shipping address from the home screen before proceeding.",
+            "emptyCartTitle": "Empty Cart",
+            "emptyCartMessage": "You cannot proceed to checkout with an empty cart."
+        },
+        "item": {
+            "colorLabel": "Color:",
+            "sizeLabel": "Size:",
+            "pricePerUnitLabel": "Price:",
+            "eachSuffix": "each",
+            "quantityLabel": "Qty:",
+            "changeQuantity": "Change quantity",
+            "accessibilityLabel": "{{name}}, quantity {{quantity}}, subtotal {{subtotal}}",
+            "modal": {
+                "removeItemButton": "Remove item"
+            }
+        }
+    },
+    "orderSummary": {
+        "title": "Order Summary",
+        "subtotalLabel": "Subtotal:",
+        "shippingLabel": "Shipping:",
+        "totalLabel": "Order Total:",
+        "taxLabel": "Taxes:"
+    },
+    "address": {
+        "add": {
+            "title": "Add New Address",
+            "saveButton": "Save Address"
+        },
+        "edit": {
+            "title": "Edit Address",
+            "saveButton": "Update Address"
+        },
+        "form": {
+            "label": "Label *",
+            "recipientName": "Recipient's Name *",
+            "phone": "Contact Phone *",
+            "street": "Street & Number *",
+            "details": "Apt / Suite / Colony (Optional)",
+            "country": "Country *",
+            "state": "State / Province *",
+            "city": "City / Municipality *",
+            "postalCode": "Postal Code *",
+            "instructions": "Delivery Instructions (Optional)"
+        },
+        "placeholders": {
+            "label": "E.g. Home, Office",
+            "recipientName": "Full name",
+            "phone": "10 digits",
+            "street": "123 Evergreen Terrace",
+            "details": "Floor 5, Apt B",
+            "selectCountry": "Select a country...",
+            "selectState": "Select a state...",
+            "selectCity": "Select a city...",
+            "postalCode": "5 digits",
+            "instructions": "Leave at front desk, call upon arrival..."
+        },
+        "delete": {
+            "confirmTitle": "Confirm Deletion",
+            "confirmMessage": "Are you sure you want to delete the address \"{{label}}\"?",
+            "deleteButton": "Delete"
+        },
+        "modal": {
+            "title": "My Addresses",
+            "addButton": "Add New Address",
+            "loadError": "Error loading addresses: {{error}}",
+            "emptyTitle": "No Addresses",
+            "emptySubtitle": "You haven't saved any addresses yet. Add one to get started!",
+            "limitReached": "Showing a maximum of {{max}} addresses."
+        },
+        "listItem": {
+            "addressDetails": "Address details",
+            "selected": "Selected",
+            "editButtonLabel": "Edit address {{label}}",
+            "deleteButtonLabel": "Delete address {{label}}",
+            "isDefault": "Default address",
+            "setDefault": "Set address {{label}} as default"
+        }
+    },
+    "favorites": {
+        "screenTitle": "Favorites ({{count}})",
+        "removeAlert": {
+            "title": "Remove from Favorites",
+            "message": "Are you sure you want to remove \"{{name}}\" from your favorites?",
+            "removeButton": "Remove"
+        },
+        "error": {
+            "title": "Error Loading Favorites",
+            "message": "We couldn't get your favorite products. Please try again."
+        },
+        "empty": {
+            "title": "You have no favorites yet",
+            "subtitle": "Tap the heart on products you love to save them here.",
+            "exploreButton": "Explore Products"
+        },
+        "previewItem": {
+            "accessibilityLabel": "Favorite: {{name}}, price {{price}}. Tap for details."
+        },
+        "preview": {
+            "title": "Favorites ({{count}})"
+        }
+    },
+    "orders": {
+        "history": {
+            "title": "My Orders",
+            "error": {
+                "title": "Error Loading Orders",
+                "message": "We couldn't get your order history."
+            },
+            "empty": {
+                "title": "No Order History",
+                "subtitle": "When you place your first order, it will appear here."
+            }
+        },
+        "detail": {
+            "headerTitle": "Order Details",
+            "productsTitle": "Products ({{count}})",
+            "errors": {
+                "genericLoad": "An error occurred while loading the order.",
+                "notFoundTitle": "Order Not Found",
+                "notFoundMessage": "We couldn't find the details for this order. Please try again."
+            },
+            "reorder": {
+                "button": "Reorder",
+                "successTitle": "Products Added",
+                "successMessage": "{{count}} product(s) added to your cart.",
+                "partialFailureTitle": "Attention",
+                "partialFailureMessage": "Some products could not be added. Please check your cart.",
+                "genericError": "There was a problem reordering."
+            }
+        },
+        "productItem": {
+            "colorLabel": "Color",
+            "sizeLabel": "Size",
+            "quantityLabel": "Quantity",
+            "priceLabel": "Unit Price",
+            "accessibilityLabel": "{{name}}, {{quantity}} unit(s), color {{color}}, size {{size}}, at {{price}} each."
+        },
+        "infoSection": {
+            "title": "Order Information",
+            "orderIdLabel": "Order ID:",
+            "dateLabel": "Date:",
+            "statusLabel": "Status:",
+            "shippingMethodLabel": "Shipping Method:"
+        },
+        "status": {
+            "pending": "Pending",
+            "processing": "Processing",
+            "shipped": "Shipped",
+            "delivered": "Delivered",
+            "cancelled": "Cancelled",
+            "unknown": "Unknown"
+        },
+        "shippingMethod": {
+            "delivery": "Home Delivery",
+            "pickup": "Store Pickup"
+        },
+        "shippingSection": {
+            "deliveryTitle": "Shipping Address",
+            "pickupTitle": "Pickup Information",
+            "phoneLabel": "Phone",
+            "instructionsLabel": "Instructions",
+            "hoursLabel": "Hours",
+            "pickupContactTitle": "Pickup Contact",
+            "contactNameLabel": "Name",
+            "contactEmailLabel": "Email",
+            "contactPhoneLabel": "Phone",
+            "trackingTitle": "Package Tracking",
+            "providerLabel": "Provider",
+            "trackingNumberLabel": "Tracking #",
+            "trackButton": "Track Package",
+            "errors": {
+                "cantOpenUrlTitle": "Error",
+                "cantOpenUrlMessage": "Cannot open tracking URL: {{url}}",
+                "noUrlTitle": "Information unavailable",
+                "noUrlMessage": "There is no tracking URL for this order."
+            }
+        },
+        "listItem": {
+            "orderIdLabel": "Order #{{id}}",
+            "totalLabel": "Total",
+            "itemCount_one": "1 item",
+            "itemCount_other": "{{count}} items",
+            "viewDetails": "View Details",
+            "accessibilityLabel": "Order number {{orderId}}, placed on {{date}}. Total of {{total}}, with {{itemCount}} items. Current status: {{status}}. Tap for details."
+        }
+    },
+    "quickadd": {
+        "sizeTitle": "Size",
+        "addToCartButton": "Add to Bag",
+        "successToast": "Added to cart!",
+        "selectSizeToast": "Please select a size",
+        "viewInCartButton": "View in Bag"
+    },
+    "shop": {
+        "title": "Shop",
+        "categories": {
+            "clothing": "Clothing",
+            "footwear": "Footwear",
+            "accessories": "Accessories"
+        },
+        "subcategories": {
+            "tops": "Tops",
+            "dresses": "Dresses",
+            "bottoms": "Bottoms",
+            "outerwear": "Outerwear",
+            "sneakers": "Sneakers",
+            "boots": "Boots",
+            "bags": "Bags",
+            "hats": "Hats & Beanies"
+        },
+        "filters": {
+            "categoryTitle": "Categories",
+            "allCategories": "All",
+            "clearButton": "Clear",
+            "applyButton": "Apply Filters",
+            "onSaleTitle": "Deals",
+            "onSaleLabel": "Show only products on sale",
+            "sortBy": {
+                "title": "Sort By",
+                "relevance": "Relevance",
+                "priceAsc": "Price: Low to High",
+                "priceDesc": "Price: High to Low"
+            }
+        }
+    }
+}

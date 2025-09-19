@@ -1,0 +1,27 @@
+{
+    "title": "Mi Carrito ({{count}})",
+    "emptyMessage": "Tu carrito está vacío.",
+    "emptySubtitle": "Los productos que añadas aparecerán aquí.",
+    "subtotalLabel": "Subtotal:",
+    "shippingLabel": "Envío:",
+    "totalLabel": "Total:",
+    "checkoutButton": "Proceder al Pago",
+    "alerts": {
+        "addressRequiredTitle": "Dirección Requerida",
+        "addressRequiredMessage": "Por favor, selecciona una dirección de envío desde la pantalla de inicio antes de proceder.",
+        "emptyCartTitle": "Carrito Vacío",
+        "emptyCartMessage": "No puedes proceder al pago con un carrito vacío."
+    },
+    "item": {
+        "colorLabel": "Color:",
+        "sizeLabel": "Talla:",
+        "pricePerUnitLabel": "Precio:",
+        "eachSuffix": "c/u",
+        "quantityLabel": "Cant:",
+        "changeQuantity": "Cambiar cantidad",
+        "accessibilityLabel": "{{name}}, cantidad {{quantity}}, subtotal {{subtotal}}",
+        "modal": {
+            "removeItemButton": "Eliminar artículo"
+        }
+    }
+}

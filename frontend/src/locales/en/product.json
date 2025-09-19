@@ -1,0 +1,104 @@
+{
+    "detail": {
+        "alerts": {
+            "shareErrorNoInfo": "No product information available to share."
+        },
+        "carousel": {
+            "accessibilityLabel": "Image carousel for {{name}}",
+            "imageAccessibilityLabel": "Image {{index}} of {{total}} for {{name}}"
+        },
+        "toasts": {
+            "incompleteSelectionTitle": "Incomplete Selection",
+            "incompleteSelectionMessageSize": "Please select a size.",
+            "colorVariantNotFound": "Color variant not found.",
+            "notAvailableTitle": "Not Available",
+            "sizeNotAvailable": "The selected size is not available.",
+            "addedToCartSuccessTitle": "Added!",
+            "addedToCartSuccessMessage": "{{productName}} was added to your cart.",
+            "addToCartErrorGeneral": "Could not add {{productName}}. Please try again.",
+            "addToCartErrorProblem": "There was a problem adding to cart.",
+            "selectColorFirstTitle": "Select a color",
+            "selectColorFirstMessageFavorites": "You must choose a color to save it to favorites."
+        },
+        "stockMessages": {
+            "unavailableInColor": "Not available in {{colorName}}",
+            "lowStockInSize": "Few units left in size {{sizeName}}!"
+        },
+        "accordion": {
+            "fabricTitle": "Composition & Fabric",
+            "careTitle": "Care Instructions"
+        },
+        "outOfStockModal": {
+            "title": "Product Out of Stock",
+            "message": "This item is currently unavailable."
+        },
+        "actions": {
+            "addToCartButton": "Add to Cart",
+            "favoriteAddedToast": "Added to Favorites",
+            "favoriteRemovedToast": "Removed from Favorites",
+            "favoriteErrorToastTitle": "Favorite Error",
+            "favoriteErrorToastMessage": "Failed to update favorites.",
+            "addFavoriteLabel": "Add to favorites",
+            "removeFavoriteLabel": "Remove from favorites"
+        },
+        "variants": {
+            "colorsTitle": "Colors",
+            "sizesTitle": "Sizes",
+            "colorAccessibilityLabel": "Color {{colorName}}, status: {{status}}",
+            "sizeAccessibilityLabel": "Size {{sizeName}}, status: {{status}}"
+        },
+        "priceDisplay": {
+            "title": "Price",
+            "discountBadge": "-{{discount}}%",
+            "saleAccessibilityLabel": "Sale price: {{price}}. Original price: {{originalPrice}}.",
+            "regularAccessibilityLabel": "Price: {{price}}."
+        },
+        "primaryInfo": {
+            "ratingCountText": "({{count}} ratings)",
+            "ratingAccessibilityLabel": "Rating: {{rating}} out of 5, based on {{count}} ratings"
+        },
+        "description": {
+            "title": "Description"
+        },
+        "header": {
+            "backButtonLabel": "Go back",
+            "shareButtonLabel": "Share product"
+        }
+    },
+    "share": {
+        "modal": {
+            "messagesOption": "Messages",
+            "otherOption": "Other...",
+            "shareErrorTitle": "Sharing Error",
+            "cannotOpenMessagesApp": "Cannot open messaging app on {{platform}}.",
+            "problemOpeningMessages": "There was a problem trying to open messages. Using general sharing option."
+        },
+        "preview": {
+            "loadingInfo": "Loading product information...",
+            "categoryLabel": "Category: ",
+            "accessibilityLabel": "Preview of product to share: {{name}}, category {{category}}."
+        },
+        "shareMessage": "Check out this product: {{productName}}! {{productUrl}}",
+        "shareTitle": "Check out: {{productName}}"
+    },
+    "card": {
+        "badge": {
+            "sale": "Sale",
+            "discountOff": "{{discount}}% OFF",
+            "new": "New",
+            "topSeller": "Top Seller",
+            "lowStock": "Low Stock",
+            "outOfStock": "Out of Stock"
+        },
+        "toasts": {
+            "favoriteErrorTitle": "Favorite Error",
+            "favoriteErrorMessage": "Could not update favorites."
+        },
+        "a11y": {
+            "defaultHint": "Tap to view product details",
+            "addToFavorites": "Add to favorites",
+            "removeFromFavorites": "Remove from favorites",
+            "saleLabel": "Product on sale: {{productName}}, original price {{originalPrice}}, sale price {{salePrice}}"
+        }
+    }
+}

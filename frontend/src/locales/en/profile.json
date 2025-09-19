@@ -1,0 +1,81 @@
+{
+    "screenTitle": "Profile",
+    "favoritesTitle": "Favorites",
+    "verifyEmailPrompt": "Please verify your email address to access all features.",
+    "resendVerificationLink": "Resend email",
+    "editProfileButton": "Edit profile",
+    "logoutButton": "Log Out",
+    "simulateVerification": "Sim. Verify",
+    "birthDateLabel": "Date of Birth",
+    "genderLabel": "Gender",
+    "selectDatePlaceholder": "Select a date",
+    "gender": {
+        "male": "Male",
+        "female": "Female",
+        "other": "Other",
+        "prefer_not_to_say": "Prefer not to say",
+        "selectPlaceholder": "Select your gender"
+    },
+    "alerts": {
+        "verificationEmailSentTitle": "Email Sent",
+        "verificationEmailSentMessage": "We've resent the verification email to {{email}}.",
+        "verificationEmailSentError": "Could not resend email. Please try again.",
+        "profileUpdatedSuccess": "Profile updated successfully"
+    },
+    "options": {
+        "orders": "Orders",
+        "addresses": "Addresses",
+        "paymentMethods": "Payments",
+        "settings": "Settings",
+        "help": "Help"
+    },
+    "help": {
+        "faq": "Frequently Asked Questions",
+        "contactUs": "Contact Us",
+        "ctaText": "Can't find your answer?",
+        "ctaLink": "Consult our Help Chat.",
+        "chatWelcome": "Hello! I'm the support assistant. How can I help you today based on our FAQ?",
+        "chatPlaceholder": "Type your question..."
+    },
+    "settings": {
+        "accountSection": "Account",
+        "email": "Email",
+        "phone": "Phone Number",
+        "password": "Password",
+        "dataSection": "Data",
+        "shippingInfo": "Shipping Information",
+        "paymentInfo": "Payment Information",
+        "regionalSection": "Regional",
+        "language": "Language",
+        "languageModal": {
+            "title": "Select Language",
+            "message": "Choose your preferred language for the application."
+        },
+        "languageChangedToast": {
+            "title": "Language Updated",
+            "messageEN": "The app is now in English.",
+            "messageES": "The app is now in Spanish."
+        },
+        "infoSection": "Information",
+        "helpCenter": "Help Center",
+        "terms": "Terms of Service",
+        "privacy": "Privacy Policy",
+        "currentEmailLabel": "Current email address:",
+        "newEmailLabel": "New email address",
+        "confirmEmailLabel": "Confirm new email address",
+        "addPhoneTitle": "Add Phone Number",
+        "editPhoneTitle": "Edit Phone Number",
+        "currentPhoneLabel": "Current number:",
+        "newPhoneLabel": "Phone Number",
+        "consentCheckboxLabel": "I agree to receive a text message to verify my device, as well as the Privacy Policy and Terms of Use.",
+        "disclaimerText": "Message and data rates may apply. Delays may occur from your wireless provider.",
+        "sendCodeButton": "Send Code",
+        "changePasswordTitle": "Change Password",
+        "currentPasswordLabel": "Current Password",
+        "newPasswordLabel": "New Password",
+        "confirmNewPasswordLabel": "Confirm New Password",
+        "logoutOtherDevicesCheckbox": "Log out of all other devices",
+        "shippingInfoTitle": "Shipping Information",
+        "shippingDetailsSection": "Shipping Details"
+    }
+}

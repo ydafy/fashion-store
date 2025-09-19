@@ -1,0 +1,39 @@
+{
+    "savedMethods": "Métodos de pago guardados",
+    "addNew": "Añadir nuevo método de pago",
+    "delete": {
+        "title": "Eliminar Método de Pago",
+        "message": "¿Estás seguro de que quieres eliminar la tarjeta que termina en •••• {{last4}}?"
+    },
+    "empty": {
+        "title": "Sin Métodos de Pago",
+        "subtitle": "Añade un método de pago para un checkout más rápido."
+    },
+    "cardEndingIn": "tarjeta que termina en",
+    "expiresOn": "Expira",
+    "isDefault": "Predeterminada",
+    "form": {
+        "cardNumber": "Número de tarjeta",
+        "expiryDate": "Fecha de vto.",
+        "cvv": "CVV",
+        "cardHolderName": "Nombre en la tarjeta",
+        "nickname": "Sobrenombre",
+        "setDefault": "Establecer como método de pago predeterminado",
+        "expiryPlaceholder": "MM/AA",
+        "cardHolderPlaceholder": "Nombre tal como aparece en la tarjeta",
+        "nicknamePlaceholder": "p. ej., Tarjeta del trabajo"
+    },
+    "add": {
+        "successTitle": "Tarjeta Añadida",
+        "successMessage": "Tu nuevo método de pago ha sido guardado.",
+        "errorMessage": "Hubo un problema al guardar tu tarjeta. Por favor, intenta de nuevo.",
+        "successMessageCheckout": "Ya está disponible para tu próxima compra.",
+        "saveErrorTitle": "No se Pudo Guardar la Tarjeta",
+        "saveErrorMessage": "No pudimos guardar tu tarjeta, pero tu pedido está siendo procesado."
+    },
+    "cvvHelp": {
+        "title": "¿Qué es el CVV?",
+        "message": "Es el código de seguridad de 3 dígitos que se encuentra en el reverso de tu tarjeta. Para American Express, son 4 dígitos en el anverso.",
+        "accessibilityLabel": "Más información sobre el código CVV"
+    }
+}

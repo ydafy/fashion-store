@@ -1,0 +1,40 @@
+{
+    "appName": "Mi App de E-Commerce",
+    "loading": "Cargando...",
+    "error": "Error",
+    "retry": "Reintentar",
+    "accept": "Aceptar",
+    "add": "Agregar",
+    "save": "Guardar",
+    "cancel": "Cancelar",
+    "submit": "Enviar",
+    "ok": "Aceptar",
+    "viewAll": "Ver todos",
+    "shopNowButton": "Comprar",
+    "free": "Gratis",
+    "comingSoon": "Esta sección estará disponible próximamente.",
+    "genericError": "Ocurrió un error inesperado.",
+    "selected": "seleccionado",
+    "available": "disponible",
+    "unavailable": "no disponible",
+    "search": "Buscar",
+    "filter": "Filtrar",
+    "expand": "expandir",
+    "collapse": "contraer",
+    "optional": "Opcional",
+    "change": "Cambiar",
+    "info": "Info",
+    "countryPickerPlaceholder": "Nombre del país",
+    "contentLoadErrorSubtext": "Error al cargar, intente mas tarde",
+    "errors": {
+        "permissionDeniedTitle": "Permiso Denegado",
+        "galleryPermissionDenied": "Lo sentimos, necesitamos acceso a tus fotos para que puedas elegir una imagen de perfil.",
+        "cameraPermissionDenied": "Lo sentimos, necesitamos acceso a la cámara para que puedas tomar una nueva foto de perfil.",
+        "renderErrorTitle": "¡Ups! Algo salió mal",
+        "renderErrorMessage": "Ocurrió un error inesperado al mostrar esta sección. Por favor, intenta navegar a otra parte de la aplicación."
+    },
+    "footer": {
+        "slogan": "Diseño atemporal, hecho para durar.",
+        "copyright": "© {{year}} {{brandName}}. Todos los derechos reservados."
+    }
+}

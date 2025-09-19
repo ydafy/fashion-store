@@ -1,0 +1,23 @@
+{
+    "screenTitle": "Favorites ({{count}})",
+    "removeAlert": {
+        "title": "Remove from Favorites",
+        "message": "Are you sure you want to remove \"{{name}}\" from your favorites?",
+        "removeButton": "Remove"
+    },
+    "error": {
+        "title": "Error Loading Favorites",
+        "message": "We couldn't get your favorite products. Please try again."
+    },
+    "empty": {
+        "title": "You have no favorites yet",
+        "subtitle": "Tap the heart on products you love to save them here.",
+        "exploreButton": "Explore Products"
+    },
+    "previewItem": {
+        "accessibilityLabel": "Favorite: {{name}}, price {{price}}. Tap for details."
+    },
+    "preview": {
+        "title": "Favorites ({{count}})"
+    }
+}

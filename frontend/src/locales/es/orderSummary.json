@@ -1,0 +1,7 @@
+{
+    "title": "Resumen del Pedido",
+    "subtotalLabel": "Subtotal:",
+    "shippingLabel": "Envío:",
+    "totalLabel": "Total del Pedido:",
+    "taxLabel": "Impuestos:"
+}

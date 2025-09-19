@@ -1,0 +1,81 @@
+{
+    "screenTitle": "Perfil",
+    "favoritesTitle": "Favoritos",
+    "verifyEmailPrompt": "Por favor, verifica tu correo electrónico para acceder a todas las funciones.",
+    "resendVerificationLink": "Reenviar correo",
+    "editProfileButton": "Editar perfil",
+    "logoutButton": "Cerrar Sesión",
+    "simulateVerification": "Simular Verif.",
+    "birthDateLabel": "Dia de nacimiento",
+    "genderLabel": "Genero",
+    "selectDatePlaceholder": "Selecciona una fecha",
+    "gender": {
+        "male": "Masculino",
+        "female": "Femenino",
+        "other": "Otro",
+        "prefer_not_to_say": "Prefiero no decir",
+        "selectPlaceholder": "Selecciona tu genero"
+    },
+    "alerts": {
+        "verificationEmailSentTitle": "Correo Enviado",
+        "verificationEmailSentMessage": "Hemos reenviado el correo de verificación a {{email}}.",
+        "verificationEmailSentError": "No se pudo reenviar el correo. Intenta de nuevo.",
+        "profileUpdatedSuccess": "Perfil actualizado correctamente"
+    },
+    "options": {
+        "orders": "Pedidos",
+        "addresses": "Direcciones",
+        "paymentMethods": "Pagos",
+        "settings": "Configuración",
+        "help": "Ayuda"
+    },
+    "help": {
+        "faq": "Preguntas Frecuentes",
+        "contactUs": "Contáctanos",
+        "ctaText": "¿No encuentras tu respuesta?",
+        "ctaLink": "Consulta nuestro Chat de Ayuda.",
+        "chatWelcome": "¡Hola! Soy el asistente de soporte. ¿Cómo puedo ayudarte hoy basándome en nuestras preguntas frecuentes?",
+        "chatPlaceholder": "Escribe tu pregunta..."
+    },
+    "settings": {
+        "accountSection": "Cuenta",
+        "email": "Email",
+        "phone": "Numero de Telefono",
+        "password": "Contraseña",
+        "dataSection": "Datos",
+        "shippingInfo": "Información de envío",
+        "paymentInfo": "Información de pago",
+        "regionalSection": "Regional",
+        "language": "Idioma",
+        "languageModal": {
+            "title": "Seleccionar Idioma",
+            "message": "Elige tu idioma de preferencia para la aplicación."
+        },
+        "languageChangedToast": {
+            "title": "Idioma Actualizado",
+            "messageEN": "La aplicación ahora está en Inglés.",
+            "messageES": "La aplicación ahora está en Español."
+        },
+        "infoSection": "Informacion",
+        "helpCenter": "Centro de ayuda",
+        "terms": "Términos de servicio",
+        "privacy": "Política de privacidad",
+        "currentEmailLabel": "Dirección de correo electrónico actual:",
+        "newEmailLabel": "Nuevo correo electronico",
+        "confirmEmailLabel": "Confirmar nuevo correo electronico",
+        "addPhoneTitle": "Agregar Número de Teléfono",
+        "editPhoneTitle": "Editar Número de Teléfono",
+        "currentPhoneLabel": "Número actual:",
+        "newPhoneLabel": "Número de Teléfono",
+        "consentCheckboxLabel": "Acepto recibir un mensaje de texto para verificar mi dispositivo, así como la Política de Privacidad y los Términos de Uso.",
+        "disclaimerText": "Podrían aplicarse tarifas por mensajes de texto y uso de datos. Podrían haber retrasos por parte de tu proveedor de servicio inalámbrico.",
+        "sendCodeButton": "Enviar Código",
+        "changePasswordTitle": "Cambiar Contraseña",
+        "currentPasswordLabel": "Contraseña Actual",
+        "newPasswordLabel": "Nueva Contraseña",
+        "confirmNewPasswordLabel": "Confirmar Nueva Contraseña",
+        "logoutOtherDevicesCheckbox": "Cerrar sesión en todos los demás dispositivos",
+        "shippingInfoTitle": "Información de Envío",
+        "shippingDetailsSection": "Detalles de Envío"
+    }
+}

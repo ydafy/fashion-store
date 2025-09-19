@@ -1,0 +1,18 @@
+<svg width="300" height="180" viewBox="0 0 300 180" xmlns="http://www.w3.org/2000/svg">
+  <!-- Fondo de la tarjeta -->
+  <rect width="300" height="180" rx="12" fill="#ffffff" stroke="#000000" stroke-width="2"/>
+
+  <!-- Franja magnética -->
+  <rect x="0" y="30" width="300" height="40" fill="#000000"/>
+
+  <!-- Área de firma -->
+  <rect x="20" y="90" width="260" height="30" fill="#ffffff" stroke="#000000" stroke-width="1"/>
+
+  <!-- Recuadro del CVV más grande -->
+  <rect x="190" y="85" width="80" height="40" fill="#ffffff" stroke="#000000" stroke-width="2" rx="4"/>
+  <text x="230" y="110" text-anchor="middle" fill="#000000" font-size="16" font-family="Arial, sans-serif">123</text>
+
+  <!-- Flecha más abajo apuntando al CVV -->
+  <line x1="230" y1="160" x2="230" y2="130" stroke="#000000" stroke-width="2"/>
+  <polyline points="225,135 230,130 235,135" fill="none" stroke="#000000" stroke-width="2"/>
+</svg>

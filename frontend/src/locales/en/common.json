@@ -1,0 +1,39 @@
+{
+    "appName": "My E-Commerce App",
+    "loading": "Loading...",
+    "error": "Error",
+    "accept": "Accept",
+    "retry": "Retry",
+    "save": "Save",
+    "cancel": "Cancel",
+    "add": "Add",
+    "submit": "Submit",
+    "ok": "OK",
+    "viewAll": "View All",
+    "shopNowButton": "Shop Now",
+    "free": "Free",
+    "info": "Info",
+    "comingSoon": "This section will be available soon.",
+    "genericError": "An unexpected error occurred.",
+    "selected": "selected",
+    "available": "available",
+    "unavailable": "unavailable",
+    "search": "Search",
+    "filter": "Filter",
+    "expand": "expand",
+    "collapse": "collapse",
+    "change": "Change",
+    "countryPickerPlaceholder": "Enter country name",
+    "contentLoadErrorSubtext": "Loading error, try again later",
+    "errors": {
+        "permissionDeniedTitle": "Permission Denied",
+        "galleryPermissionDenied": "Sorry, we need access to your photos to let you choose a profile picture.",
+        "cameraPermissionDenied": "Sorry, we need camera access to let you take a new profile picture.",
+        "renderErrorTitle": "Oops! Something went wrong",
+        "renderErrorMessage": "An unexpected error occurred while displaying this section. Please try navigating to another part of the app."
+    },
+    "footer": {
+        "slogan": "Timeless design, built to last.",
+        "copyright": "© {{year}} {{brandName}}. All rights reserved."
+    }
+}

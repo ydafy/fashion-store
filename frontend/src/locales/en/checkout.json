@@ -1,0 +1,65 @@
+{
+    "productCount_one": "1 product in your summary",
+    "productCount_other": "{{count}} products in your summary",
+    "summaryTitle": "Products in your order",
+    "authRequiredTitle": "Authentication Required",
+    "authRequiredMessage": "You must be logged in to complete your order.",
+    "emailVerificationRequiredTitle": "Email Verification Required",
+    "emailVerificationRequiredMessage": "You must verify your email before placing an order. Would you like to resend the verification email?",
+    "addressRequiredTitle": "Address Required",
+    "addressRequiredMessage": "Please select or add a shipping address.",
+    "orderConfirmedTitle": "Order Confirmed!",
+    "orderConfirmedMessage": "Your order #{{orderId}} has been processed.",
+    "errors": {
+        "fetchPickupLocationsError": "Could not fetch pickup locations.",
+        "genericPickupError": "Error loading pickup locations.",
+        "createOrderTitle": "Order Error",
+        "createOrderError": "Could not create the order.",
+        "genericCreateOrderError": "Could not process your order. Please try again later.",
+        "paymentDeclinedTitle": "Payment Declined",
+        "paymentDeclinedMessage": "Your card was declined. Please double-check your payment details or try a different card."
+    },
+    "content": {
+        "mainTitle": "Checkout",
+        "deliveryMethod": "Home Delivery",
+        "pickupMethod": "Store Pickup",
+        "shippingDetailsTitle": "Shipping Details",
+        "pickupDetailsTitle": "Pickup Details",
+        "noPickupLocations": "No pickup locations available.",
+        "pickupContactTitle": "Pickup Contact Information",
+        "paymentTitle": "Payment",
+        "paymentMethod": "Payment method",
+        "cardPayment": "Credit or debit card",
+        "costSummaryTitle": "Cost Summary",
+        "subtotal": "Subtotal",
+        "shipping": "Shipping",
+        "taxes": "Taxes (VAT {{rate}}%)",
+        "total": "Total",
+        "confirmOrderButton": "Confirm Order",
+        "noPickupLocationsSubtext": "Please try home delivery or check back later.",
+        "paymentMethodHint": "Selects credit or debit card as your payment method."
+    },
+    "placeholders": {
+        "pickupName": "Full name of person picking up",
+        "pickupEmail": "Contact email",
+        "pickupPhone": "Contact phone",
+        "cardHolderName": "Name on card",
+        "cardNumber": "Card number",
+        "cardExpiry": "MM/YY",
+        "cardCvv": "CVV"
+    },
+    "payment": {
+        "savedMethodsTitle": "Pay with a saved card",
+        "addNewCard": "Add a new payment method",
+        "useSavedCard": "Use a saved card"
+    },
+    "paymentForm": {
+        "title": "Card Details",
+        "saveCardLabel": "Save this card for future purchases"
+    },
+    "summaryItem": {
+        "variant": "{{color}} - Size: {{size}}",
+        "quantity": "Quantity: {{count}}",
+        "accessibilityLabel": "{{name}}, quantity {{quantity}}, color {{color}}, size {{size}}. Subtotal: {{subtotal}}."
+    }
+}

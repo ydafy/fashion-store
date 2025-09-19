@@ -1,0 +1,65 @@
+{
+    "productCount_one": "1 producto en tu resumen",
+    "productCount_other": "{{count}} productos en tu resumen",
+    "summaryTitle": "Productos en tu pedido",
+    "authRequiredTitle": "Autenticación Requerida",
+    "authRequiredMessage": "Debes iniciar sesión para completar tu pedido.",
+    "emailVerificationRequiredTitle": "Verificación de Correo Requerida",
+    "emailVerificationRequiredMessage": "Debes verificar tu correo electrónico antes de poder realizar un pedido. ¿Deseas reenviar el correo de verificación?",
+    "addressRequiredTitle": "Dirección Requerida",
+    "addressRequiredMessage": "Por favor, selecciona o añade una dirección de envío.",
+    "orderConfirmedTitle": "¡Pedido Confirmado!",
+    "orderConfirmedMessage": "Tu pedido #{{orderId}} ha sido procesado.",
+    "errors": {
+        "fetchPickupLocationsError": "No se pudo obtener puntos de recogida.",
+        "genericPickupError": "Error al cargar puntos de recogida.",
+        "createOrderTitle": "Error de Pedido",
+        "createOrderError": "No se pudo crear el pedido.",
+        "genericCreateOrderError": "No se pudo procesar tu pedido. Intenta de nuevo más tarde.",
+        "paymentDeclinedTitle": "Pago Rechazado",
+        "paymentDeclinedMessage": "Tu tarjeta fue rechazada. Por favor, verifica los detalles de tu pago o intenta con otra tarjeta."
+    },
+    "content": {
+        "mainTitle": "Finalizar Compra",
+        "deliveryMethod": "Entrega a Domicilio",
+        "pickupMethod": "Recoger en Punto",
+        "shippingDetailsTitle": "Detalles de Envío",
+        "pickupDetailsTitle": "Detalles de Recogida",
+        "noPickupLocations": "No hay puntos de recogida disponibles.",
+        "pickupContactTitle": "Datos de Contacto para la Recogida",
+        "paymentTitle": "Pago",
+        "paymentMethod": "Forma de pago",
+        "cardPayment": "Tarjeta de crédito o débito",
+        "costSummaryTitle": "Resumen de Costos",
+        "subtotal": "Subtotal",
+        "shipping": "Envío",
+        "taxes": "Impuestos (IVA {{rate}}%)",
+        "total": "Total",
+        "confirmOrderButton": "Confirmar Pedido",
+        "noPickupLocationsSubtext": "Por favor, intenta con entrega a domicilio o vuelve a consultar más tarde.",
+        "paymentMethodHint": "Selecciona tarjeta de crédito o débito como tu forma de pago."
+    },
+    "placeholders": {
+        "pickupName": "Nombre completo de quien recoge",
+        "pickupEmail": "Correo electrónico de contacto",
+        "pickupPhone": "Teléfono de contacto",
+        "cardHolderName": "Nombre del titular",
+        "cardNumber": "Número de tarjeta",
+        "cardExpiry": "MM/AA",
+        "cardCvv": "CVV"
+    },
+    "payment": {
+        "savedMethodsTitle": "Pagar con una tarjeta guardada",
+        "addNewCard": "Añadir un nuevo método de pago",
+        "useSavedCard": "Usar una tarjeta guardada"
+    },
+    "paymentForm": {
+        "title": "Detalles de la Tarjeta",
+        "saveCardLabel": "Guardar esta tarjeta para futuras compras"
+    },
+    "summaryItem": {
+        "variant": "{{color}} - Talla: {{size}}",
+        "quantity": "Cantidad: {{count}}",
+        "accessibilityLabel": "{{name}}, cantidad {{quantity}}, color {{color}}, talla {{size}}. Subtotal: {{subtotal}}."
+    }
+}

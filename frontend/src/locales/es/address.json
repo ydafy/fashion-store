@@ -1,0 +1,60 @@
+{
+    "deliveryInstructionsLabel": "Instrucciones de Entrega:",
+    "noAddressSelected": "Ninguna Dirección de Envío Seleccionada",
+    "noAddressSelectedSubtext": "Por favor, añade o selecciona una dirección. Tu dirección de envío por defecto se mostrará aquí.",
+    "add": {
+        "title": "Nueva dirrecion",
+        "saveButton": "Guardar dirrecion"
+    },
+    "edit": {
+        "title": "Editar dirección",
+        "saveButton": "Actualizar dirección",
+        "successTitle": "Cambio exitoso",
+        "successMessage": "Direccion guardada"
+    },
+    "form": {
+        "label": "Etiqueta *",
+        "recipientName": "Nombre del destinatario *",
+        "phone": "Teléfono de contacto *",
+        "street": "Calle y número *",
+        "details": "Apartamento / Suite / Colonia (Opcional)",
+        "country": "Pais *",
+        "state": "Estado / Provincia *",
+        "city": "Ciudad / Municipio *",
+        "postalCode": "Codigo postal *",
+        "instructions": "Instrucciones de entrega (opcional)"
+    },
+    "placeholders": {
+        "label": "E.g. Casa, Oficina",
+        "recipientName": "Nombre completo",
+        "phone": "10 digitos",
+        "street": "123 Emiliano Zapata",
+        "details": "Piso 5, Apt B",
+        "selectCountry": "Seleccione un país...",
+        "selectState": "Seleccione un estado...",
+        "selectCity": "Seleccione una ciudad...",
+        "postalCode": "5 digitos",
+        "instructions": "Déjelo en recepción y llame al llegar...."
+    },
+    "delete": {
+        "confirmTitle": "Confirmar eliminación",
+        "confirmMessage": "¿Estás seguro de que deseas eliminar la dirección \"{{label}}\"?",
+        "deleteButton": "Eliminar"
+    },
+    "modal": {
+        "title": "Mis direcciones",
+        "addButton": "Agregar nueva dirección",
+        "loadError": "Error al cargar direcciones: {{error}}",
+        "emptyTitle": "Sin direcciones",
+        "emptySubtitle": "Aún no has guardado ninguna dirección. Agrega una para empezar.!",
+        "limitReached": "Mostrando un máximo de {{max}} direcciones."
+    },
+    "listItem": {
+        "addressDetails": "Detalles de la dirección",
+        "selected": "Seleccionado",
+        "editButtonLabel": "Editar dirección {{label}}",
+        "deleteButtonLabel": "Eliminar direccion {{label}}",
+        "isDefault": "Direcion por defecto",
+        "setDefault": "Establecer dirección {{label}} por defecto"
+    }
+}

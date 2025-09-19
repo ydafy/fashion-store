@@ -1,0 +1,7 @@
+{
+    "title": "Order Summary",
+    "subtotalLabel": "Subtotal:",
+    "shippingLabel": "Shipping:",
+    "totalLabel": "Order Total:",
+    "taxLabel": "Taxes:"
+}

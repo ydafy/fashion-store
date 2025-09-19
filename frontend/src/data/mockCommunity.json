@@ -1,0 +1,35 @@
+[
+    {
+        "id": "ugc_01",
+        "imageUrl": "https://i.ibb.co/pBgwQbXm/Modelo-Prod1.jpg",
+        "userHandle": "@estilo_urbano",
+        "featuredProducts": [
+            {
+                "productId": "prod-1",
+                "variantId": "var-1-rosa"
+            }
+        ]
+    },
+    {
+        "id": "ugc_02",
+        "imageUrl": "https://i.ibb.co/BHfCjkCW/modelo-Prod2.jpg",
+        "userHandle": "@fashion_lover",
+        "featuredProducts": [
+            {
+                "productId": "prod-4",
+                "variantId": "var-4-arena"
+            }
+        ]
+    },
+    {
+        "id": "ugc_03",
+        "imageUrl": "https://i.ibb.co/nsF3q85C/modelo3-Modelo.jpg",
+        "userHandle": "@aventurero_chic",
+        "featuredProducts": [
+            {
+                "productId": "prod-8",
+                "variantId": "var-8-crema"
+            }
+        ]
+    }
+]

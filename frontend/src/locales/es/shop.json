@@ -1,0 +1,77 @@
+{
+    "title": "Comprar",
+    "quickFilters": {
+        "title": "Para qué ocasión"
+    },
+    "saleMosaic": {
+        "title": "En Oferta",
+        "cardA11yHint": "Abre los detalles del producto"
+    },
+    "productStrip": {
+        "newArrivalsTitle": "Recién Llegados",
+        "recentlyViewedTitle": "Visto Recientemente",
+        "a11yLabel": {
+            "newArrivals": "Carrusel de productos recién llegados",
+            "recentlyViewed": "Carrusel de productos vistos recientemente"
+        }
+    },
+    "errors": {
+        "newArrivalsLoadFailed": "No se pudieron cargar los productos nuevos",
+        "recentlyViewedLoadFailed": "No se pudieron cargar los productos vistos recientemente",
+        "tryAgainLater": "Por favor intenta más tarde"
+    },
+    "noNewArrivals": "No hay productos nuevos por el momento",
+    "editorials": {
+        "title": "Editoriales",
+        "error": "No se pudo cargar el contenido editorial",
+        "cardA11yLabel": "Editorial: {{title}}",
+        "cardA11yHint": "Abre la sección de productos relacionados",
+        "loadingA11yLabel": "Cargando contenido editorial",
+        "a11yLabel": "Carrusel de secciones editoriales"
+    },
+    "colorFilter": {
+        "title": "Encuentra tu Tono",
+        "resultsTitle": "Resultados para: {{color}}"
+    },
+    "categories": {
+        "title": "Categorías",
+        "clothing": "Ropa",
+        "footwear": "Calzado",
+        "accessories": "Accesorios"
+    },
+    "subcategories": {
+        "tops": "Tops",
+        "dresses": "Vestidos",
+        "bottoms": "Pantalones y Faldas",
+        "outerwear": "Abrigos y Chamarras",
+        "sneakers": "Tenis",
+        "boots": "Botas",
+        "bags": "Bolsas",
+        "hats": "Gorras y Sombreros"
+    },
+    "filters": {
+        "categoryTitle": "Categorías",
+        "allCategories": "Todas",
+        "clearButton": "Limpiar",
+        "applyButton": "Aplicar Filtros",
+        "onSaleTitle": "Ofertas",
+        "onSaleLabel": "Mostrar solo productos en oferta",
+        "colorTitle": "Colores",
+        "sizeTitle": "Tallas",
+        "priceRangeTitle": "Rango de precio",
+        "sortBy": {
+            "title": "Ordenar por",
+            "relevance": "Relevancia",
+            "priceAsc": "Precio: Menor a Mayor",
+            "priceDesc": "Precio: Mayor a Menor"
+        }
+    },
+    "grid": {
+        "errorTitle": "Error al Cargar Productos",
+        "emptyMessage": "No se encontraron productos",
+        "emptySubtext": "Intenta con otros filtros o términos de búsqueda."
+    },
+    "search": {
+        "resultsFor": "Resultados para: \"{{query}}\""
+    }
+}

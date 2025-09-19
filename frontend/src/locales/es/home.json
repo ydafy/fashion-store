@@ -1,0 +1,29 @@
+{
+    "recommended": {
+        "titleDefault": "Recomendaciones",
+        "viewMore": "Ver Más",
+        "emptyMessage": "No hay recomendaciones por ahora."
+    },
+    "collections": {
+        "titleDefault": "Colecciones",
+        "emptyMessage": "No hay colecciones disponibles en este momento."
+    },
+    "errors": {
+        "loadContentErrorTitle": "¡Vaya! Hubo un Error",
+        "loadContentErrorGeneric": "Error al cargar el contenido principal. Por favor, intenta de nuevo."
+    },
+    "HerroCarousel": {
+        "newArrivalsTitle": "Novedades en la Tienda"
+    },
+    "community": {
+        "sectionHeader": {
+            "title": "Nuestra comunidad"
+        },
+        "infoModal": {
+            "title": "¿Quieres aparecer aquí?",
+            "message": "¡Nos encanta ver nuestro estilo en el mundo real! Para tener la oportunidad de aparecer en nuestra galería, simplemente sube tu foto a Instagram, etiqueta nuestra cuenta {{handle}} y usa el hashtag {{hashtag}}. ¡Estamos deseando ver tu look!"
+        },
+        "photoBy": "Foto de @XimeXime19",
+        "shopTheLook": "Producto de la imagen"
+    }
+}

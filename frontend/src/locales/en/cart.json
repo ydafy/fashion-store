@@ -1,0 +1,27 @@
+{
+    "title": "My Cart ({{count}})",
+    "emptyMessage": "Your cart is empty.",
+    "emptySubtitle": "Products you add will appear here.",
+    "subtotalLabel": "Subtotal:",
+    "shippingLabel": "Shipping:",
+    "totalLabel": "Total:",
+    "checkoutButton": "Proceed to Checkout",
+    "alerts": {
+        "addressRequiredTitle": "Address Required",
+        "addressRequiredMessage": "Please select a shipping address from the home screen before proceeding.",
+        "emptyCartTitle": "Empty Cart",
+        "emptyCartMessage": "You cannot proceed to checkout with an empty cart."
+    },
+    "item": {
+        "colorLabel": "Color:",
+        "sizeLabel": "Size:",
+        "pricePerUnitLabel": "Price:",
+        "eachSuffix": "each",
+        "quantityLabel": "Qty:",
+        "changeQuantity": "Change quantity",
+        "accessibilityLabel": "{{name}}, quantity {{quantity}}, subtotal {{subtotal}}",
+        "modal": {
+            "removeItemButton": "Remove item"
+        }
+    }
+}

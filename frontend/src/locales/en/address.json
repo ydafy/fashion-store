@@ -1,0 +1,60 @@
+{
+    "deliveryInstructionsLabel": "Delivery Instructions:",
+    "noAddressSelected": "No Shipping Address Selected",
+    "noAddressSelectedSubtext": "Please add or select an address. Your default shipping address will be shown here.",
+    "add": {
+        "title": "Add New Address",
+        "saveButton": "Save Address"
+    },
+    "edit": {
+        "title": "Edit Address",
+        "saveButton": "Update Address",
+        "successTitle": "Successful change",
+        "successMessage": "Address saved"
+    },
+    "form": {
+        "label": "Label *",
+        "recipientName": "Recipient's Name *",
+        "phone": "Contact Phone *",
+        "street": "Street & Number *",
+        "details": "Apt / Suite / Colony (Optional)",
+        "country": "Country *",
+        "state": "State / Province *",
+        "city": "City / Municipality *",
+        "postalCode": "Postal Code *",
+        "instructions": "Delivery Instructions (Optional)"
+    },
+    "placeholders": {
+        "label": "E.g. Home, Office",
+        "recipientName": "Full name",
+        "phone": "10 digits",
+        "street": "123 Evergreen Terrace",
+        "details": "Floor 5, Apt B",
+        "selectCountry": "Select a country...",
+        "selectState": "Select a state...",
+        "selectCity": "Select a city...",
+        "postalCode": "5 digits",
+        "instructions": "Leave at front desk, call upon arrival..."
+    },
+    "delete": {
+        "confirmTitle": "Confirm Deletion",
+        "confirmMessage": "Are you sure you want to delete the address \"{{label}}\"?",
+        "deleteButton": "Delete"
+    },
+    "modal": {
+        "title": "My Addresses",
+        "addButton": "Add New Address",
+        "loadError": "Error loading addresses: {{error}}",
+        "emptyTitle": "No Addresses",
+        "emptySubtitle": "You haven't saved any addresses yet. Add one to get started!",
+        "limitReached": "Showing a maximum of {{max}} addresses."
+    },
+    "listItem": {
+        "addressDetails": "Address details",
+        "selected": "Selected",
+        "editButtonLabel": "Edit address {{label}}",
+        "deleteButtonLabel": "Delete address {{label}}",
+        "isDefault": "Default address",
+        "setDefault": "Set address {{label}} as default"
+    }
+}
