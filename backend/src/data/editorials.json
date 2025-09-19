@@ -1,0 +1,64 @@
+[
+    {
+        "id": "edit-01",
+        "imageUrl": "https://www.cyamoda.com/on/demandware.static/-/Sites-Cya_MX-Library/default/dw031ebdcd/FACELIFT/S36_CAT_MUJER-VESTIDO.jpg",
+        "title": {
+            "es": "Vuelta a la Oficina",
+            "en": "Back to the Office"
+        },
+        "action": {
+            "type": "FILTER_BY_TAG",
+            "payload": {
+                "tags": [
+                    "attr-elegant"
+                ]
+            }
+        }
+    },
+    {
+        "id": "edit-02",
+        "imageUrl": "https://images.pexels.com/photos/4456153/pexels-photo-4456153.jpeg",
+        "title": {
+            "es": "Colección de Lino",
+            "en": "Linen Collection"
+        },
+        "action": {
+            "type": "FILTER_BY_TAG",
+            "payload": {
+                "tags": [
+                    "attr-midi"
+                ]
+            }
+        }
+    },
+    {
+        "id": "edit-03",
+        "imageUrl": "https://images.pexels.com/photos/33857224/pexels-photo-33857224.jpeg",
+        "title": {
+            "es": "Esenciales de Verano",
+            "en": "Summer Essentials"
+        },
+        "action": {
+            "type": "FILTER_BY_TAG",
+            "payload": {
+                "tags": [
+                    "attr-summer"
+                ]
+            }
+        }
+    },
+    {
+        "id": "edit-04",
+        "imageUrl": "https://www.cyamoda.com/dw/image/v2/BGFN_PRD/on/demandware.static/-/Sites-siteCatalog_cya_mx/default/dwcc07d1ca/images/storage2024/3111024_A.jpg?sw=950&sh=1570&sm=fit",
+        "title": {
+            "es": "Ofertas Exclusivas",
+            "en": "Exclusive Offers"
+        },
+        "action": {
+            "type": "FILTER_BY_SALE",
+            "payload": {
+                "onSale": true
+            }
+        }
+    }
+]

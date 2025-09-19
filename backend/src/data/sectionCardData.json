@@ -1,0 +1,17 @@
+[
+    {
+        "id": "casual",
+        "title": "Colección Casual",
+        "imageUrl": "https://www.cyamoda.com/on/demandware.static/-/Sites-Cya_MX-Library/default/dw11a1bbf5/FACELIFT/S36_LOOK_MUJER-PREPPY.jpg?sw=1558&sh=694&sm=fit"
+    },
+    {
+        "id": "verano",
+        "title": "Colección de Verano",
+        "imageUrl": "https://www.cyamoda.com/on/demandware.static/-/Sites-Cya_MX-Library/default/dw53bc0b30/FACELIFT/S36_LOOK_MUJER-OUTDOORS.jpg?sw=1558&sh=694&sm=fit"
+    },
+    {
+        "id": "formal",
+        "title": "Colección Formal",
+        "imageUrl": "https://www.cyamoda.com/on/demandware.static/-/Sites-Cya_MX-Library/default/dw09bed718/FACELIFT/S36_LOOK_MUJER-CALZADO.jpg?sw=1558&sh=694&sm=fit"
+    }
+]

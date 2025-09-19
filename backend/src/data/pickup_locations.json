@@ -1,0 +1,47 @@
+[
+    {
+        "id": "p1",
+        "name": "Tienda Centro Histórico",
+        "address": "Calle de Madero 123, Centro",
+        "city": "Hermosillo",
+        "state": "Sonora",
+        "country": "México",
+        "hours": "Lun-Vie 9am-6pm"
+    },
+    {
+        "id": "p2",
+        "name": "Punto de Recogida Galerías",
+        "address": "Blvd. Cultura 55, Proyecto Rio Sonora",
+        "city": "Hermosillo",
+        "state": "Sonora",
+        "country": "México",
+        "hours": "Lun-Sáb 11am-8pm"
+    },
+    {
+        "id": "p3",
+        "name": "Almacén San Pedro",
+        "address": "Av. Vasconcelos 402, Del Valle",
+        "city": "San Pedro Garza García",
+        "state": "Nuevo León",
+        "country": "México",
+        "hours": "Solo Recogida: Lun-Vie 10am-5pm"
+    },
+    {
+        "id": "p4",
+        "name": "Downtown LA Pickup Point",
+        "address": "700 W 7th St, Downtown",
+        "city": "Los Angeles",
+        "state": "California",
+        "country": "Estados Unidos",
+        "hours": "Mon-Fri 10am-6pm"
+    },
+    {
+        "id": "p5",
+        "name": "SoHo Collection Point",
+        "address": "459 Broadway, SoHo",
+        "city": "New York City",
+        "state": "New York",
+        "country": "Estados Unidos",
+        "hours": "Mon-Sat 11am-7pm"
+    }
+]

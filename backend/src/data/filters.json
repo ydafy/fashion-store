@@ -1,0 +1,208 @@
+{
+    "quickFilterGroups": [
+        "type",
+        "style",
+        "fit",
+        "season"
+    ],
+    "modalFilterGroups": [
+        "material",
+        "feature"
+    ],
+    "filterGroupLayout": [
+        {
+            "id": "type",
+            "name": {
+                "es": "Tipo",
+                "en": "Type"
+            },
+            "tags": [
+                "attr-shirt-dress",
+                "attr-tote",
+                "attr-bomber"
+            ]
+        },
+        {
+            "id": "fit",
+            "name": {
+                "es": "Corte",
+                "en": "Fit"
+            },
+            "tags": [
+                "attr-oversize",
+                "attr-fit",
+                "attr-slim",
+                "attr-semi-fitted",
+                "attr-high-waist"
+            ]
+        },
+        {
+            "id": "style",
+            "name": {
+                "es": "Estilo",
+                "en": "Style"
+            },
+            "tags": [
+                "attr-casual",
+                "attr-elegant",
+                "attr-party",
+                "attr-urban",
+                "attr-washed",
+                "attr-ripped"
+            ]
+        },
+        {
+            "id": "season",
+            "name": {
+                "es": "Temporada",
+                "en": "Season"
+            },
+            "tags": [
+                "attr-summer",
+                "attr-winter"
+            ]
+        },
+        {
+            "id": "material",
+            "name": {
+                "es": "Material",
+                "en": "Material"
+            },
+            "tags": [
+                "attr-cotton",
+                "attr-viscose",
+                "attr-denim",
+                "attr-mesh",
+                "attr-satin",
+                "attr-canvas",
+                "attr-lace"
+            ]
+        },
+        {
+            "id": "feature",
+            "name": {
+                "es": "Característica",
+                "en": "Feature"
+            },
+            "tags": [
+                "attr-platform"
+            ]
+        }
+    ],
+    "tagDetails": {
+        "attr-oversize": {
+            "es": "Oversize",
+            "en": "Oversize",
+            "iconName": "TShirt"
+        },
+        "attr-fit": {
+            "es": "Fit",
+            "en": "Fit",
+            "iconName": "HashStraight"
+        },
+        "attr-slim": {
+            "es": "Slim",
+            "en": "Slim",
+            "iconName": "ArrowsInLineHorizontal"
+        },
+        "attr-semi-fitted": {
+            "es": "Semi-Ajustado",
+            "en": "Semi-Fitted",
+            "iconName": "ArrowsLeftRight"
+        },
+        "attr-casual": {
+            "es": "Casual",
+            "en": "Casual",
+            "iconName": "Popcorn"
+        },
+        "attr-elegant": {
+            "es": "Elegante",
+            "en": "Elegant",
+            "iconName": "Wine"
+        },
+        "attr-party": {
+            "es": "Fiesta",
+            "en": "Party",
+            "iconName": "Cheers"
+        },
+        "attr-urban": {
+            "es": "Urbano",
+            "en": "Urban",
+            "iconName": "Wall"
+        },
+        "attr-shirt-dress": {
+            "es": "Camisero",
+            "en": "Shirt Dress",
+            "iconName": "FlowerTulip"
+        },
+        "attr-tote": {
+            "es": "Tote",
+            "en": "Tote",
+            "iconName": "Tote"
+        },
+        "attr-bomber": {
+            "es": "Bomber",
+            "en": "Bomber",
+            "iconName": "Motorcycle"
+        },
+        "attr-washed": {
+            "es": "Deslavado",
+            "en": "Washed",
+            "iconName": "WashingMachine"
+        },
+        "attr-ripped": {
+            "es": "Roto",
+            "en": "Ripped",
+            "iconName": "Scissors"
+        },
+        "attr-lace": {
+            "es": "Encaje",
+            "en": "Lace",
+            "iconName": "HourglassSimpleHigh"
+        },
+        "attr-platform": {
+            "es": "Plataforma",
+            "en": "Platform",
+            "iconName": "HighHeel"
+        },
+        "attr-high-waist": {
+            "es": "Tiro Alto",
+            "en": "High-Waist",
+            "iconName": "ArrowBendLeftUp"
+        },
+        "attr-cotton": {
+            "es": "Algodón",
+            "en": "Cotton"
+        },
+        "attr-viscose": {
+            "es": "Viscosa",
+            "en": "Viscose"
+        },
+        "attr-denim": {
+            "es": "Mezclilla",
+            "en": "Denim"
+        },
+        "attr-mesh": {
+            "es": "Mesh",
+            "en": "Mesh"
+        },
+        "attr-satin": {
+            "es": "Satín",
+            "en": "Satin"
+        },
+        "attr-canvas": {
+            "es": "Lona",
+            "en": "Canvas"
+        },
+        "attr-summer": {
+            "es": "Verano",
+            "en": "Summer",
+            "iconName": "TreePalm"
+        },
+        "attr-winter": {
+            "es": "Invierno",
+            "en": "Winter",
+            "iconName": "Snowflake"
+        }
+    }
+}

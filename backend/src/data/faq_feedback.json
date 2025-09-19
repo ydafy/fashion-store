@@ -1,0 +1,30 @@
+{
+  "q_shipping_1": {
+    "up": 11,
+    "down": 1
+  },
+  "q_shipping_2": {
+    "up": 3,
+    "down": 3
+  },
+  "q_shipping_3": {
+    "up": 5,
+    "down": 1
+  },
+  "q_returns_1": {
+    "up": 3,
+    "down": 0
+  },
+  "q_returns_2": {
+    "up": 1,
+    "down": 2
+  },
+  "q_payments_1": {
+    "up": 3,
+    "down": 2
+  },
+  "q_account_1": {
+    "up": 3,
+    "down": 0
+  }
+}

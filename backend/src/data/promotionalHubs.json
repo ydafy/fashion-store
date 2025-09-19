@@ -1,0 +1,128 @@
+{
+    "bestSellers": {
+        "title": {
+            "es": "Best Sellers",
+            "en": "Best Sellers"
+        },
+        "hubs": [
+            {
+                "id": "hub_winter_bestsellers",
+                "mainPanel": {
+                    "id": "panel_winter_main",
+                    "title": {
+                        "es": "Invierno",
+                        "en": "Winter"
+                    },
+                    "icon": "Snowflake",
+                    "imageUrl": "https://images.pexels.com/photos/700535/pexels-photo-700535.jpeg",
+                    "action": {
+                        "type": "FILTER_BY_TAG",
+                        "payload": {
+                            "tags": [
+                                "attr-winter"
+                            ],
+                            "isBestSeller": true
+                        }
+                    }
+                },
+                "secondaryPanels": [
+                    {
+                        "id": "panel_winter_jackets",
+                        "title": {
+                            "es": "Chamarras",
+                            "en": "Jackets"
+                        },
+                        "icon": "CoatHanger",
+                        "action": {
+                            "type": "FILTER_BY_CATEGORY",
+                            "payload": {
+                                "tags": [
+                                    "attr-winter"
+                                ],
+                                "categoryId": "sub-cat-chamarras",
+                                "isBestSeller": true
+                            }
+                        }
+                    },
+                    {
+                        "id": "panel_winter_pants",
+                        "title": {
+                            "es": "Pantalones",
+                            "en": "Pants"
+                        },
+                        "icon": "Pants",
+                        "action": {
+                            "type": "FILTER_BY_CATEGORY",
+                            "payload": {
+                                "tags": [
+                                    "attr-winter"
+                                ],
+                                "categoryId": "sub-cat-pantalones",
+                                "isBestSeller": true
+                            }
+                        }
+                    }
+                ]
+            },
+            {
+                "id": "hub_summer_bestsellers",
+                "mainPanel": {
+                    "id": "panel_summer_main",
+                    "title": {
+                        "es": "Verano",
+                        "en": "Summer"
+                    },
+                    "icon": "TreePalm",
+                    "imageUrl": "https://images.pexels.com/photos/6260568/pexels-photo-6260568.jpeg",
+                    "action": {
+                        "type": "FILTER_BY_TAG",
+                        "payload": {
+                            "tags": [
+                                "attr-summer"
+                            ],
+                            "isBestSeller": true
+                        }
+                    }
+                },
+                "secondaryPanels": [
+                    {
+                        "id": "panel_summer_tshirts",
+                        "title": {
+                            "es": "Camisetas",
+                            "en": "T-Shirts"
+                        },
+                        "icon": "TShirt",
+                        "action": {
+                            "type": "FILTER_BY_CATEGORY",
+                            "payload": {
+                                "tags": [
+                                    "attr-summer"
+                                ],
+                                "categoryId": "sub-cat-camisetas",
+                                "isBestSeller": true
+                            }
+                        }
+                    },
+                    {
+                        "id": "panel_summer_tops",
+                        "title": {
+                            "es": "Tops",
+                            "en": "Tops"
+                        },
+                        "icon": "GenderFemale",
+                        "action": {
+                            "type": "FILTER_BY_CATEGORY",
+                            "payload": {
+                                "tags": [
+                                    "attr-summer"
+                                ],
+                                "categoryId": "sub-cat-tops",
+                                "isBestSeller": true
+                            }
+                        }
+                    }
+                ]
+            }
+        ]
+    }
+}

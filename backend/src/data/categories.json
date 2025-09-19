@@ -1,0 +1,88 @@
+[
+    {
+        "id": "cat-ropa",
+        "name": {
+            "es": "Ropa",
+            "en": "Apparel"
+        },
+        "iconName": "TShirt",
+        "subcategories": [
+            {
+                "id": "sub-cat-camisetas",
+                "name": {
+                    "es": "Camisetas",
+                    "en": "T-Shirts"
+                }
+            },
+            {
+                "id": "sub-cat-tops",
+                "name": {
+                    "es": "Tops",
+                    "en": "Tops"
+                }
+            },
+            {
+                "id": "sub-cat-pantalones",
+                "name": {
+                    "es": "Pantalones",
+                    "en": "Pants"
+                }
+            },
+            {
+                "id": "sub-cat-vestidos",
+                "name": {
+                    "es": "Vestidos",
+                    "en": "Dresses"
+                }
+            },
+            {
+                "id": "sub-cat-shorts",
+                "name": {
+                    "es": "Shorts",
+                    "en": "Shorts"
+                }
+            },
+            {
+                "id": "sub-cat-chamarras",
+                "name": {
+                    "es": "Chamarras",
+                    "en": "Jackets"
+                }
+            }
+        ]
+    },
+    {
+        "id": "cat-calzado",
+        "name": {
+            "es": "Calzado",
+            "en": "Footwear"
+        },
+        "iconName": "Sneaker",
+        "subcategories": [
+            {
+                "id": "sub-cat-tenis",
+                "name": {
+                    "es": "Tenis",
+                    "en": "Sneakers"
+                }
+            }
+        ]
+    },
+    {
+        "id": "cat-accesorios",
+        "name": {
+            "es": "Accesorios",
+            "en": "Accessories"
+        },
+        "iconName": "Watch",
+        "subcategories": [
+            {
+                "id": "sub-cat-bolsas",
+                "name": {
+                    "es": "Bolsas",
+                    "en": "Bags"
+                }
+            }
+        ]
+    }
+]

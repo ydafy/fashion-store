@@ -1,0 +1,61 @@
+[
+    {
+        "id": "cat_shipping",
+        "categoryTitleKey": "faq.categories.shipping",
+        "questions": [
+            {
+                "id": "q_shipping_1",
+                "questionKey": "faq.shipping.q1",
+                "answerKey": "faq.shipping.a1"
+            },
+            {
+                "id": "q_shipping_2",
+                "questionKey": "faq.shipping.q2",
+                "answerKey": "faq.shipping.a2"
+            },
+            {
+                "id": "q_shipping_3",
+                "questionKey": "faq.shipping.q3",
+                "answerKey": "faq.shipping.a3"
+            }
+        ]
+    },
+    {
+        "id": "cat_returns",
+        "categoryTitleKey": "faq.categories.returns",
+        "questions": [
+            {
+                "id": "q_returns_1",
+                "questionKey": "faq.returns.q1",
+                "answerKey": "faq.returns.a1"
+            },
+            {
+                "id": "q_returns_2",
+                "questionKey": "faq.returns.q2",
+                "answerKey": "faq.returns.a2"
+            }
+        ]
+    },
+    {
+        "id": "cat_payments",
+        "categoryTitleKey": "faq.categories.payments",
+        "questions": [
+            {
+                "id": "q_payments_1",
+                "questionKey": "faq.payments.q1",
+                "answerKey": "faq.payments.a1"
+            }
+        ]
+    },
+    {
+        "id": "cat_account",
+        "categoryTitleKey": "faq.categories.account",
+        "questions": [
+            {
+                "id": "q_account_1",
+                "questionKey": "faq.account.q1",
+                "answerKey": "faq.account.a1"
+            }
+        ]
+    }
+]

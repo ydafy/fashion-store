@@ -1,0 +1,66 @@
+[
+    {
+        "country": "México",
+        "states": [
+            {
+                "state": "Sonora",
+                "cities": [
+                    "Hermosillo",
+                    "Obregón",
+                    "Nogales",
+                    "Guaymas"
+                ]
+            },
+            {
+                "state": "Nuevo León",
+                "cities": [
+                    "Monterrey",
+                    "San Pedro Garza García",
+                    "Santa Catarina",
+                    "Apodaca"
+                ]
+            },
+            {
+                "state": "Jalisco",
+                "cities": [
+                    "Guadalajara",
+                    "Zapopan",
+                    "Tlaquepaque",
+                    "Puerto Vallarta"
+                ]
+            }
+        ]
+    },
+    {
+        "country": "Estados Unidos",
+        "states": [
+            {
+                "state": "California",
+                "cities": [
+                    "Los Angeles",
+                    "San Francisco",
+                    "San Diego",
+                    "Sacramento"
+                ]
+            },
+            {
+                "state": "Texas",
+                "cities": [
+                    "Houston",
+                    "Austin",
+                    "Dallas",
+                    "San Antonio"
+                ]
+            },
+            {
+                "state": "New York",
+                "cities": [
+                    "New York City",
+                    "Buffalo",
+                    "Rochester",
+                    "Albany"
+                ]
+            }
+        ]
+    }
+]

@@ -1,0 +1,16 @@
+[
+  {
+    "id": "05afb2b9-c06c-4e97-af31-9b2e39b9e169",
+    "label": "Casa",
+    "recipientName": "Alvaro Estrada",
+    "phone": "(662) 317-3255",
+    "street": "123 Emiliano Zapata",
+    "details": "",
+    "city": "Hermosillo",
+    "state": "Sonora",
+    "country": "México",
+    "postalCode": "12333",
+    "instructions": "Dejar con el guardia ",
+    "isDefault": true
+  }
+]

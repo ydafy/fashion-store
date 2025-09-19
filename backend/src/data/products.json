@@ -1,0 +1,1562 @@
+[
+    {
+        "id": "prod-1",
+        "slug": "playera-rosa-manga-corta-urbanstyle",
+        "brand": "UrbanStyle Basics",
+        "price": 19.99,
+        "originalPrice": null,
+        "fabric": {
+            "es": "Algodon 100%",
+            "en": "100% Cotton"
+        },
+        "rating": 4.0,
+        "ratingCount": 98,
+        "isFeatured": true,
+        "dateAdded": "2025-09-1T20:00:00Z",
+        "categoryId": "sub-cat-camisetas",
+        "name": {
+            "es": "Playera Rosa Manga Corta",
+            "en": "Pink Short Sleeve T-Shirt"
+        },
+        "description": {
+            "es": "Playera manga corta, cuello redondo, color rosa, silueta oversize.",
+            "en": "Short sleeve t-shirt, round neck, pink color, oversize silhouette."
+        },
+        "careInstructions": {
+            "es": "Lavar a máquina con agua fría. No usar blanqueador. Secar a baja temperatura.",
+            "en": "Machine wash cold. Do not bleach. Tumble dry low."
+        },
+        "tags": {
+            "es": [
+                "attr-oversize",
+                "attr-casual",
+                "attr-cotton",
+                "color-pale-pink",
+                "color-pastel-blue",
+                "size-s",
+                "size-m",
+                "size-l",
+                "size-xl"
+            ],
+            "en": [
+                "attr-oversize",
+                "attr-casual",
+                "attr-cotton",
+                "color-pale-pink",
+                "color-pastel-blue",
+                "size-s",
+                "size-m",
+                "size-l",
+                "size-xl"
+            ]
+        },
+        "variants": [
+            {
+                "id": "var-1-rosa",
+                "colorCode": "#fabeec",
+                "colorName": {
+                    "es": "Rosa Pálido",
+                    "en": "Pale Pink"
+                },
+                "images": [
+                    {
+                        "id": "img-1-1",
+                        "uri": "https://www.cyamoda.com/dw/image/v2/BGFN_PRD/on/demandware.static/-/Sites-siteCatalog_cya_mx/default/dwab35f7d2/images/Abril%202024/3102136_A.jpg?sw=950&sh=1570&sm=fit",
+                        "blurhash": "LAM%o}IA?t_N,9j@T2%g0fIo^k%2"
+                    },
+                    {
+                        "id": "img-1-2",
+                        "uri": "https://www.cyamoda.com/dw/image/v2/BGFN_PRD/on/demandware.static/-/Sites-siteCatalog_cya_mx/default/dw15747879/images/Abril%202024/3102136_B.jpg?sw=950&sh=1570&sm=fit",
+                        "blurhash": "L9NAI^nN.kpIX2%M%hM{01WA~Cof"
+                    },
+                    {
+                        "id": "img-1-3",
+                        "uri": "https://www.cyamoda.com/dw/image/v2/BGFN_PRD/on/demandware.static/-/Sites-siteCatalog_cya_mx/default/dwaeb5872e/images/Abril%202024/3102136_C.jpg?sw=950&sh=1570&sm=fit",
+                        "blurhash": "LENA3bDiO=?^E0IB%3x]55R5tRof"
+                    },
+                    {
+                        "id": "img-1-4",
+                        "uri": "https://www.cyamoda.com/dw/image/v2/BGFN_PRD/on/demandware.static/-/Sites-siteCatalog_cya_mx/default/dwb3992a37/images/Abril%202024/3102136_D.jpg?sw=950&sh=1570&sm=fit",
+                        "blurhash": "LAOMgIO;GF.8F^_NH?ib00%gNH%2"
+                    },
+                    {
+                        "id": "img-1-5",
+                        "uri": "https://www.cyamoda.com/dw/image/v2/BGFN_PRD/on/demandware.static/-/Sites-siteCatalog_cya_mx/default/dw1119c638/images/Abril%202024/3102136_E.jpg?sw=950&sh=1570&sm=fit",
+                        "blurhash": "L1Qb;1?HWB%M^+~qxuof^+~qM{NG"
+                    }
+                ],
+                "inventory": [
+                    {
+                        "id": "inv-1-s",
+                        "size": "s",
+                        "stock": 0,
+                        "sku": "PLA-ROS-OV-S"
+                    },
+                    {
+                        "id": "inv-1-m",
+                        "size": "m",
+                        "stock": 0,
+                        "sku": "PLA-ROS-OV-M"
+                    },
+                    {
+                        "id": "inv-1-l",
+                        "size": "l",
+                        "stock": 0,
+                        "sku": "PLA-ROS-OV-L"
+                    }
+                ]
+            },
+            {
+                "id": "var-1-azul",
+                "colorCode": "#add0db",
+                "colorName": {
+                    "es": "Azul Pastel",
+                    "en": "Pastel Blue"
+                },
+                "images": [
+                    {
+                        "id": "img-2-1",
+                        "uri": "https://www.cyamoda.com/dw/image/v2/BGFN_PRD/on/demandware.static/-/Sites-siteCatalog_cya_mx/default/dwa5ce716d/images/Abril%202024/3102135_A.jpg?sw=950&sh=1570&sm=fit",
+                        "blurhash": "LAMaCTIo~W?ax]n+o~yDD5o0%za}"
+                    },
+                    {
+                        "id": "img-2-2",
+                        "uri": "https://www.cyamoda.com/dw/image/v2/BGFN_PRD/on/demandware.static/-/Sites-siteCatalog_cya_mx/default/dwd33a0c3c/images/Abril%202024/3102135_B.jpg?sw=950&sh=1570&sm=fit",
+                        "blurhash": "LBMj%JnO~W%hjFx]x^IU4Tae.7WB"
+                    },
+                    {
+                        "id": "img-2-3",
+                        "uri": "https://www.cyamoda.com/dw/image/v2/BGFN_PRD/on/demandware.static/-/Sites-siteCatalog_cya_mx/default/dw469f3322/images/Abril%202024/3102135_C.jpg?sw=950&sh=1570&sm=fit",
+                        "blurhash": "L8MHAE$N~X%gL}TK?^R54U-p?^M_"
+                    },
+                    {
+                        "id": "img-2-4",
+                        "uri": "https://www.cyamoda.com/dw/image/v2/BGFN_PRD/on/demandware.static/-/Sites-siteCatalog_cya_mx/default/dwc9cea74f/images/Abril%202024/3102135_D.jpg?sw=950&sh=1570&sm=fit",
+                        "blurhash": "LCMj:Y-Vx^%hDi?^IUrW4T?HXno}"
+                    },
+                    {
+                        "id": "img-2-5",
+                        "uri": "https://www.cyamoda.com/dw/image/v2/BGFN_PRD/on/demandware.static/-/Sites-siteCatalog_cya_mx/default/dwc187f6f0/images/Abril%202024/3102135_E.jpg?sw=950&sh=1570&sm=fit",
+                        "blurhash": "L2O|qU-qV]xt=$~XxtoM?I~pRjRj"
+                    }
+                ],
+                "inventory": [
+                    {
+                        "id": "inv-2-s",
+                        "size": "s",
+                        "stock": 0,
+                        "sku": "PLA-AZU-OV-S"
+                    },
+                    {
+                        "id": "inv-2-m",
+                        "size": "m",
+                        "stock": 0,
+                        "sku": "PLA-AZU-OV-M"
+                    },
+                    {
+                        "id": "inv-2-l",
+                        "size": "l",
+                        "stock": 0,
+                        "sku": "PLA-AZU-OV-L"
+                    },
+                    {
+                        "id": "inv-2-xl",
+                        "size": "xl",
+                        "stock": 0,
+                        "sku": "PLA-AZU-OV-XL"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": "prod-2",
+        "slug": "top-mesh-estampado-nightglam",
+        "brand": "NightGlam",
+        "price": 39.99,
+        "originalPrice": 49.99,
+        "fabric": {
+            "es": "Elastano 5%, Poliester 95%",
+            "en": "Elastane 5%, Polyester 95%"
+        },
+        "rating": 4.3,
+        "ratingCount": 272,
+        "isFeatured": true,
+        "dateAdded": "2025-09-1T20:00:00Z",
+        "categoryId": "sub-cat-tops",
+        "name": {
+            "es": "Top Mesh Estampado",
+            "en": "Printed Mesh Top"
+        },
+        "description": {
+            "es": "Top en tejido de mesh, manga larga, cuello redondo, estampado gráfico, silueta ajustada. Medidas de Modelo: 1.76 cm de altura",
+            "en": "Mesh fabric top, long sleeve, round neck, graphic print, fitted silhouette. Model's height: 1.76 cm"
+        },
+        "careInstructions": {
+            "es": "Lavar a mano. No planchar sobre el estampado.",
+            "en": "Hand wash. Do not iron on print."
+        },
+        "tags": {
+            "es": [
+                "attr-mesh",
+                "attr-party",
+                "attr-winter",
+                "color-charcoal-gray",
+                "color-black-night",
+                "size-s",
+                "size-m",
+                "size-l"
+            ],
+            "en": [
+                "attr-mesh",
+                "attr-party",
+                "attr-winter",
+                "color-charcoal-gray",
+                "color-black-night",
+                "size-s",
+                "size-m",
+                "size-l"
+            ]
+        },
+        "variants": [
+            {
+                "id": "var-2-gris",
+                "colorCode": "#07082e",
+                "colorName": {
+                    "es": "Gris Carbón",
+                    "en": "Carbon Grey"
+                },
+                "images": [
+                    {
+                        "id": "img-3-1",
+                        "uri": "https://www.cyamoda.com/dw/image/v2/BGFN_PRD/on/demandware.static/-/Sites-siteCatalog_cya_mx/default/dwcd8fd815/images/Abril%202024/3100207_A.jpg?sw=950&sh=1570&sm=fit",
+                        "blurhash": "JGJt^=s.~qja~BR*"
+                    },
+                    {
+                        "id": "img-3-2",
+                        "uri": "https://www.cyamoda.com/dw/image/v2/BGFN_PRD/on/demandware.static/-/Sites-siteCatalog_cya_mx/default/dw92dcdcb3/images/Abril%202024/3100207_B.jpg?sw=950&sh=1570&sm=fit",
+                        "blurhash": "JOI#fNxu~Way%LWB"
+                    },
+                    {
+                        "id": "img-3-3",
+                        "uri": "https://www.cyamoda.com/dw/image/v2/BGFN_PRD/on/demandware.static/-/Sites-siteCatalog_cya_mx/default/dwc661d39c/images/Abril%202024/3100207_C.jpg?sw=950&sh=1570&sm=fit",
+                        "blurhash": "JOH2G[xD~V9F-oRj"
+                    },
+                    {
+                        "id": "img-3-4",
+                        "uri": "https://www.cyamoda.com/dw/image/v2/BGFN_PRD/on/demandware.static/-/Sites-siteCatalog_cya_mx/default/dw4568e878/images/Abril%202024/3100207_D.jpg?sw=950&sh=1570&sm=fit",
+                        "blurhash": "JNEolQ~q~Vxv-nxu"
+                    },
+                    {
+                        "id": "img-3-5",
+                        "uri": "https://www.cyamoda.com/dw/image/v2/BGFN_PRD/on/demandware.static/-/Sites-siteCatalog_cya_mx/default/dw46b322cb/images/Abril%202024/3100207_E.jpg?sw=950&sh=1570&sm=fit",
+                        "blurhash": "J8AmrPxu_400E14m"
+                    }
+                ],
+                "inventory": [
+                    {
+                        "id": "inv-3-s",
+                        "size": "s",
+                        "stock": 10,
+                        "sku": "TOP-MESH-EST-S"
+                    },
+                    {
+                        "id": "inv-3-m",
+                        "size": "m",
+                        "stock": 5,
+                        "sku": "TOP-MESH-EST-M"
+                    },
+                    {
+                        "id": "inv-3-l",
+                        "size": "l",
+                        "stock": 0,
+                        "sku": "TOP-MESH-EST-L"
+                    }
+                ]
+            },
+            {
+                "id": "var-2-negro",
+                "colorCode": "#000000",
+                "colorName": {
+                    "es": "Negro Noche",
+                    "en": "Night Black"
+                },
+                "images": [
+                    {
+                        "id": "img-4-1",
+                        "uri": "https://www.cyamoda.com/dw/image/v2/BGFN_PRD/on/demandware.static/-/Sites-siteCatalog_cya_mx/default/dw747e5499/images/Abril%202024/3100208_A.jpg?sw=950&sh=1570&sm=fit",
+                        "blurhash": "JIHLJ5oK~WoL?aNG"
+                    },
+                    {
+                        "id": "img-4-2",
+                        "uri": "https://www.cyamoda.com/dw/image/v2/BGFN_PRD/on/demandware.static/-/Sites-siteCatalog_cya_mx/default/dw8b235b18/images/Abril%202024/3100208_B.jpg?sw=950&sh=1570&sm=fit",
+                        "blurhash": "JDJ@?;k9D%ay~pog"
+                    },
+                    {
+                        "id": "img-4-3",
+                        "uri": "https://www.cyamoda.com/dw/image/v2/BGFN_PRD/on/demandware.static/-/Sites-siteCatalog_cya_mx/default/dw60d41c09/images/Abril%202024/3100208_C.jpg?sw=950&sh=1570&sm=fit",
+                        "blurhash": "JGHLMD%1~Wof-:M{"
+                    },
+                    {
+                        "id": "img-4-4",
+                        "uri": "https://www.cyamoda.com/dw/image/v2/BGFN_PRD/on/demandware.static/-/Sites-siteCatalog_cya_mx/default/dwe62de0bc/images/Abril%202024/3100208_D.jpg?sw=950&sh=1570&sm=fit",
+                        "blurhash": "JFEy9|^+~VD%~VMx"
+                    },
+                    {
+                        "id": "img-4-5",
+                        "uri": "https://www.cyamoda.com/dw/image/v2/BGFN_PRD/on/demandware.static/-/Sites-siteCatalog_cya_mx/default/dw1abd3f7b/images/Abril%202024/3100208_E.jpg?sw=950&sh=1570&sm=fit",
+                        "blurhash": "J02$Kia#xuWBofoe"
+                    }
+                ],
+                "inventory": [
+                    {
+                        "id": "inv-4-s",
+                        "size": "s",
+                        "stock": 10,
+                        "sku": "TOP-MESH-EST-S-BLK"
+                    },
+                    {
+                        "id": "inv-4-m",
+                        "size": "m",
+                        "stock": 5,
+                        "sku": "TOP-MESH-EST-M-BLK"
+                    },
+                    {
+                        "id": "inv-4-l",
+                        "size": "l",
+                        "stock": 0,
+                        "sku": "TOP-MESH-EST-L-BLK"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": "prod-3",
+        "slug": "jeans-slim-destrucciones-denimpro",
+        "brand": "DenimPro",
+        "price": 59.99,
+        "originalPrice": null,
+        "fabric": {
+            "es": "Algodon 99%,Elastano 1%",
+            "en": "Cotton 99%, Elastane 1%"
+        },
+        "rating": 3.9,
+        "ratingCount": 65,
+        "isFeatured": false,
+        "dateAdded": "2025-08-29T20:00:00Z",
+        "categoryId": "sub-cat-pantalones",
+        "name": {
+            "es": "Jeans Slim Destrucciones",
+            "en": "Slim Fit Ripped Jeans"
+        },
+        "description": {
+            "es": "Jeans color azul empolvado, fit slim cropped, tiro alto, pierna semiajustada, efecto de lavado, con destrucciones y proceso biowash amigable con el medio ambiente.",
+            "en": "Powder blue jeans, slim cropped fit, high rise, semi-fitted leg, washed effect, with rips and eco-friendly biowash process."
+        },
+        "careInstructions": {
+            "es": "Lavar a máquina al revés. Secar colgado para mantener el color.",
+            "en": "Machine wash inside out. Hang dry to maintain color."
+        },
+        "tags": {
+            "es": [
+                "attr-slim",
+                "attr-washed",
+                "attr-ripped",
+                "attr-cotton",
+                "attr-semi-fitted",
+                "color-powdery-blue",
+                "color-navy-blue",
+                "size-25",
+                "size-26",
+                "size-27",
+                "size-28",
+                "size-29",
+                "size-30"
+            ],
+            "en": [
+                "attr-slim",
+                "attr-washed",
+                "attr-ripped",
+                "attr-semi-fitted",
+                "color-powdery-blue",
+                "color-navy-blue",
+                "size-25",
+                "size-26",
+                "size-27",
+                "size-28",
+                "size-29",
+                "size-30"
+            ]
+        },
+        "variants": [
+            {
+                "id": "var-3-azul-empolvado",
+                "colorCode": "#98b5bf",
+                "colorName": {
+                    "es": "Azul Empolvado",
+                    "en": "Powder Blue"
+                },
+                "images": [
+                    {
+                        "id": "img-5-1",
+                        "uri": "https://www.cyamoda.com/dw/image/v2/BGFN_PRD/on/demandware.static/-/Sites-siteCatalog_cya_mx/default/dw8a34930a/images/Abril%202024/3100276_A.jpg?sw=950&sh=1570&sm=fit",
+                        "blurhash": "LMLqX@k9~UoLD%RjxVt6%0kCNdoe"
+                    },
+                    {
+                        "id": "img-5-2",
+                        "uri": "https://www.cyamoda.com/dw/image/v2/BGFN_PRD/on/demandware.static/-/Sites-siteCatalog_cya_mx/default/dwf4105b77/images/Abril%202024/3100276_B.jpg?sw=950&sh=1570&sm=fit",
+                        "blurhash": "LBMjs{JD~p^hxGRPIUg4?GxZJCJW"
+                    },
+                    {
+                        "id": "img-5-3",
+                        "uri": "https://www.cyamoda.com/dw/image/v2/BGFN_PRD/on/demandware.static/-/Sites-siteCatalog_cya_mx/default/dwca58ee45/images/Abril%202024/3100276_C.jpg?sw=950&sh=1570&sm=fit",
+                        "blurhash": "LMIYLa};~U%0t8WBRktR-:kCS5R,"
+                    },
+                    {
+                        "id": "img-5-4",
+                        "uri": "https://www.cyamoda.com/dw/image/v2/BGFN_PRD/on/demandware.static/-/Sites-siteCatalog_cya_mx/default/dw0a1fdd46/images/Abril%202024/3100276_D.jpg?sw=950&sh=1570&sm=fit",
+                        "blurhash": "LUK-tWWA~Tt6Myayngay-Uj]NHfj"
+                    },
+                    {
+                        "id": "img-5-5",
+                        "uri": "https://www.cyamoda.com/dw/image/v2/BGFN_PRD/on/demandware.static/-/Sites-siteCatalog_cya_mx/default/dw94f8e28a/images/Abril%202024/3100276_E.jpg?sw=950&sh=1570&sm=fit",
+                        "blurhash": "LDIOts0P~V4o}lNek?]}?Gs9X.of"
+                    }
+                ],
+                "inventory": [
+                    {
+                        "id": "inv-5-25",
+                        "size": 25,
+                        "stock": 10,
+                        "sku": "JEA-SLM-DES-25"
+                    },
+                    {
+                        "id": "inv-5-26",
+                        "size": 26,
+                        "stock": 0,
+                        "sku": "JEA-SLM-DES-26"
+                    },
+                    {
+                        "id": "inv-5-27",
+                        "size": 27,
+                        "stock": 10,
+                        "sku": "JEA-SLM-DES-27"
+                    },
+                    {
+                        "id": "inv-5-28",
+                        "size": 28,
+                        "stock": 0,
+                        "sku": "JEA-SLM-DES-28"
+                    },
+                    {
+                        "id": "inv-5-29",
+                        "size": 29,
+                        "stock": 5,
+                        "sku": "JEA-SLM-DES-29"
+                    },
+                    {
+                        "id": "inv-5-30",
+                        "size": 30,
+                        "stock": 8,
+                        "sku": "JEA-SLM-DES-30"
+                    }
+                ]
+            },
+            {
+                "id": "var-3-azul-marino",
+                "colorCode": "#0f4b60",
+                "colorName": {
+                    "es": "Azul Marino",
+                    "en": "Navy Blue"
+                },
+                "images": [
+                    {
+                        "id": "img-6-1",
+                        "uri": "https://www.cyamoda.com/dw/image/v2/BGFN_PRD/on/demandware.static/-/Sites-siteCatalog_cya_mx/default/dw9d8758a5/images/Abril%202024/3100277_A.jpg?sw=950&sh=1570&sm=fit",
+                        "blurhash": "LDIOts0P~V4o}lNek?]}?Gs9X.of"
+                    },
+                    {
+                        "id": "img-6-2",
+                        "uri": "https://www.cyamoda.com/dw/image/v2/BGFN_PRD/on/demandware.static/-/Sites-siteCatalog_cya_mx/default/dwaad72cb9/images/Abril%202024/3100277_B.jpg?sw=950&sh=1570&sm=fit",
+                        "blurhash": "LDIOts0P~V4o}lNek?]}?Gs9X.of"
+                    },
+                    {
+                        "id": "img-6-3",
+                        "uri": "https://www.cyamoda.com/dw/image/v2/BGFN_PRD/on/demandware.static/-/Sites-siteCatalog_cya_mx/default/dw5d2ff192/images/Abril%202024/3100277_D.jpg?sw=950&sh=1570&sm=fit",
+                        "blurhash": "LDIOts0P~V4o}lNek?]}?Gs9X.of"
+                    },
+                    {
+                        "id": "img-6-4",
+                        "uri": "https://www.cyamoda.com/dw/image/v2/BGFN_PRD/on/demandware.static/-/Sites-siteCatalog_cya_mx/default/dw25490f2e/images/Abril%202024/3100277_E.jpg?sw=950&sh=1570&sm=fit",
+                        "blurhash": "LDIOts0P~V4o}lNek?]}?Gs9X.of"
+                    }
+                ],
+                "inventory": [
+                    {
+                        "id": "inv-6-25",
+                        "size": 25,
+                        "stock": 0,
+                        "sku": "JEA-SLM-DES-25-NAV"
+                    },
+                    {
+                        "id": "inv-6-26",
+                        "size": 26,
+                        "stock": 10,
+                        "sku": "JEA-SLM-DES-26-NAV"
+                    },
+                    {
+                        "id": "inv-6-27",
+                        "size": 27,
+                        "stock": 10,
+                        "sku": "JEA-SLM-DES-27-NAV"
+                    },
+                    {
+                        "id": "inv-6-28",
+                        "size": 28,
+                        "stock": 5,
+                        "sku": "JEA-SLM-DES-28-NAV"
+                    },
+                    {
+                        "id": "inv-6-29",
+                        "size": 29,
+                        "stock": 5,
+                        "sku": "JEA-SLM-DES-29-NAV"
+                    },
+                    {
+                        "id": "inv-6-30",
+                        "size": 30,
+                        "stock": 0,
+                        "sku": "JEA-SLM-DES-30-NAV"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": "prod-4",
+        "slug": "vestido-midi-volantes-chicboutique",
+        "brand": "ChicBoutique",
+        "price": 79.99,
+        "originalPrice": null,
+        "fabric": {
+            "es": "Viscosa/Rayon 100%",
+            "en": "Viscose/Rayon 100%"
+        },
+        "rating": 4.8,
+        "ratingCount": 176,
+        "isFeatured": true,
+        "dateAdded": "2025-08-29T20:00:00Z",
+        "categoryId": "sub-cat-vestidos",
+        "name": {
+            "es": "Vestido Midi Volantes",
+            "en": "Midi Ruffle Dress"
+        },
+        "description": {
+            "es": "Vestido midi, tirantes anchos con detalle de volantes, escote cuadrado, tejido de popelina, silueta semiajustada.",
+            "en": "Midi dress, wide straps with ruffle detail, square neckline, poplin fabric, semi-fitted silhouette."
+        },
+        "careInstructions": {
+            "es": "Se recomienda lavado en seco o lavado a mano delicado.",
+            "en": "Dry clean or delicate hand wash recommended."
+        },
+        "tags": {
+            "es": [
+                "attr-midi",
+                "attr-elegant",
+                "attr-summer",
+                "color-black-night",
+                "color-sand",
+                "color-pastel-blue",
+                "size-s",
+                "size-m",
+                "size-l",
+                "size-xl"
+            ],
+            "en": [
+                "attr-midi",
+                "attr-elegant",
+                "attr-summer",
+                "color-black-night",
+                "color-sand",
+                "color-pastel-blue",
+                "size-s",
+                "size-m",
+                "size-l",
+                "size-xl"
+            ]
+        },
+        "variants": [
+            {
+                "id": "var-4-negro",
+                "colorCode": "#000000",
+                "colorName": {
+                    "es": "Negro Noche",
+                    "en": "Night Black"
+                },
+                "images": [
+                    {
+                        "id": "img-7-1",
+                        "uri": "https://www.cyamoda.com/dw/image/v2/BGFN_PRD/on/demandware.static/-/Sites-siteCatalog_cya_mx/default/dw432a4740/images/Abril%202024/3108878_A.jpg?sw=950&sh=1570&sm=fit",
+                        "blurhash": "LcLzszof~qt7xZayNGay%MofM{WB"
+                    },
+                    {
+                        "id": "img-7-2",
+                        "uri": "https://www.cyamoda.com/dw/image/v2/BGFN_PRD/on/demandware.static/-/Sites-siteCatalog_cya_mx/default/dw585532c1/images/Abril%202024/3108878_B.jpg?sw=950&sh=1570&sm=fit",
+                        "blurhash": "LcLzszof~qt7xZayNGay%MofM{WB"
+                    },
+                    {
+                        "id": "img-7-3",
+                        "uri": "https://www.cyamoda.com/dw/image/v2/BGFN_PRD/on/demandware.static/-/Sites-siteCatalog_cya_mx/default/dwcda1b34d/images/Abril%202024/3108878_C.jpg?sw=950&sh=1570&sm=fit",
+                        "blurhash": "LcLzszof~qt7xZayNGay%MofM{WB"
+                    },
+                    {
+                        "id": "img-7-4",
+                        "uri": "https://www.cyamoda.com/dw/image/v2/BGFN_PRD/on/demandware.static/-/Sites-siteCatalog_cya_mx/default/dw519a87c4/images/Abril%202024/3108878_D.jpg?sw=950&sh=1570&sm=fit",
+                        "blurhash": "LcLzszof~qt7xZayNGay%MofM{WB"
+                    },
+                    {
+                        "id": "img-7-5",
+                        "uri": "https://www.cyamoda.com/dw/image/v2/BGFN_PRD/on/demandware.static/-/Sites-siteCatalog_cya_mx/default/dw53b62281/images/Abril%202024/3108878_E.jpg?sw=950&sh=1570&sm=fit",
+                        "blurhash": "LcLzszof~qt7xZayNGay%MofM{WB"
+                    }
+                ],
+                "inventory": [
+                    {
+                        "id": "inv-7-s",
+                        "size": "s",
+                        "stock": 10,
+                        "sku": "VES-MID-VOL-S-BLK"
+                    },
+                    {
+                        "id": "inv-7-m",
+                        "size": "m",
+                        "stock": 0,
+                        "sku": "VES-MID-VOL-M-BLK"
+                    },
+                    {
+                        "id": "inv-7-l",
+                        "size": "l",
+                        "stock": 2,
+                        "sku": "VES-MID-VOL-L-BLK"
+                    },
+                    {
+                        "id": "inv-7-xl",
+                        "size": "xl",
+                        "stock": 2,
+                        "sku": "VES-MID-VOL-XL-BLK"
+                    }
+                ]
+            },
+            {
+                "id": "var-4-arena",
+                "colorCode": "#ead6b5",
+                "colorName": {
+                    "es": "Arena",
+                    "en": "Sand"
+                },
+                "images": [
+                    {
+                        "id": "img-8-1",
+                        "uri": "https://www.cyamoda.com/dw/image/v2/BGFN_PRD/on/demandware.static/-/Sites-siteCatalog_cya_mx/default/dwf815a937/images/Abril%202024/3108879_A.jpg?sw=950&sh=1570&sm=fit",
+                        "blurhash": "LDNc.,tR.TxaD%kWt6ROSiofxZbH"
+                    },
+                    {
+                        "id": "img-8-2",
+                        "uri": "https://www.cyamoda.com/dw/image/v2/BGFN_PRD/on/demandware.static/-/Sites-siteCatalog_cya_mx/default/dw74ef76ca/images/Abril%202024/3108879_B.jpg?sw=950&sh=1570&sm=fit",
+                        "blurhash": "LDNc.,tR.TxaD%kWt6ROSiofxZbH"
+                    },
+                    {
+                        "id": "img-8-3",
+                        "uri": "https://www.cyamoda.com/dw/image/v2/BGFN_PRD/on/demandware.static/-/Sites-siteCatalog_cya_mx/default/dw01e7c12a/images/Abril%202024/3108879_C.jpg?sw=950&sh=1570&sm=fit",
+                        "blurhash": "LDNc.,tR.TxaD%kWt6ROSiofxZbH"
+                    },
+                    {
+                        "id": "img-8-4",
+                        "uri": "https://www.cyamoda.com/dw/image/v2/BGFN_PRD/on/demandware.static/-/Sites-siteCatalog_cya_mx/default/dwb9d3b28c/images/Abril%202024/3108879_D.jpg?sw=950&sh=1570&sm=fit",
+                        "blurhash": "LDNc.,tR.TxaD%kWt6ROSiofxZbH"
+                    },
+                    {
+                        "id": "img-8-5",
+                        "uri": "https://www.cyamoda.com/dw/image/v2/BGFN_PRD/on/demandware.static/-/Sites-siteCatalog_cya_mx/default/dw93d401dd/images/Abril%202024/3108879_E.jpg?sw=950&sh=1570&sm=fit",
+                        "blurhash": "LDNc.,tR.TxaD%kWt6ROSiofxZbH"
+                    }
+                ],
+                "inventory": [
+                    {
+                        "id": "inv-8-s",
+                        "size": "s",
+                        "stock": 10,
+                        "sku": "VES-MID-VOL-S-SND"
+                    },
+                    {
+                        "id": "inv-8-m",
+                        "size": "m",
+                        "stock": 5,
+                        "sku": "VES-MID-VOL-M-SND"
+                    },
+                    {
+                        "id": "inv-8-l",
+                        "size": "l",
+                        "stock": 2,
+                        "sku": "VES-MID-VOL-L-SND"
+                    }
+                ]
+            },
+            {
+                "id": "var-4-azul-pastel",
+                "colorCode": "#8bb0c1",
+                "colorName": {
+                    "es": "Azul Pastel",
+                    "en": "Pastel Blue"
+                },
+                "images": [
+                    {
+                        "id": "img-9-1",
+                        "uri": "https://www.cyamoda.com/dw/image/v2/BGFN_PRD/on/demandware.static/-/Sites-siteCatalog_cya_mx/default/dw2efdac9f/images/Abril%202024/3108880_A.jpg?sw=950&sh=1570&sm=fit",
+                        "blurhash": "LFNJ]~tQ~ns;McflbwV@t2ofW@bb"
+                    },
+                    {
+                        "id": "img-9-2",
+                        "uri": "https://www.cyamoda.com/dw/image/v2/BGFN_PRD/on/demandware.static/-/Sites-siteCatalog_cya_mx/default/dw1907d7bd/images/Abril%202024/3108880_B.jpg?sw=950&sh=1570&sm=fit",
+                        "blurhash": "LFNJ]~tQ~ns;McflbwV@t2ofW@bb"
+                    },
+                    {
+                        "id": "img-9-3",
+                        "uri": "https://www.cyamoda.com/dw/image/v2/BGFN_PRD/on/demandware.static/-/Sites-siteCatalog_cya_mx/default/dwbe2511a8/images/Abril%202024/3108880_C.jpg?sw=950&sh=1570&sm=fit",
+                        "blurhash": "LFNJ]~tQ~ns;McflbwV@t2ofW@bb"
+                    },
+                    {
+                        "id": "img-9-4",
+                        "uri": "https://www.cyamoda.com/dw/image/v2/BGFN_PRD/on/demandware.static/-/Sites-siteCatalog_cya_mx/default/dw865a1dce/images/Abril%202024/3108880_D.jpg?sw=950&sh=1570&sm=fit",
+                        "blurhash": "LFNJ]~tQ~ns;McflbwV@t2ofW@bb"
+                    },
+                    {
+                        "id": "img-9-5",
+                        "uri": "https://www.cyamoda.com/dw/image/v2/BGFN_PRD/on/demandware.static/-/Sites-siteCatalog_cya_mx/default/dwf4223e60/images/Abril%202024/3108880_E.jpg?sw=950&sh=1570&sm=fit",
+                        "blurhash": "LFNJ]~tQ~ns;McflbwV@t2ofW@bb"
+                    }
+                ],
+                "inventory": [
+                    {
+                        "id": "inv-9-s",
+                        "size": "s",
+                        "stock": 0,
+                        "sku": "VES-MID-VOL-S-BLU"
+                    },
+                    {
+                        "id": "inv-9-m",
+                        "size": "m",
+                        "stock": 0,
+                        "sku": "VES-MID-VOL-M-BLU"
+                    },
+                    {
+                        "id": "inv-9-l",
+                        "size": "l",
+                        "stock": 0,
+                        "sku": "VES-MID-VOL-L-BLU"
+                    },
+                    {
+                        "id": "inv-9-xl",
+                        "size": "xl",
+                        "stock": 0,
+                        "sku": "VES-MID-VOL-XL-BLU"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": "prod-5",
+        "slug": "playera-blanca-bolsillo-fit-relaxed",
+        "brand": "Fit Relaxed",
+        "price": 15.99,
+        "originalPrice": null,
+        "fabric": {
+            "es": "Algodon 100%",
+            "en": "100% Cotton"
+        },
+        "rating": 4.3,
+        "ratingCount": 120,
+        "isFeatured": true,
+        "dateAdded": "2025-08-29T20:00:00Z",
+        "categoryId": "sub-cat-camisetas",
+        "name": {
+            "es": "Playera Blanca Con Bolsa",
+            "en": "White T-shirt with bag"
+        },
+        "description": {
+            "es": "Playera color blanco, manga corta, drop shoulder, cuello redondo, bolsillo en frente, fit relaxed.",
+            "en": "White T-shirt, short sleeves, drop shoulder, round neck, front pocket, relaxed fit."
+        },
+        "careInstructions": {
+            "es": "Lavar antes de usar, lavar con colores similares, lavar a mano o máquina a 30 °C con jabón o detergente Blanqueo: No usar blanqueador Secado: No exprimir, no centrifugar Secar en línea a la sombra, no usar secadora Planchado",
+            "en": "Wash before use, wash with similar colors, hand wash or machine wash at 30 ° C with soap or detergent Bleaching: Do not bleach Drying: Do not wring, do not spin Dry on a line in the shade, do not tumble dry Ironing"
+        },
+        "tags": {
+            "es": [
+                "attr-fit",
+                "attr-cotton",
+                "attr-casual",
+                "color-natural-white",
+                "color-pastel-blue",
+                "size-s",
+                "size-m",
+                "size-l"
+            ],
+            "en": [
+                "attr-fit",
+                "attr-cotton",
+                "attr-casual",
+                "color-natural-white",
+                "color-pastel-blue",
+                "size-s",
+                "size-m",
+                "size-l"
+            ]
+        },
+        "variants": [
+            {
+                "id": "var-5-blanco-natural",
+                "colorCode": "#ffff",
+                "colorName": {
+                    "es": "Blanco",
+                    "en": "White"
+                },
+                "images": [
+                    {
+                        "id": "img-10-1",
+                        "uri": "https://www.cyamoda.com/dw/image/v2/BGFN_PRD/on/demandware.static/-/Sites-siteCatalog_cya_mx/default/dw0dfa1742/images/storage2024/3106508_A.jpg?sw=950&sh=1570&sm=fit",
+                        "blurhash": "LAM%o}IA?t_N,9j@T2%g0fIo^k%2"
+                    },
+                    {
+                        "id": "img-10-2",
+                        "uri": "https://www.cyamoda.com/dw/image/v2/BGFN_PRD/on/demandware.static/-/Sites-siteCatalog_cya_mx/default/dw3d08c104/images/storage2024/3106508_B.jpg?sw=950&sh=1570&sm=fit",
+                        "blurhash": "L9NAI^nN.kpIX2%M%hM{01WA~Cof"
+                    },
+                    {
+                        "id": "img-10-3",
+                        "uri": "https://www.cyamoda.com/dw/image/v2/BGFN_PRD/on/demandware.static/-/Sites-siteCatalog_cya_mx/default/dw9741c57b/images/storage2024/3106508_C.jpg?sw=950&sh=1570&sm=fit",
+                        "blurhash": "LENA3bDiO=?^E0IB%3x]55R5tRof"
+                    },
+                    {
+                        "id": "img-10-4",
+                        "uri": "https://www.cyamoda.com/dw/image/v2/BGFN_PRD/on/demandware.static/-/Sites-siteCatalog_cya_mx/default/dw10482ae3/images/storage2024/3106508_D.jpg?sw=950&sh=1570&sm=fit",
+                        "blurhash": "LAOMgIO;GF.8F^_NH?ib00%gNH%2"
+                    },
+                    {
+                        "id": "img-10-5",
+                        "uri": "https://www.cyamoda.com/dw/image/v2/BGFN_PRD/on/demandware.static/-/Sites-siteCatalog_cya_mx/default/dw2ac65a85/images/storage2024/3106508_E.jpg?sw=950&sh=1570&sm=fit",
+                        "blurhash": "L1Qb;1?HWB%M^+~qxuof^+~qM{NG"
+                    }
+                ],
+                "inventory": [
+                    {
+                        "id": "inv-10-s",
+                        "size": "s",
+                        "stock": 1,
+                        "sku": "PLA-BLA-FI-S"
+                    },
+                    {
+                        "id": "inv-10-m",
+                        "size": "m",
+                        "stock": 15,
+                        "sku": "PLA-BLA-FI-M"
+                    },
+                    {
+                        "id": "inv-10-l",
+                        "size": "l",
+                        "stock": 9,
+                        "sku": "PLA-BLA-FI-L"
+                    }
+                ]
+            },
+            {
+                "id": "var-5-azul-pastel",
+                "colorCode": "#add0db",
+                "colorName": {
+                    "es": "Azul Pastel",
+                    "en": "Pastel Blue"
+                },
+                "images": [
+                    {
+                        "id": "img-11-1",
+                        "uri": "https://www.cyamoda.com/dw/image/v2/BGFN_PRD/on/demandware.static/-/Sites-siteCatalog_cya_mx/default/dw0dfa1742/images/storage2024/3106508_A.jpg?sw=950&sh=1570&sm=fit",
+                        "blurhash": "LAMaCTIo~W?ax]n+o~yDD5o0%za}"
+                    },
+                    {
+                        "id": "img-11-2",
+                        "uri": "https://www.cyamoda.com/dw/image/v2/BGFN_PRD/on/demandware.static/-/Sites-siteCatalog_cya_mx/default/dw3d08c104/images/storage2024/3106508_B.jpg?sw=950&sh=1570&sm=fit",
+                        "blurhash": "LBMj%JnO~W%hjFx]x^IU4Tae.7WB"
+                    },
+                    {
+                        "id": "img-11-3",
+                        "uri": "https://www.cyamoda.com/dw/image/v2/BGFN_PRD/on/demandware.static/-/Sites-siteCatalog_cya_mx/default/dw9741c57b/images/storage2024/3106508_C.jpg?sw=950&sh=1570&sm=fit",
+                        "blurhash": "L8MHAE$N~X%gL}TK?^R54U-p?^M_"
+                    },
+                    {
+                        "id": "img-11-4",
+                        "uri": "https://www.cyamoda.com/dw/image/v2/BGFN_PRD/on/demandware.static/-/Sites-siteCatalog_cya_mx/default/dw10482ae3/images/storage2024/3106508_D.jpg?sw=950&sh=1570&sm=fit",
+                        "blurhash": "LCMj:Y-Vx^%hDi?^IUrW4T?HXno}"
+                    },
+                    {
+                        "id": "img-11-5",
+                        "uri": "https://www.cyamoda.com/dw/image/v2/BGFN_PRD/on/demandware.static/-/Sites-siteCatalog_cya_mx/default/dw2ac65a85/images/storage2024/3106508_E.jpg?sw=950&sh=1570&sm=fit",
+                        "blurhash": "L2O|qU-qV]xt=$~XxtoM?I~pRjRj"
+                    }
+                ],
+                "inventory": [
+                    {
+                        "id": "inv-11-s",
+                        "size": "s",
+                        "stock": 2,
+                        "sku": "PLA-AZU-FI-S"
+                    },
+                    {
+                        "id": "inv-11-m",
+                        "size": "m",
+                        "stock": 0,
+                        "sku": "PLA-AZU-FI-M"
+                    },
+                    {
+                        "id": "inv-11-l",
+                        "size": "l",
+                        "stock": 23,
+                        "sku": "PLA-AZU-FI-L"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": "prod-6",
+        "slug": "vestido-camisero-midi-boho",
+        "brand": "Boho Chic",
+        "price": 49.99,
+        "originalPrice": 65.99,
+        "fabric": {
+            "es": "Viscosa 100%",
+            "en": "Viscose 100%"
+        },
+        "rating": 4.6,
+        "ratingCount": 88,
+        "isFeatured": true,
+        "dateAdded": "2025-08-29T20:00:00Z",
+        "categoryId": "sub-cat-vestidos",
+        "name": {
+            "es": "Vestido Camisero Midi",
+            "en": "Midi Shirt Dress"
+        },
+        "description": {
+            "es": "Vestido midi estilo camisero con cinturón de la misma tela, botones frontales y manga larga.",
+            "en": "Midi shirt dress with a matching fabric belt, front buttons, and long sleeves."
+        },
+        "careInstructions": {
+            "es": "Lavar a mano con agua fría. No usar secadora.",
+            "en": "Hand wash with cold water. Do not tumble dry."
+        },
+        "tags": {
+            "es": [
+                "attr-casual",
+                "attr-viscose",
+                "attr-shirt-dress",
+                "color-natural-white",
+                "size-s",
+                "size-m",
+                "size-l"
+            ],
+            "en": [
+                "attr-casual",
+                "attr-viscose",
+                "attr-shirt-dress",
+                "color-natural-white",
+                "size-s",
+                "size-m",
+                "size-l"
+            ]
+        },
+        "variants": [
+            {
+                "id": "var-6-blanco",
+                "colorCode": "#ffff",
+                "colorName": {
+                    "es": "Blanco Natural",
+                    "en": "Natural White"
+                },
+                "images": [
+                    {
+                        "id": "img-12-1",
+                        "uri": "https://www.cyamoda.com/dw/image/v2/BGFN_PRD/on/demandware.static/-/Sites-siteCatalog_cya_mx/default/dw528130ec/images/storage2024/3105136_A.jpg?sw=950&sh=1570&sm=fit",
+                        "blurhash": "L1Qb;1?HWB%M^+~qxuof^+~qM{NG"
+                    },
+                    {
+                        "id": "img-12-2",
+                        "uri": "https://www.cyamoda.com/dw/image/v2/BGFN_PRD/on/demandware.static/-/Sites-siteCatalog_cya_mx/default/dw739acb0a/images/storage2024/3105136_B.jpg?sw=950&sh=1570&sm=fit",
+                        "blurhash": "L1Qb;1?HWB%M^+~qxuof^+~qM{NG"
+                    },
+                    {
+                        "id": "img-12-3",
+                        "uri": "https://www.cyamoda.com/dw/image/v2/BGFN_PRD/on/demandware.static/-/Sites-siteCatalog_cya_mx/default/dw918e118a/images/storage2024/3105136_C.jpg?sw=950&sh=1570&sm=fit",
+                        "blurhash": "L1Qb;1?HWB%M^+~qxuof^+~qM{NG"
+                    },
+                    {
+                        "id": "img-12-4",
+                        "uri": "https://www.cyamoda.com/dw/image/v2/BGFN_PRD/on/demandware.static/-/Sites-siteCatalog_cya_mx/default/dwf11c604e/images/storage2024/3105136_D.jpg?sw=950&sh=1570&sm=fit",
+                        "blurhash": "L1Qb;1?HWB%M^+~qxuof^+~qM{NG"
+                    },
+                    {
+                        "id": "img-12-5",
+                        "uri": "https://www.cyamoda.com/dw/image/v2/BGFN_PRD/on/demandware.static/-/Sites-siteCatalog_cya_mx/default/dw6b837a51/images/storage2024/3105136_E.jpg?sw=950&sh=1570&sm=fit",
+                        "blurhash": "L1Qb;1?HWB%M^+~qxuof^+~qM{NG"
+                    }
+                ],
+                "inventory": [
+                    {
+                        "id": "inv-12-s",
+                        "size": "s",
+                        "stock": 12,
+                        "sku": "VES-CAM-MID-S-BLA"
+                    },
+                    {
+                        "id": "inv-12-m",
+                        "size": "m",
+                        "stock": 5,
+                        "sku": "VES-CAM-MID-M-BLA"
+                    },
+                    {
+                        "id": "inv-12-l",
+                        "size": "l",
+                        "stock": 0,
+                        "sku": "VES-CAM-MID-L-BLA"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": "prod-7",
+        "slug": "shorts-mezclilla-tiro-alto-denimpro",
+        "brand": "DenimPro",
+        "price": 29.99,
+        "originalPrice": null,
+        "fabric": {
+            "es": "Algodon 98%, Elastano 2%",
+            "en": "Cotton 98%, Elastane 2%"
+        },
+        "rating": 4.2,
+        "ratingCount": 215,
+        "isFeatured": false,
+        "dateAdded": "2025-08-29T20:00:00Z",
+        "categoryId": "sub-cat-pantalones",
+        "name": {
+            "es": "Shorts de Mezclilla Tiro Alto",
+            "en": "High-Waist Denim Shorts"
+        },
+        "description": {
+            "es": "Shorts de mezclilla con cinco bolsillos, tiro alto y dobladillo desflecado.",
+            "en": "Five-pocket high-waisted denim shorts with a frayed hem."
+        },
+        "careInstructions": {
+            "es": "Lavar a máquina.",
+            "en": "Machine wash."
+        },
+        "tags": {
+            "es": [
+                "attr-denim",
+                "attr-high-waist",
+                "attr-summer",
+                "attr-casual",
+                "color-classical-blue",
+                "size-26",
+                "size-27",
+                "size-28"
+            ],
+            "en": [
+                "attr-denim",
+                "attr-high-waist",
+                "attr-summer",
+                "attr-casual",
+                "color-classical-blue",
+                "size-26",
+                "size-27",
+                "size-28"
+            ]
+        },
+        "variants": [
+            {
+                "id": "var-7-azul-clasico",
+                "colorCode": "#4682B4",
+                "colorName": {
+                    "es": "Azul Clásico",
+                    "en": "Classic Blue"
+                },
+                "images": [
+                    {
+                        "id": "img-13-1",
+                        "uri": "https://www.cyamoda.com/dw/image/v2/BGFN_PRD/on/demandware.static/-/Sites-siteCatalog_cya_mx/default/dwc8b95d3a/images/storage2024/3101417_A.jpg?sw=950&sh=1570&sm=fit",
+                        "blurhash": "L1Qb;1?HWB%M^+~qxuof^+~qM{NG"
+                    },
+                    {
+                        "id": "img-13-2",
+                        "uri": "https://www.cyamoda.com/dw/image/v2/BGFN_PRD/on/demandware.static/-/Sites-siteCatalog_cya_mx/default/dwd2fbecea/images/storage2024/3101417_B.jpg?sw=950&sh=1570&sm=fit",
+                        "blurhash": "L1Qb;1?HWB%M^+~qxuof^+~qM{NG"
+                    },
+                    {
+                        "id": "img-13-3",
+                        "uri": "https://www.cyamoda.com/dw/image/v2/BGFN_PRD/on/demandware.static/-/Sites-siteCatalog_cya_mx/default/dwd579188d/images/storage2024/3101417_C.jpg?sw=950&sh=1570&sm=fit",
+                        "blurhash": "L1Qb;1?HWB%M^+~qxuof^+~qM{NG"
+                    },
+                    {
+                        "id": "img-13-4",
+                        "uri": "https://www.cyamoda.com/dw/image/v2/BGFN_PRD/on/demandware.static/-/Sites-siteCatalog_cya_mx/default/dwe3a93dcb/images/storage2024/3101417_D.jpg?sw=950&sh=1570&sm=fit",
+                        "blurhash": "L1Qb;1?HWB%M^+~qxuof^+~qM{NG"
+                    },
+                    {
+                        "id": "img-13-5",
+                        "uri": "https://www.cyamoda.com/dw/image/v2/BGFN_PRD/on/demandware.static/-/Sites-siteCatalog_cya_mx/default/dw7df03af5/images/storage2024/3101417_E.jpg?sw=950&sh=1570&sm=fit",
+                        "blurhash": "L1Qb;1?HWB%M^+~qxuof^+~qM{NG"
+                    }
+                ],
+                "inventory": [
+                    {
+                        "id": "inv-13-26",
+                        "size": 26,
+                        "stock": 20,
+                        "sku": "SHO-DEN-HW-26-BLU"
+                    },
+                    {
+                        "id": "inv-13-27",
+                        "size": 27,
+                        "stock": 15,
+                        "sku": "SHO-DEN-HW-27-BLU"
+                    },
+                    {
+                        "id": "inv-13-28",
+                        "size": 28,
+                        "stock": 3,
+                        "sku": "SHO-DEN-HW-28-BLU"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": "prod-8",
+        "slug": "chamarra-bomber-ligera-activeco",
+        "brand": "ActiveWear Co.",
+        "price": 55.00,
+        "originalPrice": null,
+        "fabric": {
+            "es": "Poliester 100%",
+            "en": "100% Polyester"
+        },
+        "rating": 4.9,
+        "ratingCount": 150,
+        "isFeatured": true,
+        "dateAdded": "2024-05-12T09:00:00Z",
+        "categoryId": "sub-cat-chamarras",
+        "name": {
+            "es": "Chamarra Bomber Ligera",
+            "en": "Lightweight Bomber Jacket"
+        },
+        "description": {
+            "es": "Chamarra bomber ligera con cierre frontal, bolsillos laterales y cuello, puños y bajo de canalé.",
+            "en": "Lightweight bomber jacket with front zip, side pockets, and ribbed collar, cuffs, and hem."
+        },
+        "careInstructions": {
+            "es": "Lavar a máquina en ciclo delicado.",
+            "en": "Machine wash on gentle cycle."
+        },
+        "tags": {
+            "es": [
+                "attr-bomber",
+                "attr-winter",
+                "attr-casual",
+                "color-cream",
+                "color-khaki",
+                "size-s",
+                "size-m",
+                "size-l"
+            ],
+            "en": [
+                "attr-bomber",
+                "attr-winter",
+                "attr-casual",
+                "color-cream",
+                "color-khaki",
+                "size-s",
+                "size-m",
+                "size-l"
+            ]
+        },
+        "variants": [
+            {
+                "id": "var-8-crema",
+                "colorCode": "#edddca",
+                "colorName": {
+                    "es": "Crema",
+                    "en": "Cream"
+                },
+                "images": [
+                    {
+                        "id": "img-14-1",
+                        "uri": "https://www.cyamoda.com/dw/image/v2/BGFN_PRD/on/demandware.static/-/Sites-siteCatalog_cya_mx/default/dw5d637d2d/images/storage2024/3104260_A.jpg?sw=950&sh=1570&sm=fit",
+                        "blurhash": "L1Qb;1?HWB%M^+~qxuof^+~qM{NG"
+                    },
+                    {
+                        "id": "img-14-2",
+                        "uri": "https://www.cyamoda.com/dw/image/v2/BGFN_PRD/on/demandware.static/-/Sites-siteCatalog_cya_mx/default/dw3e8b4fbd/images/storage2024/3104260_B.jpg?sw=950&sh=1570&sm=fit",
+                        "blurhash": "L1Qb;1?HWB%M^+~qxuof^+~qM{NG"
+                    },
+                    {
+                        "id": "img-14-3",
+                        "uri": "https://www.cyamoda.com/dw/image/v2/BGFN_PRD/on/demandware.static/-/Sites-siteCatalog_cya_mx/default/dw06ad8685/images/storage2024/3104260_C.jpg?sw=950&sh=1570&sm=fit",
+                        "blurhash": "L1Qb;1?HWB%M^+~qxuof^+~qM{NG"
+                    },
+                    {
+                        "id": "img-14-4",
+                        "uri": "https://www.cyamoda.com/dw/image/v2/BGFN_PRD/on/demandware.static/-/Sites-siteCatalog_cya_mx/default/dw8ead2939/images/storage2024/3104260_D.jpg?sw=950&sh=1570&sm=fit",
+                        "blurhash": "L1Qb;1?HWB%M^+~qxuof^+~qM{NG"
+                    },
+                    {
+                        "id": "img-14-5",
+                        "uri": "https://www.cyamoda.com/dw/image/v2/BGFN_PRD/on/demandware.static/-/Sites-siteCatalog_cya_mx/default/dwb4f954ab/images/storage2024/3104260_E.jpg?sw=950&sh=1570&sm=fit",
+                        "blurhash": "L1Qb;1?HWB%M^+~qxuof^+~qM{NG"
+                    },
+                    {
+                        "id": "img-14-6",
+                        "uri": "https://www.cyamoda.com/dw/image/v2/BGFN_PRD/on/demandware.static/-/Sites-siteCatalog_cya_mx/default/dw13700f0f/images/storage2024/3104260_F.jpg?sw=950&sh=1570&sm=fit",
+                        "blurhash": "L1Qb;1?HWB%M^+~qxuof^+~qM{NG"
+                    }
+                ],
+                "inventory": [
+                    {
+                        "id": "inv-14-s",
+                        "size": "s",
+                        "stock": 8,
+                        "sku": "JCK-BOM-LT-S-CRE"
+                    },
+                    {
+                        "id": "inv-14-m",
+                        "size": "m",
+                        "stock": 10,
+                        "sku": "JCK-BOM-LT-M-CRE"
+                    }
+                ]
+            },
+            {
+                "id": "var-8-kaki",
+                "colorCode": "#9c661d",
+                "colorName": {
+                    "es": "Kaki",
+                    "en": "Khaki"
+                },
+                "images": [
+                    {
+                        "id": "img-15-1",
+                        "uri": "https://www.cyamoda.com/dw/image/v2/BGFN_PRD/on/demandware.static/-/Sites-siteCatalog_cya_mx/default/dw05806a96/images/storage2024/3105508_A.jpg?sw=950&sh=1570&sm=fit",
+                        "blurhash": "L1Qb;1?HWB%M^+~qxuof^+~qM{NG"
+                    },
+                    {
+                        "id": "img-15-2",
+                        "uri": "https://www.cyamoda.com/dw/image/v2/BGFN_PRD/on/demandware.static/-/Sites-siteCatalog_cya_mx/default/dwf16857d1/images/storage2024/3105508_B.jpg?sw=950&sh=1570&sm=fit",
+                        "blurhash": "L1Qb;1?HWB%M^+~qxuof^+~qM{NG"
+                    },
+                    {
+                        "id": "img-15-3",
+                        "uri": "https://www.cyamoda.com/dw/image/v2/BGFN_PRD/on/demandware.static/-/Sites-siteCatalog_cya_mx/default/dw6d7b4511/images/storage2024/3105508_C.jpg?sw=950&sh=1570&sm=fit",
+                        "blurhash": "L1Qb;1?HWB%M^+~qxuof^+~qM{NG"
+                    },
+                    {
+                        "id": "img-15-4",
+                        "uri": "https://www.cyamoda.com/dw/image/v2/BGFN_PRD/on/demandware.static/-/Sites-siteCatalog_cya_mx/default/dwaca6288b/images/storage2024/3105508_D.jpg?sw=950&sh=1570&sm=fit",
+                        "blurhash": "L1Qb;1?HWB%M^+~qxuof^+~qM{NG"
+                    },
+                    {
+                        "id": "img-15-5",
+                        "uri": "https://www.cyamoda.com/dw/image/v2/BGFN_PRD/on/demandware.static/-/Sites-siteCatalog_cya_mx/default/dwc7750098/images/storage2024/3105508_E.jpg?sw=950&sh=1570&sm=fit",
+                        "blurhash": "L1Qb;1?HWB%M^+~qxuof^+~qM{NG"
+                    }
+                ],
+                "inventory": [
+                    {
+                        "id": "inv-15-s",
+                        "size": "s",
+                        "stock": 7,
+                        "sku": "JCK-BOM-LT-S-KHK"
+                    },
+                    {
+                        "id": "inv-15-m",
+                        "size": "m",
+                        "stock": 12,
+                        "sku": "JCK-BOM-LT-M-KHK"
+                    },
+                    {
+                        "id": "inv-15-l",
+                        "size": "l",
+                        "stock": 0,
+                        "sku": "JCK-BOM-LT-L-KHK"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": "prod-9",
+        "slug": "top-tirantes-satin-encaje-silknlace",
+        "brand": "Silk & Lace",
+        "price": 24.99,
+        "originalPrice": 32.99,
+        "fabric": {
+            "es": "Satin 95%, Encaje 5%",
+            "en": "Satin 95%, Lace 5%"
+        },
+        "rating": 4.7,
+        "ratingCount": 95,
+        "isFeatured": false,
+        "dateAdded": "2024-03-01T18:00:00Z",
+        "categoryId": "sub-cat-tops",
+        "name": {
+            "es": "Top de Tirantes con Encaje",
+            "en": "Lace-Trim Cami Top"
+        },
+        "description": {
+            "es": "Top de tirantes finos en tejido de satín con detalle de encaje en el escote.",
+            "en": "Spaghetti strap cami top in satin fabric with lace trim on the neckline."
+        },
+        "careInstructions": {
+            "es": "Lavar a mano.",
+            "en": "Hand wash."
+        },
+        "tags": {
+            "es": [
+                "attr-satin",
+                "attr-lace",
+                "attr-casual",
+                "attr-summer",
+                "color-fire-red",
+                "size-xs",
+                "size-s"
+            ],
+            "en": [
+                "attr-satin",
+                "attr-lace",
+                "attr-casual",
+                "attr-summer",
+                "color-fire-red",
+                "size-xs",
+                "size-s"
+            ]
+        },
+        "variants": [
+            {
+                "id": "var-9-rojo",
+                "colorCode": "#B22222",
+                "colorName": {
+                    "es": "Rojo Fuego",
+                    "en": "Fire Red"
+                },
+                "images": [
+                    {
+                        "id": "img-16-1",
+                        "uri": "https://www.cyamoda.com/dw/image/v2/BGFN_PRD/on/demandware.static/-/Sites-siteCatalog_cya_mx/default/dwc6838ff8/images/Abril%202024/3102537_A.jpg?sw=950&sh=1570&sm=fit",
+                        "blurhash": "L1Qb;1?HWB%M^+~qxuof^+~qM{NG"
+                    },
+                    {
+                        "id": "img-16-2",
+                        "uri": "https://www.cyamoda.com/dw/image/v2/BGFN_PRD/on/demandware.static/-/Sites-siteCatalog_cya_mx/default/dw409f7cdb/images/Abril%202024/3102537_B.jpg?sw=950&sh=1570&sm=fit",
+                        "blurhash": "L1Qb;1?HWB%M^+~qxuof^+~qM{NG"
+                    },
+                    {
+                        "id": "img-16-3",
+                        "uri": "https://www.cyamoda.com/dw/image/v2/BGFN_PRD/on/demandware.static/-/Sites-siteCatalog_cya_mx/default/dw46ac8d9b/images/Abril%202024/3102537_C.jpg?sw=950&sh=1570&sm=fit",
+                        "blurhash": "L1Qb;1?HWB%M^+~qxuof^+~qM{NG"
+                    }
+                ],
+                "inventory": [
+                    {
+                        "id": "inv-16-xs",
+                        "size": "xs",
+                        "stock": 15,
+                        "sku": "TOP-CAMI-LC-XS-RED"
+                    },
+                    {
+                        "id": "inv-16-s",
+                        "size": "s",
+                        "stock": 2,
+                        "sku": "TOP-CAMI-LC-S-RED"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": "prod-10",
+        "slug": "tenis-plataforma-blancos-street-cred",
+        "brand": "Street Cred",
+        "price": 89.99,
+        "originalPrice": null,
+        "fabric": {
+            "es": "Sintético",
+            "en": "Synthetic"
+        },
+        "rating": 4.5,
+        "ratingCount": 350,
+        "isFeatured": true,
+        "dateAdded": "2024-05-20T10:00:00Z",
+        "categoryId": "sub-cat-tenis",
+        "name": {
+            "es": "Tenis Plataforma Blancos",
+            "en": "White Platform Sneakers"
+        },
+        "description": {
+            "es": "Tenis casuales de plataforma con exterior de material sintético y suela de goma.",
+            "en": "Casual platform sneakers with a synthetic upper and rubber sole."
+        },
+        "careInstructions": {
+            "es": "Limpiar con un paño húmedo.",
+            "en": "Wipe clean with a damp cloth."
+        },
+        "tags": {
+            "es": [
+                "attr-platform",
+                "attr-urban",
+                "attr-casual",
+                "color-all-white",
+                "size-5",
+                "size-6-5",
+                "size-7"
+            ],
+            "en": [
+                "attr-platform",
+                "attr-urban",
+                "attr-casual",
+                "color-all-white",
+                "size-5",
+                "size-6-5",
+                "size-7"
+            ]
+        },
+        "variants": [
+            {
+                "id": "var-10-blanco",
+                "colorCode": "#FFFFFF",
+                "colorName": {
+                    "es": "Blanco Total",
+                    "en": "All White"
+                },
+                "images": [
+                    {
+                        "id": "img-17-1",
+                        "uri": "https://www.cyamoda.com/dw/image/v2/BGFN_PRD/on/demandware.static/-/Sites-siteCatalog_cya_mx/default/dw4dc1ed47/images/Abril%202024/3099692_A.jpg?sw=950&sh=1570&sm=fit",
+                        "blurhash": "L1Qb;1?HWB%M^+~qxuof^+~qM{NG"
+                    },
+                    {
+                        "id": "img-17-2",
+                        "uri": "https://www.cyamoda.com/dw/image/v2/BGFN_PRD/on/demandware.static/-/Sites-siteCatalog_cya_mx/default/dw58e9f6a1/images/Abril%202024/3099692_B.jpg?sw=950&sh=1570&sm=fit",
+                        "blurhash": "L1Qb;1?HWB%M^+~qxuof^+~qM{NG"
+                    },
+                    {
+                        "id": "img-17-3",
+                        "uri": "https://www.cyamoda.com/dw/image/v2/BGFN_PRD/on/demandware.static/-/Sites-siteCatalog_cya_mx/default/dw382aa73f/images/Abril%202024/3099692_C.jpg?sw=950&sh=1570&sm=fit",
+                        "blurhash": "L1Qb;1?HWB%M^+~qxuof^+~qM{NG"
+                    }
+                ],
+                "inventory": [
+                    {
+                        "id": "inv-17-36",
+                        "size": 5,
+                        "stock": 10,
+                        "sku": "SNK-PLT-WH-36"
+                    },
+                    {
+                        "id": "inv-17-37",
+                        "size": 6.5,
+                        "stock": 18,
+                        "sku": "SNK-PLT-WH-37"
+                    },
+                    {
+                        "id": "inv-17-38",
+                        "size": 7,
+                        "stock": 0,
+                        "sku": "SNK-PLT-WH-38"
+                    }
+                ]
+            }
+        ]
+    },
+    {
+        "id": "prod-11",
+        "slug": "bolsa-tote-lona-canvas-carry",
+        "brand": "Canvas Carry",
+        "price": 35.50,
+        "originalPrice": null,
+        "fabric": {
+            "es": "Lona de algodón",
+            "en": "cotton canvas"
+        },
+        "rating": 4.8,
+        "ratingCount": 420,
+        "isFeatured": false,
+        "dateAdded": "2024-02-15T14:00:00Z",
+        "categoryId": "sub-cat-bolsas",
+        "name": {
+            "es": "Bolsa Tote de Lona",
+            "en": "Canvas Tote Bag"
+        },
+        "description": {
+            "es": "Bolsa estilo tote de lona resistente con compartimento interior y asas reforzadas.",
+            "en": "Durable canvas tote bag with an inner compartment and reinforced handles."
+        },
+        "careInstructions": {
+            "es": "Lavar a mano.",
+            "en": "Hand wash."
+        },
+        "tags": {
+            "es": [
+                "attr-tote",
+                "attr-lona",
+                "attr-casual",
+                "color-black-night",
+                "size-unitalla"
+            ],
+            "en": [
+                "attr-tote",
+                "attr-lona",
+                "attr-casual",
+                "color-black-night",
+                "size-unitalla"
+            ]
+        },
+        "variants": [
+            {
+                "id": "var-11-natural",
+                "colorCode": "#000000",
+                "colorName": {
+                    "es": "Negro Noche",
+                    "en": "Night Black"
+                },
+                "images": [
+                    {
+                        "id": "img-18-1",
+                        "uri": "https://www.cyamoda.com/dw/image/v2/BGFN_PRD/on/demandware.static/-/Sites-siteCatalog_cya_mx/default/dw4a5db477/images/storage2024/3100019_A.jpg?sw=950&sh=1570&sm=fit",
+                        "blurhash": "L1Qb;1?HWB%M^+~qxuof^+~qM{NG"
+                    },
+                    {
+                        "id": "img-18-2",
+                        "uri": "https://www.cyamoda.com/dw/image/v2/BGFN_PRD/on/demandware.static/-/Sites-siteCatalog_cya_mx/default/dw29a9ef08/images/storage2024/3100019_B.jpg?sw=950&sh=1570&sm=fit",
+                        "blurhash": "L1Qb;1?HWB%M^+~qxuof^+~qM{NG"
+                    }
+                ],
+                "inventory": [
+                    {
+                        "id": "inv-18-uni",
+                        "size": "uni",
+                        "stock": 50,
+                        "sku": "BAG-TOTE-CAN-UNI"
+                    }
+                ]
+            }
+        ]
+    }
+]
