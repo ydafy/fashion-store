@@ -12,5 +12,33 @@
     "postalCode": "12333",
     "instructions": "Dejar con el guardia ",
     "isDefault": true
+  },
+  {
+    "id": "7310ab5a-99fc-4a44-ad4e-eabb2561d676",
+    "label": "Office ",
+    "recipientName": "Luka ",
+    "phone": "(662) 317-3255",
+    "street": "Everyone Rose",
+    "details": "Floor 5",
+    "city": "New York City",
+    "state": "New York",
+    "country": "Estados Unidos",
+    "postalCode": "63958",
+    "instructions": "Marcar 435\n",
+    "isDefault": false
+  },
+  {
+    "id": "8066ebd9-c85f-49de-a4f9-facda952a239",
+    "label": "Home",
+    "recipientName": "Vary",
+    "phone": "(662) 317-3255",
+    "street": "Firensse",
+    "details": "",
+    "city": "Hermosillo",
+    "state": "Sonora",
+    "country": "México",
+    "postalCode": "25808",
+    "instructions": "",
+    "isDefault": false
   }
 ]

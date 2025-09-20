@@ -142,11 +142,11 @@ export const useCheckout = () => {
   const onConfirmOrder = async (data: CheckoutFormData) => {
     if (!user || !user.id || !user.isEmailVerified) {
       Alert.alert(
-        t('checkout.authRequiredTitle'),
-        t('checkout.authRequiredMessage'),
+        t('checkout:authRequiredTitle'),
+        t('checkout:authRequiredMessage'),
         [
           {
-            text: t('common.ok'),
+            text: t('common:ok'),
             onPress: () =>
               navigation.navigate('AuthStack', { screen: 'Login' }),
           },

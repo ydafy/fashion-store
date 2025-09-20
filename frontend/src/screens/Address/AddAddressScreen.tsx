@@ -175,8 +175,8 @@ export default function AddAddressScreen({
         // Simplemente mostramos un Toast y volvemos atrás.
         Toast.show({
           type: 'success',
-          text1: t('address:add.successTitle'),
-          text2: t('address:add.successMessage'),
+          text1: t('address:edit.successTitle'),
+          text2: t('address:edit.successMessage'),
         });
         navigation.goBack();
       },

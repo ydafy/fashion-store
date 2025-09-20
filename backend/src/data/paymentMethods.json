@@ -1,3 +1,13 @@
 {
-  "testuser001": []
+  "testuser001": [
+    {
+      "id": "pm_1758324283527",
+      "token": "pm_tok_1758324252688",
+      "brand": "Mastercard",
+      "last4": "0734",
+      "expMonth": 6,
+      "expYear": 2027,
+      "isDefault": true
+    }
+  ]
 }

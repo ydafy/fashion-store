@@ -16,7 +16,7 @@ export const getAvailableFiltersAPI = async (
   context: QueryFunctionContext<FiltersQueryKey>,
 ): Promise<AvailableFiltersResponse> => {
   // ✨ La función ahora devuelve este tipo
-  const [categoryId] = context.queryKey;
+  const [_key, _lang, categoryId] = context.queryKey;
 
   let url = `${API_BASE_URL}/api/filters`;
   if (categoryId) {
