@@ -14,8 +14,7 @@ import MaskInput, { MaskInputProps } from 'react-native-mask-input';
 import { COLORS } from '../../../constants/colors';
 import { moderateScale, verticalScale, scale } from '../../../utils/scaling';
 
-// ✨ 1. DEFINIMOS LAS PROPS
-// Heredamos las props de la librería y añadimos las nuestras.
+// We inherit the props from the library and add our own.
 export interface MaskedTextInputProps extends MaskInputProps {
   label?: string;
   errorMessage?: string | null;
@@ -46,7 +45,7 @@ const MaskedTextInput = forwardRef<TextInput, MaskedTextInputProps>(
       propOnBlur?.(e);
     };
 
-    // Lógica para el color del borde, igual que en StyledTextInput
+    // Logic for the border color, same as in StyledTextInput
     const borderColor = useMemo(() => {
       if (isFocused) return COLORS.accent;
       if (errorMessage) return COLORS.error;
@@ -57,7 +56,7 @@ const MaskedTextInput = forwardRef<TextInput, MaskedTextInputProps>(
       <View style={[styles.inputWrapper, containerStyle]}>
         {label && <Text style={styles.label}>{label}</Text>}
 
-        {/* ✨ 2. USAMOS MASKINPUT COMO EL NÚCLEO */}
+        {/*  WE USE MASKINPUT AS THE CORE */}
         <View style={[styles.fieldContainer, { borderColor }]}>
           <MaskInput
             ref={ref}
@@ -77,7 +76,7 @@ const MaskedTextInput = forwardRef<TextInput, MaskedTextInputProps>(
   },
 );
 
-// ✨ 3. USAMOS LOS MISMOS ESTILOS QUE STYLEDTEXTINPUT PARA CONSISTENCIA
+//  WE USE THE SAME STYLES AS STYLEDTEXTINPUT FOR CONSISTENCY
 const styles = StyleSheet.create({
   inputWrapper: {
     width: '100%',

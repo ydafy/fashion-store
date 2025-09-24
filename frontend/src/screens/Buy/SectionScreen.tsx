@@ -1,17 +1,11 @@
-import React, {
-  useEffect,
-  useLayoutEffect,
-  useMemo,
-  useState,
-  useRef,
-} from 'react';
+import React, { useEffect, useLayoutEffect, useMemo, useState } from 'react';
 import { View, StyleSheet } from 'react-native';
 import { useTranslation } from 'react-i18next';
 import { useNavigation, RouteProp, useRoute } from '@react-navigation/native';
 import { NativeStackNavigationProp } from '@react-navigation/native-stack';
 
 // --- Importaciones de Lógica y Tipos ---
-import { useProductSearch, Filters } from '../../hooks/useProductSearch';
+import { useProductSearch } from '../../hooks/useProductSearch';
 import { useCategoryFilters } from '../../hooks/useCategoryFilters';
 import { RootStackParamList, ShopStackParamList } from '../../types/navigation';
 import { COLORS } from '../../constants/colors';
@@ -34,10 +28,11 @@ const SectionScreen: React.FC = () => {
   const navigation =
     useNavigation<NativeStackNavigationProp<RootStackParamList>>();
   const route = useRoute<SectionScreenRouteProp>();
-  const prevParamsRef = useRef<{ categoryId?: string; filterPayload?: any }>(
-    {},
-  );
-  const prevCategoryIdRef = useRef<string | undefined>();
+
+  //   const prevParamsRef = useRef<{ categoryId?: string; filterPayload?: any }>(
+  //     {},
+  //   );
+  //   const prevCategoryIdRef = useRef<string | undefined>();
 
   const {
     categoryId: categoryIdFromParams,

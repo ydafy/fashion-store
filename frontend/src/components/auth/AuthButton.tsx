@@ -12,10 +12,9 @@ import {
 import { COLORS } from '../../constants/colors';
 import { moderateScale, scale, verticalScale } from '../../utils/scaling';
 
-// ✨ 1. MODIFICAMOS LAS PROPS: 'title' ahora es opcional y añadimos 'children'
 interface AuthButtonProps {
-  title?: string; // Hacemos 'title' opcional para retrocompatibilidad
-  children?: React.ReactNode; // 'children' puede ser cualquier cosa que React pueda renderizar
+  title?: string; // We make 'title' optional for backwards compatibility
+  children?: React.ReactNode; // 'children' can be anything that React can render
   onPress: () => void;
   isLoading?: boolean;
   disabled?: boolean;
@@ -27,7 +26,7 @@ interface AuthButtonProps {
 
 const AuthButton: React.FC<AuthButtonProps> = ({
   title,
-  children, // Recibimos 'children'
+  children,
   onPress,
   isLoading = false,
   disabled = false,
@@ -51,8 +50,8 @@ const AuthButton: React.FC<AuthButtonProps> = ({
       {isLoading ? (
         <ActivityIndicator size="small" color={COLORS.primaryBackground} />
       ) : (
-        // ✨ 2. LÓGICA DE RENDERIZADO: Si nos pasan 'children', los renderizamos.
-        // Si no, renderizamos el 'title' como antes para no romper otros componentes.
+        // RENDERING LOGIC: If we are passed 'children', we render them.
+        // If not, we render the 'title' as before so as not to break other components.
         children || (
           <View style={styles.contentWrapper}>
             {icon && <View style={styles.iconWrapper}>{icon}</View>}
@@ -72,7 +71,6 @@ const AuthButton: React.FC<AuthButtonProps> = ({
   );
 };
 
-// ✨ 3. Aplicamos scaling y añadimos estilos para el icono
 const styles = StyleSheet.create({
   button: {
     backgroundColor: COLORS.primaryText,
@@ -90,13 +88,13 @@ const styles = StyleSheet.create({
     backgroundColor: COLORS.secondaryText,
     opacity: 0.7,
   },
-  // ✨ Nuevo contenedor para icono + texto
+
   contentWrapper: {
     flexDirection: 'row',
     alignItems: 'center',
     justifyContent: 'center',
   },
-  // ✨ Nuevo wrapper para el icono
+
   iconWrapper: {
     marginRight: scale(8),
   },
@@ -105,7 +103,7 @@ const styles = StyleSheet.create({
     fontSize: moderateScale(16),
     fontFamily: 'FacultyGlyphic-Regular',
     textAlign: 'center',
-    fontWeight: '600', // Un poco más de peso para los botones
+    fontWeight: '600',
   },
   textDisabled: {},
 });

@@ -7,28 +7,27 @@ import {
   TouchableOpacity,
 } from 'react-native';
 import Carousel from 'react-native-reanimated-carousel';
-// ✨ 1. Ya no necesitamos useAnimatedStyle ni interpolate, así que los quitamos.
+
 import { Image as ExpoImage } from 'expo-image';
 import { useTranslation } from 'react-i18next';
 import * as Haptics from 'expo-haptics';
 
-// --- Tipos y Datos Simulados ---
+// --- Mock Types and Data ---
 import { Look } from '../../types/look';
 import mockLooks from '../../data/mockLooks.json';
 
-// --- Componentes ---
+// --- Components ---
 import SectionHeader from '../common/SectionHeader';
 
-// --- Constantes y Utils ---
+// --- Constants and Utils ---
 import { COLORS } from '../../constants/colors';
 import { moderateScale, scale, verticalScale } from '../../utils/scaling';
 
 const { width: screenWidth } = Dimensions.get('window');
 const CAROUSEL_HEIGHT = verticalScale(450);
-// ✨ 2. Ajustamos el ancho del item principal. Queremos que sea el protagonista.
-const ITEM_WIDTH = screenWidth * 0.8;
 
-// ✨ 3. La función de animación personalizada 'animationStyle' se elimina por completo.
+// We adjust the width of the main item. We want it to be the protagonist.
+const ITEM_WIDTH = screenWidth * 0.8;
 
 const LookbookSection: React.FC = () => {
   const { t } = useTranslation(['home', 'common']);
@@ -52,17 +51,17 @@ const LookbookSection: React.FC = () => {
         onActionPress={() => console.log('Ver todos los looks')}
       />
       <Carousel
-        // ✨ 4. El 'width' ahora es simplemente el del item principal.
         width={ITEM_WIDTH}
         height={CAROUSEL_HEIGHT}
+        // eslint-disable-next-line react-native/no-inline-styles
         style={{
           width: screenWidth,
           height: CAROUSEL_HEIGHT,
           alignItems: 'center',
         }}
         data={mockLooks as Look[]}
-        loop={false} // ✨ 5. El modo stack a menudo se siente mejor sin loop. ¡Pruébalo!
-        autoPlay={false} // También desactivamos el autoplay para fomentar la interacción.
+        loop={false}
+        autoPlay={false}
         mode="horizontal-stack"
         modeConfig={{
           snapDirection: 'left',
@@ -70,7 +69,6 @@ const LookbookSection: React.FC = () => {
         }}
         onSnapToItem={handleSnapToItem}
         renderItem={({ item: look }) => (
-          // El contenedor del slide ahora no necesita anchos especiales
           <View style={styles.slide}>
             <ExpoImage
               source={{ uri: look.imageUri }}
@@ -122,10 +120,12 @@ const styles = StyleSheet.create({
   image: {
     ...StyleSheet.absoluteFillObject,
   },
+  // eslint-disable-next-line react-native/no-color-literals
   overlay: {
     padding: moderateScale(20),
     backgroundColor: 'rgba(0,0,0,0.50)',
   },
+  // eslint-disable-next-line react-native/no-color-literals
   title: {
     fontFamily: 'FacultyGlyphic-Regular',
     fontSize: moderateScale(28),
@@ -137,6 +137,7 @@ const styles = StyleSheet.create({
     textShadowOffset: { width: 2, height: 4 },
     textShadowRadius: 6,
   },
+  // eslint-disable-next-line react-native/no-color-literals
   button: {
     backgroundColor: 'rgba(255, 255, 255, 0.9)',
     paddingVertical: verticalScale(10),

@@ -7,13 +7,12 @@ import {
   StyleProp,
   ViewStyle,
 } from 'react-native';
-// ✨ Ya no necesitamos importar Ionicons aquí
+
 import { COLORS } from '../../constants/colors';
 import { moderateScale } from '../../utils/scaling';
 
-// ✨ 1. Actualizamos las props para aceptar un ReactElement
 interface DeliveryMethodButtonProps {
-  icon: React.ReactElement; // Recibimos el componente de icono completo
+  icon: React.ReactElement; // We receive the complete icon component
   text: string;
   isSelected: boolean;
   onPress: () => void;
@@ -41,7 +40,7 @@ const DeliveryMethodButton: React.FC<DeliveryMethodButtonProps> = ({
       accessibilityLabel={text}
     >
       <View style={styles.content}>
-        {/* ✨ 2. Renderizamos el icono directamente en su contenedor */}
+        {/*  We render the icon directly into its container */}
         <View style={styles.iconWrapper}>{icon}</View>
         <Text style={[styles.text, isSelected && styles.selectedText]}>
           {text}
@@ -51,7 +50,6 @@ const DeliveryMethodButton: React.FC<DeliveryMethodButtonProps> = ({
   );
 };
 
-// --- ESTILOS ORIGINALES (con un pequeño ajuste de nombre) ---
 const styles = StyleSheet.create({
   buttonContainer: {
     borderWidth: 1.5,
@@ -62,6 +60,7 @@ const styles = StyleSheet.create({
     marginBottom: moderateScale(12),
     backgroundColor: COLORS.white,
   },
+  // eslint-disable-next-line react-native/no-color-literals
   selectedButton: {
     borderColor: COLORS.orderProcessing,
     backgroundColor: '#e9e7e2',
@@ -70,7 +69,7 @@ const styles = StyleSheet.create({
     flexDirection: 'row',
     alignItems: 'center',
   },
-  // ✨ Renombramos 'icon' a 'iconWrapper' para claridad
+
   iconWrapper: {
     marginRight: moderateScale(12),
   },

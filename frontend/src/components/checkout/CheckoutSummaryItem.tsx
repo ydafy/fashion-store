@@ -2,8 +2,7 @@ import React from 'react';
 import { View, Text, StyleSheet } from 'react-native';
 import { useTranslation } from 'react-i18next';
 
-// ✨ 1. Importaciones clave
-import { Image as ExpoImage } from 'expo-image'; // Reemplazar Image por expo-image
+import { Image as ExpoImage } from 'expo-image';
 import { CartItem } from '../../types/cart';
 import { COLORS } from '../../constants/colors';
 import { formatCurrency } from '../../utils/formatters';
@@ -15,17 +14,15 @@ const imageBlurhash = 'L6PZfSi_.AyE_3t7t7Rj~qofbHof';
 
 interface CheckoutSummaryItemProps {
   /**
-   * El objeto del item del carrito que se va a renderizar.
+   * The cart item object to render.
    */
   item: CartItem;
 }
 
 const CheckoutSummaryItem: React.FC<CheckoutSummaryItemProps> = ({ item }) => {
-  // ✨ 2. Usar i18n
   const { t } = useTranslation();
   const subtotal = item.price * item.quantity;
 
-  // ✨ 5. Construir un accessibilityLabel descriptivo
   const accessibilityLabel = t('checkout:summaryItem.accessibilityLabel', {
     name: item.name,
     quantity: item.quantity,
@@ -40,12 +37,11 @@ const CheckoutSummaryItem: React.FC<CheckoutSummaryItemProps> = ({ item }) => {
       accessibilityLabel={accessibilityLabel}
       accessible
     >
-      {/* ✨ 1. Usar ExpoImage */}
       <ExpoImage
         source={{ uri: item.image }}
         style={styles.image}
-        placeholder={imageBlurhash || LOW_RES_PLACEHOLDER} // Usar blurhash si existe, o un placeholder genérico
-        contentFit="cover" // Equivalente a resizeMode='cover' o 'stretch'
+        placeholder={imageBlurhash || LOW_RES_PLACEHOLDER} // Use blurhash if it exists, or a generic placeholder
+        contentFit="cover"
         transition={300}
       />
       <View style={styles.detailsContainer}>
@@ -53,7 +49,7 @@ const CheckoutSummaryItem: React.FC<CheckoutSummaryItemProps> = ({ item }) => {
           {item.name}
         </Text>
 
-        {/* ✨ 2. Textos internacionalizados */}
+        {/*  Internationalized texts */}
         <Text style={styles.variantText}>
           {t('checkout:summaryItem.variant', {
             color: item.colorName,
@@ -65,7 +61,7 @@ const CheckoutSummaryItem: React.FC<CheckoutSummaryItemProps> = ({ item }) => {
         </Text>
       </View>
 
-      {/* ✨ 3. Usar formatCurrency */}
+      {/*  Use formatCurrency */}
       <Text style={styles.subtotalText}>{formatCurrency(subtotal)}</Text>
     </View>
   );
@@ -75,18 +71,18 @@ const styles = StyleSheet.create({
   container: {
     flexDirection: 'row',
     alignItems: 'center',
-    paddingVertical: moderateScale(45), // Ajustar escala
+    paddingVertical: moderateScale(45),
     paddingHorizontal: moderateScale(20),
     borderBottomWidth: 1,
     borderBottomColor: COLORS.separator,
     backgroundColor: COLORS.white,
   },
   image: {
-    width: moderateScale(100), // Ajustar con scaling
+    width: moderateScale(100),
     height: moderateScale(150),
     borderRadius: moderateScale(6),
     marginRight: moderateScale(15),
-    backgroundColor: COLORS.lightGray, // Un color de fondo para el placeholder
+    backgroundColor: COLORS.lightGray,
   },
   detailsContainer: {
     flex: 1,

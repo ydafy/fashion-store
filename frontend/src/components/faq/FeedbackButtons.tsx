@@ -1,8 +1,8 @@
-import React from 'react'; // Quita 'useState' si ya no lo usas para 'voted'
+import React from 'react';
 import { View, Text, TouchableOpacity, StyleSheet } from 'react-native';
 import { useTranslation } from 'react-i18next';
 import { ThumbsUpIcon, ThumbsDownIcon } from 'phosphor-react-native';
-// ✨ 1. Asegúrate de tener todos los imports necesarios
+
 import Animated, {
   useSharedValue,
   useAnimatedStyle,
@@ -31,7 +31,6 @@ const FeedbackButtons: React.FC<FeedbackButtonsProps> = ({
 }) => {
   const { t } = useTranslation('faq');
 
-  // ✨ 2. La configuración de la animación se mantiene
   const thumbUpScale = useSharedValue(1);
   const thumbDownScale = useSharedValue(1);
   const thumbUpOpacity = useSharedValue(1);
@@ -46,22 +45,21 @@ const FeedbackButtons: React.FC<FeedbackButtonsProps> = ({
     transform: [{ scale: thumbDownScale.value }],
   }));
 
-  // ✨ 3. LA FUNCIÓN 'handleVote' COMPLETA Y FINAL
   const handleVote = (vote: 'up' | 'down') => {
-    // a) La guarda de seguridad: usa la prop 'hasVoted' de nuestra memoria persistente.
+    // a) The security guard: uses the 'hasVoted' prop from our persistent memory.
     if (hasVoted) return;
 
-    // b) Feedback inmediato: háptico y llamada al backend.
+    // b) Immediate feedback: haptic and call to the backend.
     Haptics.impactAsync(Haptics.ImpactFeedbackStyle.Medium);
     submitFeedback({ questionId, vote });
 
-    // c) Helper para llamar a nuestra función de memoria desde el hilo de UI.
+    // c) Helper to call our memory function from the UI thread.
     const registerVoteOnJS = () => {
       'worklet';
       runOnJS(onVote)(questionId);
     };
 
-    // d) La lógica de animación.
+    // d) The animation logic.
     if (vote === 'up') {
       thumbUpScale.value = withSpring(
         1.4,
@@ -89,7 +87,7 @@ const FeedbackButtons: React.FC<FeedbackButtonsProps> = ({
     }
   };
 
-  // ✨ 4. El JSX se basa en 'hasVoted'
+  //  JSX is based on 'hasVoted'
   if (hasVoted) {
     return (
       <View style={styles.container}>

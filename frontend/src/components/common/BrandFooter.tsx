@@ -7,11 +7,11 @@ import {
   Linking,
 } from 'react-native';
 import { useTranslation } from 'react-i18next';
-import { InstagramLogo, TiktokLogo } from 'phosphor-react-native';
+import { InstagramLogoIcon, TiktokLogoIcon } from 'phosphor-react-native';
 
 import { COLORS } from '../../constants/colors';
 import { verticalScale, moderateScale, scale } from '../../utils/scaling';
-import BrandIcon from './BrandIcon'; // Reutilizamos nuestro BrandIcon
+//import BrandIcon from './BrandIcon';
 
 const INSTAGRAM_URL = 'https://www.instagram.com/tu_usuario';
 const TIKTOK_URL = 'https://www.tiktok.com/@tu_usuario';
@@ -21,18 +21,18 @@ const BrandFooter: React.FC = () => {
 
   return (
     <View style={styles.container}>
-      <BrandIcon size={moderateScale(60)} />
+      {/* <BrandIcon size={moderateScale(60)} /> Here goes the brand icon */}
       <Text style={styles.slogan}>{t('footer.slogan')}</Text>
       <View style={styles.socialsContainer}>
         <TouchableOpacity onPress={() => Linking.openURL(INSTAGRAM_URL)}>
-          <InstagramLogo
+          <InstagramLogoIcon
             size={moderateScale(32)}
             color={COLORS.secondaryText}
             weight="light"
           />
         </TouchableOpacity>
         <TouchableOpacity onPress={() => Linking.openURL(TIKTOK_URL)}>
-          <TiktokLogo
+          <TiktokLogoIcon
             size={moderateScale(32)}
             color={COLORS.secondaryText}
             weight="light"

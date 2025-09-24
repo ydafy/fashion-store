@@ -22,10 +22,9 @@ const CheckoutPaymentMethodListItem: React.FC<
 > = ({ item, isSelected, isMutating, onSelect, onDelete }) => {
   const { t } = useTranslation();
 
-  // ✨ 1. USAMOS UN NOMBRE DE ESTILO MÁS CLARO Y LOS COLORES CORRECTOS
   const containerStyles = [
     styles.container,
-    isSelected && styles.selectedContainer, // Renombrado para claridad
+    isSelected && styles.selectedContainer,
     isMutating && styles.mutatingContainer,
   ];
 
@@ -62,7 +61,7 @@ const CheckoutPaymentMethodListItem: React.FC<
         ) : (
           <TouchableOpacity
             onPress={(e) => {
-              // ✨ 2. AÑADIMOS stopPropagation PARA EVITAR CONFLICTOS
+              //  WE ADDED stopPropagation TO AVOID CONFLICTS
               e.stopPropagation();
               onDelete(item);
             }}
@@ -87,7 +86,7 @@ const styles = StyleSheet.create({
     borderColor: COLORS.separator,
     backgroundColor: COLORS.white,
   },
-  // ✨ 3. ESTILOS DE SELECCIÓN CLAROS Y CONSISTENTES
+
   selectedContainer: {
     borderColor: COLORS.orderProcessing,
     backgroundColor: COLORS.warningBackground,

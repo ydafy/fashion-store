@@ -3,7 +3,6 @@ import { TouchableOpacity, StyleSheet } from 'react-native';
 import { useTranslation } from 'react-i18next';
 import { Image as ExpoImage } from 'expo-image';
 
-// ✨ Importamos el tipo ProductImage, ya que Product no se usa completo aquí
 import { Product, ProductImage } from '../../types/product';
 import { COLORS } from '../../constants/colors';
 import {
@@ -24,17 +23,17 @@ const FavoritePreviewItem: React.FC<FavoritePreviewItemProps> = ({
   variantId,
   onPress,
 }) => {
-  // ✨ Obtenemos i18n para usar el idioma actual en formatCurrency
+  //  We get i18n to use the current language in formatCurrency
   const { t, i18n } = useTranslation();
 
-  // ✨ Lógica de búsqueda de imagen mejorada y centralizada
+  //  Improved and centralized image search logic
   const imageObjectToDisplay: ProductImage | undefined = useMemo(() => {
     const variant = product.variants.find((v) => v.id === variantId);
-    // Si no encontramos la variante (caso raro), usamos la primera imagen de la primera variante como fallback
+    // If we don't find the variant (rare case), we use the first image of the first variant as a fallback
     return variant?.images?.[0] || product.variants?.[0]?.images?.[0];
   }, [product.variants, variantId]);
 
-  // ✨ El label de accesibilidad ahora usa el idioma correcto para el formato de moneda
+  //  The accessibility label now uses the correct language for currency formatting
   const accessibilityLabel = t('favorites:previewItem.accessibilityLabel', {
     name: product.name,
     price: formatCurrency(product.price, i18n.language, 'USD'),

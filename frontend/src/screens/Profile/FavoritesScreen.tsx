@@ -6,7 +6,7 @@ import {
   StyleSheet,
   Alert,
   TouchableOpacity,
-  Text
+  Text,
 } from 'react-native';
 import { useTranslation } from 'react-i18next';
 import { useNavigation } from '@react-navigation/native';
@@ -29,7 +29,8 @@ const ITEM_SPACING = scale(15);
 const NUM_COLUMNS = 2;
 
 const FavoritesScreen = () => {
-  const { t } = useTranslation();
+  const { t, i18n } = useTranslation(['favorites', 'common']); // Asegúrate de tener i18n
+  const lang = i18n.language as 'es' | 'en';
   const navigation =
     useNavigation<NativeStackNavigationProp<RootStackParamList>>();
   const { openQuickAddModal } = useQuickAddModal();
@@ -39,7 +40,7 @@ const FavoritesScreen = () => {
     isLoading,
     error,
     removeFavorite,
-    fetchFavorites
+    fetchFavorites,
   } = useFavorites();
 
   useLayoutEffect(() => {
@@ -50,7 +51,7 @@ const FavoritesScreen = () => {
           showBackButton={true}
         />
       ),
-      headerShown: true
+      headerShown: true,
     });
   }, [navigation, t, favoriteEntries.length]);
 
@@ -58,19 +59,19 @@ const FavoritesScreen = () => {
   const handleRemoveFavorite = (
     productId: string,
     variantId: string,
-    productName: string
+    productNameString: string,
   ) => {
     Alert.alert(
       t('favorites:removeAlert.title'),
-      t('favorites:removeAlert.message', { name: productName }),
+      t('favorites:removeAlert.message', { name: productNameString }),
       [
         { text: t('common:cancel'), style: 'cancel' },
         {
           text: t('favorites:removeAlert.removeButton'),
           onPress: () => removeFavorite(productId, variantId),
-          style: 'destructive'
-        }
-      ]
+          style: 'destructive',
+        },
+      ],
     );
   };
 
@@ -80,22 +81,23 @@ const FavoritesScreen = () => {
     navigation.navigate('MainTabs', {
       screen: 'HomeTab',
       params: {
-        screen: 'HomeScreen'
-      }
+        screen: 'HomeScreen',
+      },
     });
   };
 
   const renderFavoriteItem = ({
-    item: favoriteEntry
+    item: favoriteEntry,
   }: {
     item: FavoriteEntry;
   }) => {
     const product = favoriteProducts.find(
-      (p) => p.id === favoriteEntry.productId
+      (p) => p.id === favoriteEntry.productId,
     );
 
     if (!product) return null;
 
+    const productNameString = product.name[lang] || product.name.es;
     return (
       <View style={styles.productCardWrapper}>
         {/* ✨ 3. Envolvemos ProductCard en un TouchableOpacity para el QuickAdd */}
@@ -113,7 +115,7 @@ const FavoritesScreen = () => {
             handleRemoveFavorite(
               product.id,
               favoriteEntry.variantId,
-              product.name
+              productNameString,
             )
           }
         >
@@ -185,21 +187,21 @@ const FavoritesScreen = () => {
 const styles = StyleSheet.create({
   container: {
     flex: 1,
-    backgroundColor: COLORS.primaryBackground
+    backgroundColor: COLORS.primaryBackground,
   },
   centered: {
     justifyContent: 'center',
     alignItems: 'center',
-    padding: scale(20)
+    padding: scale(20),
   },
   listContentContainer: {
     paddingHorizontal: ITEM_SPACING / 2,
     paddingTop: verticalScale(10),
-    paddingBottom: verticalScale(20)
+    paddingBottom: verticalScale(20),
   },
   productCardWrapper: {
     flex: 1 / NUM_COLUMNS,
-    margin: ITEM_SPACING / 2
+    margin: ITEM_SPACING / 2,
   },
   // ✨ Nuevo estilo para el botón de eliminar sobre la tarjeta
   removeButton: {
@@ -209,21 +211,21 @@ const styles = StyleSheet.create({
 
     padding: moderateScale(6),
     borderRadius: moderateScale(20),
-    zIndex: 10
+    zIndex: 10,
   },
   exploreButton: {
     backgroundColor: COLORS.primaryText,
     paddingVertical: verticalScale(12),
     paddingHorizontal: scale(30),
     borderRadius: 8,
-    marginTop: verticalScale(20)
+    marginTop: verticalScale(20),
   },
   exploreButtonText: {
     color: COLORS.white,
     fontSize: moderateScale(16),
     fontWeight: 'bold',
-    fontFamily: 'FacultyGlyphic-Regular'
-  }
+    fontFamily: 'FacultyGlyphic-Regular',
+  },
 });
 
 export default FavoritesScreen;

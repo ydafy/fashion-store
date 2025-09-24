@@ -5,7 +5,7 @@ import {
   View,
   ViewStyle,
   StyleProp,
-  TouchableOpacity, // ✨ AÑADIDO
+  TouchableOpacity,
 } from 'react-native';
 
 import { COLORS } from '../../constants/colors';
@@ -13,20 +13,20 @@ import { moderateScale } from '../../utils/scaling';
 
 interface SectionHeaderProps {
   /**
-   * El texto del título a mostrar.
+   * The title text to display.
    */
   title: string;
   /**
-   * Estilos opcionales para el contenedor principal.
+   * Optional styles for the parent container.
    */
   style?: StyleProp<ViewStyle>;
   /**
-   * ✨ AÑADIDO: Texto opcional para el botón de acción a la derecha.
+   *  Optional text for the action button on the right.
    */
   actionText?: string;
   /**
-   * ✨ AÑADIDO: Función que se ejecuta al presionar el botón de acción.
-   * Solo se muestra el botón si esta prop y 'actionText' existen.
+   *  Function that runs when the action button is pressed.
+   * The button is only displayed if this prop and 'actionText' exist.
    */
   onActionPress?: () => void;
 }
@@ -41,7 +41,7 @@ const SectionHeader: React.FC<SectionHeaderProps> = ({
     <View style={[styles.container, style]} accessibilityRole="header">
       <Text style={styles.titleText}>{title}</Text>
 
-      {/* ✨ LÓGICA AÑADIDA: Renderizamos el botón solo si tenemos el texto y la función */}
+      {/* ✨ ADDED LOGIC: We render the button only if we have the text and the function */}
       {actionText && onActionPress && (
         <TouchableOpacity onPress={onActionPress}>
           <Text style={styles.actionText}>{actionText}</Text>

@@ -5,7 +5,6 @@ import { useNavigation } from '@react-navigation/native';
 import { useTranslation } from 'react-i18next';
 import Animated, { useAnimatedStyle } from 'react-native-reanimated';
 
-// ✨ 1. Importamos los nuevos iconos y eliminamos Ionicons
 import { CaretDownIcon, ArrowLeftIcon } from 'phosphor-react-native';
 
 import { useAddress, useAddressModal } from '../../contexts';
@@ -13,22 +12,20 @@ import { COLORS } from '../../constants/colors';
 import { moderateScale, scale, verticalScale } from '../../utils/scaling';
 
 export interface CustomHeaderProps {
-  // 👈 AÑADE export
   showAddress?: boolean;
   showFavorites?: boolean;
   onAddressPress?: () => void;
   onFavoritesPress?: () => void;
   title?: string;
   showBackButton?: boolean;
-  onBackPress?: () => void; // Permitir un back press personalizado
+  onBackPress?: () => void; // Allow a custom back press
   showShareButton?: boolean;
   onSharePress?: () => void;
   addressText?: string;
 }
 
-// --- ✨ 2. Definición de Tipos Actualizada ✨ ---
 export interface HeaderAction {
-  icon: React.ReactElement; // Ahora espera un elemento React completo
+  icon: React.ReactElement; // Now expect a complete React element
   onPress: () => void;
   accessibilityLabelKey: string;
   hasIndicator?: boolean;
@@ -42,7 +39,7 @@ interface GlobalHeaderProps {
   rightActions?: HeaderAction[];
 }
 
-// --- Sub-componente AddressSelector (con icono actualizado) ---
+// --- AddressSelector sub-component (with updated icon) ---
 const AddressSelector = () => {
   const { t } = useTranslation();
   const { selectedAddress } = useAddress();
@@ -62,7 +59,7 @@ const AddressSelector = () => {
       <Text style={styles.addressText} numberOfLines={1}>
         {displayAddressText}
       </Text>
-      {/* ✨ Icono actualizado a Phosphor */}
+
       <CaretDownIcon
         size={moderateScale(20)}
         color={COLORS.primaryText}
@@ -73,7 +70,7 @@ const AddressSelector = () => {
   );
 };
 
-// --- Componente Principal GlobalHeader ---
+// --- GlobalHeader Main Component ---
 const GlobalHeader: React.FC<GlobalHeaderProps> = ({
   title,
   titleOpacity,
@@ -112,9 +109,8 @@ const GlobalHeader: React.FC<GlobalHeaderProps> = ({
               onPress={handleGoBack}
               style={styles.iconButton}
               accessibilityRole="button"
-              accessibilityLabel={t('product:detail.header.backButtonLabel')} // Asumiendo que esta clave existe
+              accessibilityLabel={t('product:detail.header.backButtonLabel')}
             >
-              {/* ✨ Icono de "atrás" actualizado a Phosphor */}
               <ArrowLeftIcon
                 size={moderateScale(26)}
                 color={COLORS.primaryText}
@@ -145,7 +141,7 @@ const GlobalHeader: React.FC<GlobalHeaderProps> = ({
               accessibilityRole="button"
               accessibilityLabel={t(action.accessibilityLabelKey)}
             >
-              {/* ✨ 3. Renderizamos directamente el icono que nos pasan */}
+              {/* We directly render the icon that is passed to us */}
               {action.icon}
               {action.hasIndicator && <View style={styles.indicatorDot} />}
             </TouchableOpacity>
@@ -156,7 +152,6 @@ const GlobalHeader: React.FC<GlobalHeaderProps> = ({
   );
 };
 
-// --- ✨ 3. Estilos Unificados ✨ ---
 const styles = StyleSheet.create({
   headerContainer: {
     backgroundColor: COLORS.primaryBackground,
@@ -213,7 +208,7 @@ const styles = StyleSheet.create({
 
     textAlign: 'center',
   },
-  // Estilos para AddressSelector
+
   addressTouchable: {
     flexDirection: 'row',
     alignItems: 'center',

@@ -1,14 +1,13 @@
 import React from 'react';
 import { View, Text, StyleSheet } from 'react-native';
 import { useTranslation } from 'react-i18next';
-import { MapPinIcon } from 'phosphor-react-native';
 
-// --- Tipos y Componentes ---
+// --- Types and Components ---
 import { Address } from '../../types/address';
 import EmptyState from '../common/EmptyState';
 import { IconFactory } from '../icons/IconFactory';
 
-// --- Constantes y Utils ---
+// --- Constants and Utils ---
 import { COLORS } from '../../constants/colors';
 import { moderateScale, verticalScale } from '../../utils/scaling';
 
@@ -21,7 +20,7 @@ const ShippingDetailsPreview: React.FC<ShippingDetailsPreviewProps> = ({
 }) => {
   const { t } = useTranslation('address');
 
-  // ✨ Renderizamos el estado vacío si no hay una dirección seleccionada.
+  //  We render the empty state if no direction is selected.
   if (!address) {
     return (
       <EmptyState
@@ -40,7 +39,7 @@ const ShippingDetailsPreview: React.FC<ShippingDetailsPreviewProps> = ({
     );
   }
 
-  // ✨ Renderizamos los detalles completos de la dirección si existe.
+  //  We render the full address details if one exists.
   return (
     <View style={styles.container}>
       <Text style={styles.label}>{address.label}</Text>
@@ -50,7 +49,7 @@ const ShippingDetailsPreview: React.FC<ShippingDetailsPreviewProps> = ({
       </Text>
       <Text style={styles.addressLine}>{address.country}</Text>
 
-      {/* Mostramos las instrucciones de entrega solo si existen */}
+      {/* We only show delivery instructions if they exist */}
       {address.instructions && (
         <View style={styles.instructionsContainer}>
           <Text style={styles.instructionsLabel}>
@@ -100,7 +99,7 @@ const styles = StyleSheet.create({
     lineHeight: moderateScale(20),
   },
   emptyStateContainer: {
-    minHeight: verticalScale(200), // Damos una altura mínima
+    minHeight: verticalScale(200),
   },
 });
 

@@ -8,26 +8,26 @@ import {
   ViewStyle,
 } from 'react-native';
 import { useTranslation } from 'react-i18next';
-// ✨ REFACTOR: Importamos nuestro IconFactory
+
 import { IconFactory } from '../icons/IconFactory';
 import { COLORS } from '../../constants/colors';
 import { moderateScale } from '../../utils/scaling';
 
 interface ErrorDisplayProps {
   /**
-   * ✨ REFACTOR: El mensaje principal del error.
+   * The main error message.
    */
   message: string;
   /**
-   * ✨ REFACTOR: Texto secundario opcional.
+   * Optional secondary text.
    */
   subtext?: string;
   /**
-   * Función opcional para el botón de reintentar. Si se proporciona, se muestra el botón.
+   * Optional function for the retry button. If provided, the button is displayed.
    */
   onRetry?: () => void;
   /**
-   * Estilos opcionales para el contenedor.
+   * Optional styles for the container.
    */
   style?: StyleProp<ViewStyle>;
 }
@@ -42,7 +42,6 @@ const ErrorDisplay: React.FC<ErrorDisplayProps> = ({
 
   return (
     <View style={[styles.errorContainer, style]}>
-      {/* ✨ REFACTOR: Usamos IconFactory para consistencia */}
       <IconFactory
         name="CloudSlashIcon"
         size={moderateScale(60)}

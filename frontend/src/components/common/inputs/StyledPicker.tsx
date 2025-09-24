@@ -9,19 +9,19 @@ import { moderateScale } from '../../../utils/scaling';
 
 interface StyledPickerProps extends Omit<PickerSelectProps, 'onValueChange'> {
   /**
-   * Etiqueta que se muestra encima del picker.
+   * Label to display above the picker.
    */
   label: string;
   /**
-   * Mensaje de error a mostrar debajo del picker.
+   * Error message to display below the picker.
    */
   errorMessage?: string;
   /**
-   * Función que se llama cuando el valor del picker cambia.
+   * Function called when the picker's value changes.
    */
   onValueChange: (value: any) => void;
   /**
-   * El texto que se muestra como placeholder cuando no hay nada seleccionado.
+   * The text to display as the placeholder when nothing is selected.
    */
   placeholder: string;
 }
@@ -38,7 +38,7 @@ const StyledPicker: React.FC<StyledPickerProps> = ({
 }) => {
   const { t } = useTranslation();
 
-  // Estilos dinámicos para el borde, igual que en StyledTextInput
+  // Dynamic styles for the border, just like in StyledTextInput
   const getDynamicBorderStyle = () => {
     if (errorMessage) return { borderColor: COLORS.error, borderWidth: 1.5 };
     return { borderColor: COLORS.borderDefault, borderWidth: 1 };
@@ -47,7 +47,7 @@ const StyledPicker: React.FC<StyledPickerProps> = ({
   const pickerPlaceholder = {
     label: placeholder,
     value: null,
-    color: COLORS.secondaryText
+    color: COLORS.secondaryText,
   };
 
   return (
@@ -63,16 +63,16 @@ const StyledPicker: React.FC<StyledPickerProps> = ({
         style={{
           inputIOS: {
             ...styles.inputBase,
-            ...getDynamicBorderStyle()
+            ...getDynamicBorderStyle(),
           },
           inputAndroid: {
             ...styles.inputBase,
-            ...getDynamicBorderStyle()
+            ...getDynamicBorderStyle(),
           },
           iconContainer: styles.iconContainer,
           placeholder: {
-            color: COLORS.secondaryText
-          }
+            color: COLORS.secondaryText,
+          },
         }}
         Icon={() => (
           <Ionicons
@@ -83,7 +83,7 @@ const StyledPicker: React.FC<StyledPickerProps> = ({
         )}
         {...restOfProps}
       />
-      {/* Contenedor de error con altura fija para evitar saltos de layout */}
+      {/* Fixed-height error container to avoid layout breaks */}
       <View style={styles.errorContainer}>
         {errorMessage && <Text style={styles.errorText}>{errorMessage}</Text>}
       </View>
@@ -93,13 +93,13 @@ const StyledPicker: React.FC<StyledPickerProps> = ({
 
 const styles = StyleSheet.create({
   inputWrapper: {
-    marginBottom: moderateScale(5) // Un poco menos de margen porque el errorContainer ya da espacio
+    marginBottom: moderateScale(5),
   },
   label: {
     fontSize: moderateScale(14),
     color: COLORS.primaryText,
     fontFamily: 'FacultyGlyphic-Regular',
-    marginBottom: moderateScale(8)
+    marginBottom: moderateScale(8),
   },
   inputBase: {
     backgroundColor: COLORS.white,
@@ -110,22 +110,22 @@ const styles = StyleSheet.create({
     fontSize: moderateScale(16),
     color: COLORS.primaryText,
     fontFamily: 'FacultyGlyphic-Regular',
-    paddingRight: moderateScale(35) // Espacio para el icono
+    paddingRight: moderateScale(35),
   },
   iconContainer: {
     top: Platform.OS === 'ios' ? moderateScale(14) : moderateScale(16),
-    right: moderateScale(15)
+    right: moderateScale(15),
   },
   errorContainer: {
     minHeight: moderateScale(18),
     marginTop: moderateScale(6),
-    paddingHorizontal: moderateScale(2)
+    paddingHorizontal: moderateScale(2),
   },
   errorText: {
     color: COLORS.error,
     fontSize: moderateScale(12),
-    fontFamily: 'FacultyGlyphic-Regular'
-  }
+    fontFamily: 'FacultyGlyphic-Regular',
+  },
 });
 
 export default StyledPicker;

@@ -5,7 +5,7 @@ import {
   Text,
   ImageBackground,
   StyleSheet,
-  TouchableOpacity
+  TouchableOpacity,
 } from 'react-native';
 import { ImageBackground as ExpoImageBackground } from 'expo-image';
 
@@ -19,13 +19,13 @@ const SECTION_IMAGE_PLACEHOLDER = require('../../../assets/images/placeholder.pn
 const SectionCard: React.FC<SectionCardProps> = ({
   imageUrl,
   title,
-  navigation
+  navigation,
 }) => {
   const { t } = useTranslation();
   return (
     <View style={styles.cardContainer}>
       <ExpoImageBackground
-        source={{ uri: imageUrl }} //  Usa la prop imageUrl como fuente de la imagen de fondo
+        source={{ uri: imageUrl }}
         style={styles.backgroundImage}
         contentFit="cover"
         placeholder={SECTION_IMAGE_PLACEHOLDER}
@@ -33,7 +33,7 @@ const SectionCard: React.FC<SectionCardProps> = ({
         onError={(e) =>
           console.warn(
             `[SectionCard] Error cargando imagen de fondo: ${imageUrl}`,
-            e.error
+            e.error,
           )
         }
       >
@@ -42,7 +42,7 @@ const SectionCard: React.FC<SectionCardProps> = ({
           <TouchableOpacity
             style={styles.buyButton}
             onPress={() => {
-              const params = { sectionTitle: title }; // Creamos el objeto de parámetros
+              const params = { sectionTitle: title }; // We create the parameters object
 
               navigation.navigate('Section', params);
             }}
@@ -59,44 +59,44 @@ const SectionCard: React.FC<SectionCardProps> = ({
 
 const styles = StyleSheet.create({
   cardContainer: {
-    width: '100%', // Ancho de la card (90% del ancho de la pantalla - ajustable)
-    height: '100%', // Altura de la card (ajusta según la proporción deseada para tus imágenes)
-    borderRadius: 15, // Bordes redondeados
-    overflow: 'hidden', //  Importante para que la imagen y el degradado respeten los bordes redondeados
-    backgroundColor: COLORS.lightGray // Color de fondo de fallback mientras carga la imagen (opcional)
+    width: '100%',
+    height: '100%',
+    borderRadius: 15,
+    overflow: 'hidden',
+    backgroundColor: COLORS.lightGray,
   },
   backgroundImage: {
     width: '100%',
     height: '100%',
-    justifyContent: 'center', // Centra el contenido verticalmente dentro de la imagen
-    alignItems: 'center' // Centra el contenido horizontalmente dentro de la imagen
+    justifyContent: 'center',
+    alignItems: 'center',
   },
   overlayContainer: {
-    flex: 1, //  Para que ocupe todo el espacio disponible dentro de ImageBackground
-    justifyContent: 'space-around', // Distribuye el espacio entre el título y el botón (título arriba, botón abajo)
-    alignItems: 'center', // Centra horizontalmente el título y el botón
-    padding: scale(20)
+    flex: 1,
+    justifyContent: 'space-around',
+    alignItems: 'center',
+    padding: scale(20),
   },
   titleText: {
-    fontSize: 28, // Tamaño del título (ajusta según necesites)
+    fontSize: 28,
     fontFamily: 'FacultyGlyphic-Regular',
-    color: COLORS.white, // Color del texto del título (blanco)
-    textAlign: 'center', // Alineación del texto del título al centro
-    fontWeight: '500'
+    color: COLORS.white,
+    textAlign: 'center',
+    fontWeight: '500',
   },
   buyButton: {
-    backgroundColor: COLORS.white, // Color de fondo del botón "Comprar" (blanco)
-    paddingVertical: scale(12), // Padding vertical del botón
-    paddingHorizontal: scale(30), // Padding horizontal del botón
-    borderRadius: 25 // Bordes redondeados del botón
+    backgroundColor: COLORS.white,
+    paddingVertical: scale(12),
+    paddingHorizontal: scale(30),
+    borderRadius: 25,
   },
   buyButtonText: {
-    fontSize: 16, // Tamaño del texto del botón "Comprar" (ajusta según necesites)
+    fontSize: 16,
     fontFamily: 'FacultyGlyphic-Regular',
-    color: COLORS.primaryText, // Color del texto del botón "Comprar" (negro)
-    textAlign: 'center', // Alineación del texto del botón al centro
-    fontWeight: '600'
-  }
+    color: COLORS.primaryText,
+    textAlign: 'center',
+    fontWeight: '600',
+  },
 });
 
 export default SectionCard;

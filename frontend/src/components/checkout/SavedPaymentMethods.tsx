@@ -1,5 +1,5 @@
 import React from 'react';
-import { View, Text, StyleSheet, Alert } from 'react-native';
+import { View, Text, StyleSheet } from 'react-native';
 import { useTranslation } from 'react-i18next';
 
 import { PaymentMethod } from '../../types/payment';
@@ -32,8 +32,8 @@ const SavedPaymentMethods: React.FC<SavedPaymentMethodsProps> = ({
     return <LoadingIndicator style={styles.centered} />;
   }
 
-  // Nota: el caso de 'empty' lo manejaremos en ScreenContent.
-  // Este componente asume que siempre se le pasará al menos un método.
+  // Note: We'll handle the 'empty' case in ScreenContent.
+  // This component assumes that at least one method will always be passed to it.
   return (
     <View>
       <Text style={styles.title}>

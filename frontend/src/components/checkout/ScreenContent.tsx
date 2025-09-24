@@ -10,33 +10,34 @@ import { useTranslation } from 'react-i18next';
 import SavedPaymentMethods from './SavedPaymentMethods';
 import { TruckIcon, StorefrontIcon, MapPinIcon } from 'phosphor-react-native';
 
-// ✨ RHF: Importaciones clave para la refactorización
 import { useFormContext, Controller } from 'react-hook-form';
 
-// Componentes y Tipos
+// Constants and Utils
+import { COLORS } from '../../constants/colors';
+import { formatCurrency } from '../../utils/formatters';
+import { moderateScale, scale, verticalScale } from '../../utils/scaling';
+
+// Components and Types
 import { Address } from '../../types/address';
 import { PickupLocation } from '../../types/pickup_location';
-import { COLORS } from '../../constants/colors';
+import StyledTextInput from '../common/inputs/StyledTextInput';
 import { PaymentMethod } from '../../types/payment';
 import {
   DEFAULT_SHIPPING_COST,
   DEFAULT_TAX_RATE,
-} from '../../constants/appConfig'; // ✨ Usar constantes globales
-import { formatCurrency } from '../../utils/formatters'; // ✨ Usar formatter
-
+} from '../../constants/appConfig';
 import DeliveryMethodButton from './DeliveryMethodButton';
-import StyledTextInput from '../common/inputs/StyledTextInput';
-import PaymentForm from './PaymentForm'; // Este también lo refactorizaremos
-
+import PaymentForm from './PaymentForm';
 import LoadingIndicator from '../common/LoadingIndicator';
 import EmptyState from '../common/EmptyState';
-import { moderateScale, scale, verticalScale } from '../../utils/scaling';
 import MaskedTextInput from '../common/inputs/MaskedTextInput';
+
+// Context for Address Modal
 import { useAddressModal } from '../../contexts/AddressModalContext';
 
-// ✨ RHF: Las props se reducen drásticamente.
-// Solo pasamos datos que NO pertenecen al formulario (como `selectedAddress` del context)
-// y los handlers para acciones que NO son del formulario.
+//  RHF: Props are drastically reduced.
+// We only pass data that does NOT belong to the form (such as `selectedAddress` from the context)
+// and handlers for actions that do not belong to the form.
 export interface ScreenContentProps {
   selectedMethod: 'delivery' | 'pickup';
   selectedAddress: Address | null;
@@ -46,8 +47,8 @@ export interface ScreenContentProps {
   errorPickup: string | null;
   cartTotal: number;
   isConfirmingOrder: boolean;
-  paymentMethods?: PaymentMethod[]; // Lista de tarjetas guardadas
-  isLoadingPaymentMethods: boolean; // Estado de carga de las tarjetas
+  paymentMethods?: PaymentMethod[]; // List of saved cards
+  isLoadingPaymentMethods: boolean; // Card loading status
   mutatingCardId: string | null;
   handleSelectCard: (method: PaymentMethod) => void;
   handleDeleteCard: (method: PaymentMethod) => void;
@@ -59,7 +60,7 @@ export interface ScreenContentProps {
 const ScreenContent: React.FC<ScreenContentProps> = ({
   selectedMethod,
   selectedAddress,
-  selectedPickupLocation,
+  //selectedPickupLocation,
   pickupLocations,
   loadingPickup,
   errorPickup,
@@ -76,7 +77,7 @@ const ScreenContent: React.FC<ScreenContentProps> = ({
 }) => {
   const { t } = useTranslation();
 
-  // ✨ RHF: Obtenemos todo lo necesario del contexto del formulario. ¡Adiós prop drilling!
+  //  We get everything we need from the form context.
   const {
     control,
     formState: { errors },
@@ -88,19 +89,21 @@ const ScreenContent: React.FC<ScreenContentProps> = ({
 
   const pickupEmailRef = useRef<TextInput>(null);
   const pickupPhoneRef = useRef<TextInput>(null);
-  //FUNCIÓN PARA ABRIR EL MODAL
+
+  //FUNCTION TO OPEN THE MODAL
   const { openAddressModal } = useAddressModal();
 
   const selectedCardId = watch('selectedCardId');
 
   const [paymentView, setPaymentView] = useState<'saved' | 'new'>('saved');
-  // ✨ ESTADO PARA CONTROLAR LA UI DE PAGO
+
+  //  STATE TO CONTROL THE PAYMENT UI
   const currentShippingCost =
     selectedMethod === 'delivery' ? DEFAULT_SHIPPING_COST : 0;
   const taxAmount = cartTotal * DEFAULT_TAX_RATE;
   const finalTotal = cartTotal + currentShippingCost + taxAmount;
 
-  // Efecto para establecer la vista inicial y los valores del formulario
+  // Effect to set the initial view and form values
   useEffect(() => {
     const hasSavedMethods = paymentMethods && paymentMethods.length > 0;
     const initialView = hasSavedMethods ? 'saved' : 'new';
@@ -133,7 +136,7 @@ const ScreenContent: React.FC<ScreenContentProps> = ({
 
     return (
       <>
-        {/* Si estamos en la vista 'saved', mostramos la lista */}
+        {/* If we are in the 'saved' view, we show the list */}
         {paymentView === 'saved' && (
           <SavedPaymentMethods
             paymentMethods={paymentMethods}
@@ -145,10 +148,10 @@ const ScreenContent: React.FC<ScreenContentProps> = ({
           />
         )}
 
-        {/* Si estamos en la vista 'new', mostramos el formulario */}
+        {/* If we are in the 'new' view, we show the form */}
         {paymentView === 'new' && <PaymentForm />}
 
-        {/* Siempre mostramos el botón para alternar */}
+        {/* We always show the toggle button */}
         <TouchableOpacity onPress={handleTogglePaymentView}>
           <Text style={styles.togglePaymentFormText}>
             {paymentView === 'saved'
@@ -162,7 +165,7 @@ const ScreenContent: React.FC<ScreenContentProps> = ({
 
   return (
     <View style={styles.contentWrapper}>
-      {/* --- Sección Método de Envío --- */}
+      {/* --- Shipping Method Section --- */}
       <View style={styles.deliveryMethodSection}>
         <DeliveryMethodButton
           icon={
@@ -196,7 +199,7 @@ const ScreenContent: React.FC<ScreenContentProps> = ({
         />
       </View>
 
-      {/* --- Sección Detalles de Envío/Recogida --- */}
+      {/* --- Shipping/Pickup Details Section --- */}
       <View style={styles.section}>
         <View style={styles.sectionHeader}>
           <Text style={styles.shippingDataTitle}>
@@ -204,7 +207,7 @@ const ScreenContent: React.FC<ScreenContentProps> = ({
               ? t('checkout:content.shippingDetailsTitle')
               : t('checkout:content.pickupDetailsTitle')}
           </Text>
-          {/* Mostramos el botón "Cambiar" solo si el método es entrega */}
+          {/* We only show the "Change" button if the method is delivery */}
           {selectedMethod === 'delivery' && (
             <TouchableOpacity
               onPress={openAddressModal}
@@ -251,9 +254,7 @@ const ScreenContent: React.FC<ScreenContentProps> = ({
               />
             )}
 
-            {/* ✨ RHF: Input oculto para el ID de la ubicación de recogida */}
-
-            {/* --- ✨ 2. RENDERIZAMOS LA LISTA DIRECTAMENTE, SIN CONTROLLER ✨ --- */}
+            {/* ---  WE RENDER THE LIST DIRECTLY, WITHOUT CONTROLLER  --- */}
 
             {!loadingPickup &&
               pickupLocations.map((location) => (
@@ -282,14 +283,14 @@ const ScreenContent: React.FC<ScreenContentProps> = ({
               </Text>
             )}
 
-            {/* --- Formulario de Contacto para Recogida (si hay ubicaciones) --- */}
+            {/* --- Pickup Contact Form (if there are locations) --- */}
             {pickupLocations.length > 0 && (
               <View style={styles.pickupContactContainer}>
                 <Text style={styles.contactTitle}>
                   {t('checkout:content.pickupContactTitle')}
                 </Text>
 
-                {/* ✨ RHF: Usamos Controller para cada input */}
+                {/*  We use Controller for each input */}
                 <Controller
                   control={control}
                   name="pickupName"
@@ -371,7 +372,7 @@ const ScreenContent: React.FC<ScreenContentProps> = ({
         )}
       </View>
 
-      {/* --- Sección de Pago --- */}
+      {/* --- Payment Section --- */}
       <View style={styles.section}>
         <Text style={styles.paymentTitle}>
           {t('checkout:content.paymentTitle')}
@@ -379,7 +380,7 @@ const ScreenContent: React.FC<ScreenContentProps> = ({
         {renderPaymentSection()}
       </View>
 
-      {/* --- Sección Resumen de Costos --- */}
+      {/* --- Cost Summary Section --- */}
       <View style={styles.section}>
         <Text style={styles.sectionTitle}>
           {t('checkout:content.costSummaryTitle')}
@@ -412,7 +413,7 @@ const ScreenContent: React.FC<ScreenContentProps> = ({
         </View>
       </View>
 
-      {/* --- Sección Total FINAL --- */}
+      {/* --- FINAL Total Section --- */}
       <View style={styles.finalTotalSection}>
         <Text style={styles.finalTotalLabel}>
           {t('checkout:content.total')}
@@ -513,7 +514,7 @@ const styles = StyleSheet.create({
   },
   selectedPickupLocationItem: {
     borderColor: COLORS.accent,
-    backgroundColor: '#f0f5ff',
+    backgroundColor: COLORS.warningBackground,
   },
   pickupLocationName: {
     fontSize: moderateScale(15),

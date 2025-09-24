@@ -17,7 +17,6 @@ export const getPromotionalHubs =
     const headers = { 'Accept-Language': lang };
     const url = `${API_BASE_URL}/api/promotional-hubs`;
 
-    console.log(`[PromotionalHubService] Fetching hubs from: ${url}`);
     const response = await fetch(url, { headers });
 
     if (!response.ok) {

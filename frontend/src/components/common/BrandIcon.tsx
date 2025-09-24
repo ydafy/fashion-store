@@ -3,15 +3,13 @@ import { moderateScale } from '../../utils/scaling';
 import { CreditCardIcon } from 'phosphor-react-native';
 import { COLORS } from '../../constants/colors';
 
-// --- Importa todos los logos que planeas usar ---
+// --- Import all the logos you plan to use ---
 import VisaLogo from '../../../assets/images/logos/visaLogo.svg';
 import MastercardLogo from '../../../assets/images/logos/masterCardLogo.svg';
 import AmexLogo from '../../../assets/images/logos/americanExpressLogo.svg';
-// import GoogleLogo from '../../../assets/icons/brands/google.svg'; // Ejemplo para el futuro
-// import FacebookLogo from '../../../assets/icons/brands/facebook.svg'; // Ejemplo para el futuro
+// import GoogleLogo from '../../../assets/icons/brands/google.svg'; // Example for the future
+// import FacebookLogo from '../../../assets/icons/brands/facebook.svg'; // Example for the future
 
-// ✨ 1. CREAMOS UN TIPO PARA LAS MARCAS SOPORTADAS ✨
-// Esto nos da autocompletado y seguridad de tipos.
 export type BrandName =
   | 'Visa'
   | 'Mastercard'
@@ -24,17 +22,17 @@ export type BrandName =
 interface BrandIconProps {
   brand: BrandName;
   width: number;
-  height?: number; // Hacemos la altura opcional para logos cuadrados
+  height?: number; // We make the height optional for square logos
 }
 
 /**
- * Un componente que renderiza el logo de una marca específica (tarjeta, social, etc.).
- * @param {BrandName} brand - El nombre de la marca a renderizar.
- * @param {number} width - El ancho del icono.
- * @param {number} [height] - La altura opcional. Si no se provee, se calcula un ratio.
+ * A component that renders a specific brand's logo (card, social media, etc.).
+ * @param {BrandName} brand - The brand name to render.
+ * @param {number} width - The width of the icon.
+ * @param {number} [height] - The optional height. If not provided, a ratio is calculated.
  */
 const BrandIcon: React.FC<BrandIconProps> = ({ brand, width, height }) => {
-  const iconHeight = height || width * 0.63; // Ratio por defecto para tarjetas
+  const iconHeight = height || width * 0.63; // Default ratio for cards
 
   switch (brand) {
     case 'Visa':
@@ -48,7 +46,7 @@ const BrandIcon: React.FC<BrandIconProps> = ({ brand, width, height }) => {
     // case 'Facebook':
     //   return <FacebookLogo width={width} height={width} />;
     default:
-      // Un fallback genérico y seguro
+      // A generic and safe fallback
       return (
         <CreditCardIcon
           size={moderateScale(width)}

@@ -1,28 +1,28 @@
 import React from 'react';
 import { View, Text, StyleSheet, StyleProp, ViewStyle } from 'react-native';
-// Ya no necesitamos Ionicons aquí, el componente padre nos pasará el icono
+
 import { COLORS } from '../../constants/colors';
 import { moderateScale } from '../../utils/scaling';
 
 interface EmptyStateProps {
   /**
-   * El texto principal que se mostrará.
+   * The main text to display.
    */
   message: string;
 
   /**
-   * Texto secundario opcional para dar más contexto o una llamada a la acción.
+   * Optional secondary text to provide more context or a call to action.
    */
   subtext?: string;
 
   /**
-   * ✨ Un elemento React para mostrar como icono.
-   * Esto hace al componente agnóstico a la librería de iconos.
+   *  A React element to display as an icon.
+   * This makes the component agnostic to the icon library.
    */
   icon?: React.ReactElement;
 
   /**
-   * Estilo personalizado para el contenedor principal.
+   * Custom style for the parent container.
    */
   style?: StyleProp<ViewStyle>;
 }
@@ -30,12 +30,12 @@ interface EmptyStateProps {
 const EmptyState: React.FC<EmptyStateProps> = ({
   message,
   subtext,
-  icon, // Usamos la nueva prop
-  style
+  icon,
+  style,
 }) => {
   return (
     <View style={[styles.container, style]}>
-      {/* ✨ Renderizamos el icono si se proporciona */}
+      {/*  We render the icon if provided */}
       {icon && <View style={styles.iconWrapper}>{icon}</View>}
       <Text style={styles.messageText}>{message}</Text>
       {subtext && <Text style={styles.subtext}>{subtext}</Text>}
@@ -49,12 +49,12 @@ const styles = StyleSheet.create({
     justifyContent: 'center',
     alignItems: 'center',
     padding: moderateScale(20),
-    minHeight: moderateScale(150)
+    minHeight: moderateScale(150),
   },
-  // ✨ Cambiamos 'icon' a 'iconWrapper' para mayor claridad
+
   iconWrapper: {
     marginBottom: moderateScale(15),
-    opacity: 0.8
+    opacity: 0.8,
   },
   messageText: {
     fontSize: moderateScale(18),
@@ -62,15 +62,15 @@ const styles = StyleSheet.create({
     color: COLORS.primaryText,
     textAlign: 'center',
     fontFamily: 'FacultyGlyphic-Regular',
-    marginBottom: moderateScale(8)
+    marginBottom: moderateScale(8),
   },
   subtext: {
     fontSize: moderateScale(14),
     color: COLORS.secondaryText,
     textAlign: 'center',
     fontFamily: 'FacultyGlyphic-Regular',
-    lineHeight: moderateScale(20)
-  }
+    lineHeight: moderateScale(20),
+  },
 });
 
 export default EmptyState;

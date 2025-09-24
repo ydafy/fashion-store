@@ -1,4 +1,4 @@
-import React, { forwardRef, ReactElement, useMemo, useState } from 'react';
+import React, { forwardRef, ReactElement, useMemo } from 'react';
 import {
   TextInput,
   StyleSheet,
@@ -6,8 +6,6 @@ import {
   TextInputProps,
   StyleProp,
   View,
-  NativeSyntheticEvent,
-  TextInputFocusEventData,
 } from 'react-native';
 import { COLORS } from '../../../constants/colors';
 import { moderateScale, scale, verticalScale } from '../../../utils/scaling';
@@ -47,7 +45,7 @@ const TextInputBase = forwardRef<TextInput, TextInputBaseProps>(
 
     return (
       <View style={[styles.fieldContainer, { borderColor }, containerStyle]}>
-        {/* ✨ LÓGICA CONDICIONAL: Usa la función 'render' si existe, si no, el TextInput por defecto */}
+        {/*  CONDITIONAL LOGIC: Use the 'render' function if it exists, otherwise the default TextInput */}
         {render ? render(textInputProps) : <TextInput {...textInputProps} />}
 
         {rightIcon && (

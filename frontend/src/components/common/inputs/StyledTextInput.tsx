@@ -23,23 +23,22 @@ const StyledTextInput = forwardRef<TextInput, StyledTextInputProps>(
       label,
       errorMessage,
       containerStyle,
-      onFocus: propOnFocus, // Recibimos el onFocus del exterior
-      onBlur: propOnBlur, // Recibimos el onBlur del exterior
+      onFocus: propOnFocus, // We receive the onFocus from outside
+      onBlur: propOnBlur, // We receive the onBlur from outside
       ...restOfProps
     },
     ref,
   ) => {
     const [isFocused, setIsFocused] = useLocalState(false);
 
-    // ✨ ESTA ES LA LÓGICA CORRECTA ✨
     const handleFocus = (e: NativeSyntheticEvent<TextInputFocusEventData>) => {
       setIsFocused(true);
-      propOnFocus?.(e); // Ejecutamos la función onFocus que nos pasaron
+      propOnFocus?.(e); // We execute the onFocus function that was passed to us
     };
 
     const handleBlur = (e: NativeSyntheticEvent<TextInputFocusEventData>) => {
       setIsFocused(false);
-      propOnBlur?.(e); // Ejecutamos la función onBlur que nos pasaron
+      propOnBlur?.(e); // We execute the onBlur function that was passed to us
     };
 
     return (
@@ -50,8 +49,7 @@ const StyledTextInput = forwardRef<TextInput, StyledTextInputProps>(
           ref={ref}
           isFocused={isFocused}
           hasError={!!errorMessage}
-          // ✨ AQUÍ ESTÁ LA CORRECCIÓN CLAVE ✨
-          // Conectamos nuestros handlers que SÍ llaman a las props externas.
+          // We connect our handlers that DO call the external props.
           onFocus={handleFocus}
           onBlur={handleBlur}
           {...restOfProps}
@@ -65,7 +63,6 @@ const StyledTextInput = forwardRef<TextInput, StyledTextInputProps>(
   },
 );
 
-// ... (los estilos se mantienen igual)
 const styles = StyleSheet.create({
   inputWrapper: {
     width: '100%',

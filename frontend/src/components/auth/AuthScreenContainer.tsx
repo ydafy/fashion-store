@@ -1,12 +1,13 @@
+/* eslint-disable react-native/no-color-literals */
 import React, { ReactNode } from 'react';
 import {
   View,
   StyleSheet,
   SafeAreaView,
   StatusBar,
-  Dimensions
+  Dimensions,
 } from 'react-native';
-import { COLORS } from '../../constants/colors'; // Ajusta la ruta
+import { COLORS } from '../../constants/colors';
 
 interface AuthScreenContainerProps {
   children: ReactNode;
@@ -15,7 +16,7 @@ interface AuthScreenContainerProps {
 const screenHeight = Dimensions.get('window').height;
 
 const AuthScreenContainer: React.FC<AuthScreenContainerProps> = ({
-  children
+  children,
 }) => {
   return (
     <SafeAreaView style={styles.safeArea}>
@@ -33,33 +34,33 @@ const AuthScreenContainer: React.FC<AuthScreenContainerProps> = ({
 const styles = StyleSheet.create({
   safeArea: {
     flex: 1,
-    backgroundColor: '#EFEBE4' // Color grisáceo de fondo general (ajusta según tu imagen)
+    backgroundColor: '#EFEBE4',
   },
   background: {
     flex: 1,
-    justifyContent: 'center', // Centra la tarjeta verticalmente
-    alignItems: 'center', // Centra la tarjeta horizontalmente
-    padding: 20, // Espacio alrededor de la tarjeta
-    backgroundColor: '#EFEBE4' // Mismo color que safeArea
+    justifyContent: 'center',
+    alignItems: 'center',
+    padding: 20,
+    backgroundColor: '#EFEBE4',
   },
   card: {
-    width: '100%', // Ocupa el ancho disponible (limitado por el padding de 'background')
-    maxWidth: 400, // Un ancho máximo para que no sea demasiado ancha en tablets
+    width: '100%',
+    maxWidth: 400,
     backgroundColor: COLORS.primaryBackground,
-    borderRadius: 20, // Bordes redondeados pronunciados
-    padding: 30, // Padding interno de la tarjeta
-    // Sombras para darle elevación (opcional, ajusta para el efecto deseado)
+    borderRadius: 20,
+    padding: 30,
+
     shadowColor: '#000',
     shadowOffset: {
       width: 0,
-      height: 4
+      height: 4,
     },
     shadowOpacity: 0.1,
     shadowRadius: 10,
     elevation: 8,
-    minHeight: screenHeight * 0.65, // Asegura una altura mínima
-    justifyContent: 'space-around' // Distribuye el espacio entre elementos hijos
-  }
+    minHeight: screenHeight * 0.65,
+    justifyContent: 'space-around',
+  },
 });
 
 export default AuthScreenContainer;

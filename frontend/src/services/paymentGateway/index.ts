@@ -1,11 +1,11 @@
 import { PaymentFormData } from '../../components/schemas/paymentSchema';
-import { detectCardBrand } from '../../utils/cardUtils';
+//import { detectCardBrand } from '../../utils/cardUtils';
 
-// ✨ EL CONTRATO HA CAMBIADO: Ya no enviamos 'brand' ni 'last4'.
-// Enviamos el número de tarjeta completo para que el backend lo procese.
+// We no longer send 'brand' and 'last4'.
+// We send the full card number for the backend to process.
 export interface TokenizedPaymentData {
   token: string;
-  cardNumber: string; // El número completo
+  cardNumber: string;
   expMonth: number;
   expYear: number;
   isDefault: boolean;
@@ -13,7 +13,7 @@ export interface TokenizedPaymentData {
 }
 
 /**
- * @description Simula la tokenización. Ya no detecta la marca.
+ * @description Simulates tokenization. No longer detects the brand.
  */
 export const createPaymentToken = (
   cardData: PaymentFormData,
@@ -25,7 +25,7 @@ export const createPaymentToken = (
 
       const tokenizedData: TokenizedPaymentData = {
         token: `pm_tok_${Date.now()}`,
-        cardNumber: sanitizedCardNumber, // Pasamos el número completo
+        cardNumber: sanitizedCardNumber, // We passed the full number
         expMonth: parseInt(expMonth, 10),
         expYear: parseInt(`20${expYear}`, 10),
         isDefault: cardData.isDefault || false,
@@ -37,23 +37,23 @@ export const createPaymentToken = (
 };
 
 /**
- * @description Simula el procesamiento de un pago a través de un proveedor externo.
- * Tarda entre 2 y 3 segundos y tiene una pequeña probabilidad de fallar.
- * @param {object} paymentDetails - Contiene el token de la tarjeta o el ID de la tarjeta guardada.
- * @returns {Promise<{success: boolean; message: string}>} Un objeto indicando si el pago fue exitoso.
+ * @description Simulates processing a payment through a third-party provider.
+ * Takes 2-3 seconds and has a small chance of failure.
+ * @param {object} paymentDetails - Contains the card token or saved card ID.
+ * @returns {Promise<{success: boolean; message: string}>} An object indicating whether the payment was successful.
  */
 export const processPayment = (paymentDetails: {
   amount: number;
-  token?: string; // Para tarjetas nuevas
-  savedCardId?: string; // Para tarjetas guardadas
+  token?: string; // For new cards
+  savedCardId?: string; // For saved cards
 }): Promise<{ success: boolean; message: string }> => {
   console.log('[PaymentGateway] Procesando pago:', paymentDetails);
 
   return new Promise((resolve) => {
-    const randomDelay = 2000 + Math.random() * 1000; // Delay entre 2 y 3 segundos
+    const randomDelay = 2000 + Math.random() * 1000; // Delay between 2 and 3 seconds
 
     setTimeout(() => {
-      // Simulamos una tasa de fallo del 10%
+      // We simulate a failure rate of 10%
       const isSuccessful = Math.random() > 0.1;
 
       if (isSuccessful) {

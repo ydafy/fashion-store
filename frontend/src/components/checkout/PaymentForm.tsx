@@ -2,10 +2,9 @@ import React, { useRef } from 'react';
 import { View, StyleSheet, TextInput } from 'react-native';
 import { useTranslation } from 'react-i18next';
 
-// ✨ RHF: Importaciones clave
 import { useFormContext, Controller } from 'react-hook-form';
 
-// Componentes y Tipos
+// --- Components and Types ---
 import { COLORS } from '../../constants/colors';
 import StyledTextInput from '../common/inputs/StyledTextInput';
 import Checkbox from '../common/Checkbox';
@@ -15,7 +14,7 @@ import MaskedTextInput from '../../components/common/inputs/MaskedTextInput';
 const PaymentForm: React.FC = () => {
   const { t } = useTranslation();
 
-  // ✨ RHF: Obtenemos todo lo que necesitamos del contexto.
+  //  RHF: We get everything we need from the context.
   const {
     control,
     formState: { errors },

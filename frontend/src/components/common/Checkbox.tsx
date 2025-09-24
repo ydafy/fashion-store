@@ -6,9 +6,8 @@ import {
   StyleProp,
   ViewStyle,
   TextStyle,
-  View,
 } from 'react-native';
-// ✨ CAMBIO: Importamos nuestro IconFactory en lugar de Ionicons.
+
 import { IconFactory } from '../icons/IconFactory';
 import { COLORS } from '../../constants/colors';
 import { moderateScale } from '../../utils/scaling';
@@ -55,7 +54,6 @@ const Checkbox: React.FC<CheckboxProps> = ({
       }}
       accessibilityLabel={label}
     >
-      {/* ✨ CAMBIO: Usamos IconFactory con iconos de Phosphor. */}
       <IconFactory
         name={isChecked ? 'Check' : 'Square'}
         weight={isChecked ? 'fill' : 'regular'}

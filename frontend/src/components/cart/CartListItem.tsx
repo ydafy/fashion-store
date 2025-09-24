@@ -1,3 +1,4 @@
+/* eslint-disable react-native/no-color-literals */
 import React, { useRef, useMemo, useCallback } from 'react';
 import {
   View,
@@ -5,24 +6,29 @@ import {
   StyleSheet,
   TouchableOpacity,
   ScrollView,
-  ActivityIndicator
+  ActivityIndicator,
 } from 'react-native';
+
 import { BottomSheetModal, BottomSheetView } from '@gorhom/bottom-sheet';
 import { Image as ExpoImage } from 'expo-image';
 import { useTranslation } from 'react-i18next';
 import Ionicons from '@expo/vector-icons/Ionicons';
-
-import { CartItem } from '../../types/cart';
-import { useCart } from '../../contexts/CartContext';
+// --- Constants and Utils ---
 import { COLORS } from '../../constants/colors';
 import { formatCurrency } from '../../utils/formatters';
 import { moderateScale } from '../../utils/scaling';
 
-// Helper para crear un ID único para cada item del carrito
+// --- Types and Components ---
+import { CartItem } from '../../types/cart';
+
+// --- Context ---
+import { useCart } from '../../contexts/CartContext';
+
+// Helper to create a unique ID for each item in the cart
 const generateItemId = (
-  item: Pick<CartItem, 'productId' | 'variantId' | 'inventoryId'>
+  item: Pick<CartItem, 'productId' | 'variantId' | 'inventoryId'>,
 ): string => {
-  // El nuevo ID es más robusto porque se basa en los IDs únicos del backend
+  // The new ID is more robust because it is based on the backend's unique IDs
   return `${item.productId}-${item.variantId}-${item.inventoryId}`;
 };
 
@@ -36,7 +42,7 @@ const CartListItem: React.FC<CartListItemProps> = ({ item }) => {
   const { t } = useTranslation();
   const { removeFromCart, updateQuantity, mutatingItemId } = useCart();
 
-  // ✨ 1. Usamos un ID único para simplificar las llamadas
+  // We use a unique ID to simplify calls
   const itemId = useMemo(() => generateItemId(item), [item]);
   const isMutating = mutatingItemId === itemId;
 
@@ -45,11 +51,11 @@ const CartListItem: React.FC<CartListItemProps> = ({ item }) => {
 
   const handleOpenQuantityModal = useCallback(
     () => bottomSheetModalRef.current?.present(),
-    []
+    [],
   );
   const handleCloseQuantityModal = useCallback(
     () => bottomSheetModalRef.current?.dismiss(),
-    []
+    [],
   );
 
   const handleSelectQuantity = useCallback(
@@ -57,7 +63,7 @@ const CartListItem: React.FC<CartListItemProps> = ({ item }) => {
       updateQuantity(itemId, quantity);
       handleCloseQuantityModal();
     },
-    [itemId, updateQuantity, handleCloseQuantityModal]
+    [itemId, updateQuantity, handleCloseQuantityModal],
   );
 
   const handleRemoveFromModal = useCallback(() => {
@@ -68,7 +74,7 @@ const CartListItem: React.FC<CartListItemProps> = ({ item }) => {
   const accessibilityLabel = t('cart:item.accessibilityLabel', {
     name: item.name,
     quantity: item.quantity,
-    subtotal: formatCurrency(item.price * item.quantity)
+    subtotal: formatCurrency(item.price * item.quantity),
   });
 
   return (
@@ -78,7 +84,7 @@ const CartListItem: React.FC<CartListItemProps> = ({ item }) => {
         accessibilityLabel={accessibilityLabel}
         accessible
       >
-        {/* --- Fila Superior --- */}
+        {/* --- Top Row --- */}
         <View style={styles.topSection}>
           <ExpoImage
             source={{ uri: item.image }}
@@ -93,18 +99,18 @@ const CartListItem: React.FC<CartListItemProps> = ({ item }) => {
             </Text>
             <Text style={styles.descriptionText}>
               {`${t('cart:item.colorLabel')} ${item.colorName} - ${t(
-                'cart:item.sizeLabel'
+                'cart:item.sizeLabel',
               )} ${item.size}`}
             </Text>
             <Text style={styles.descriptionText}>
               {`${t('cart:item.pricePerUnitLabel')} ${formatCurrency(
-                item.price
+                item.price,
               )}`}
             </Text>
           </View>
         </View>
 
-        {/* --- Fila Inferior --- */}
+        {/* --- Bottom Row --- */}
         <View style={styles.bottomSection}>
           <TouchableOpacity
             style={styles.quantitySelector}
@@ -114,7 +120,7 @@ const CartListItem: React.FC<CartListItemProps> = ({ item }) => {
             accessibilityLabel={t('cart:item.changeQuantity')}
           >
             <Text style={styles.quantitySelectorText}>{`${t(
-              'cart:item.quantityLabel'
+              'cart:item.quantityLabel',
             )} ${item.quantity}`}</Text>
             <Ionicons
               name="chevron-down-outline"
@@ -123,7 +129,7 @@ const CartListItem: React.FC<CartListItemProps> = ({ item }) => {
             />
           </TouchableOpacity>
 
-          {/* ✨ 2. Mostramos un spinner si el item se está actualizando ✨ */}
+          {/*  We show a spinner if the item is being updated  */}
           {isMutating ? (
             <ActivityIndicator
               style={styles.mutatingSpinner}
@@ -172,14 +178,14 @@ const CartListItem: React.FC<CartListItemProps> = ({ item }) => {
                 key={qty}
                 style={[
                   styles.modalQuantityItem,
-                  item.quantity === qty && styles.modalQuantityItemSelected
+                  item.quantity === qty && styles.modalQuantityItemSelected,
                 ]}
                 onPress={() => handleSelectQuantity(qty)}
               >
                 <Text
                   style={[
                     styles.modalQuantityText,
-                    item.quantity === qty && styles.modalQuantityTextSelected
+                    item.quantity === qty && styles.modalQuantityTextSelected,
                   ]}
                 >
                   {qty}
@@ -200,12 +206,11 @@ const CartListItem: React.FC<CartListItemProps> = ({ item }) => {
   );
 };
 
-// --- ✨ 3. Estilos Refinados ✨ ---
 const styles = StyleSheet.create({
   container: {
     padding: moderateScale(15),
     borderBottomWidth: 1,
-    borderBottomColor: COLORS.separator
+    borderBottomColor: COLORS.separator,
   },
   topSection: { flexDirection: 'row', marginBottom: moderateScale(15) },
   image: {
@@ -213,7 +218,7 @@ const styles = StyleSheet.create({
     height: moderateScale(150),
     borderRadius: 8,
     marginRight: 15,
-    backgroundColor: COLORS.primaryBackground
+    backgroundColor: COLORS.primaryBackground,
   },
   detailsContainer: { flex: 1, justifyContent: 'flex-start' },
   name: {
@@ -221,18 +226,18 @@ const styles = StyleSheet.create({
     fontWeight: '600',
     color: COLORS.primaryText,
     fontFamily: 'FacultyGlyphic-Regular',
-    marginBottom: 8
+    marginBottom: 8,
   },
   descriptionText: {
     fontSize: moderateScale(14),
     color: COLORS.secondaryText,
     fontFamily: 'FacultyGlyphic-Regular',
-    lineHeight: moderateScale(21)
+    lineHeight: moderateScale(21),
   },
   bottomSection: {
     flexDirection: 'row',
     justifyContent: 'space-between',
-    alignItems: 'center'
+    alignItems: 'center',
   },
   quantitySelector: {
     flexDirection: 'row',
@@ -240,46 +245,46 @@ const styles = StyleSheet.create({
     backgroundColor: COLORS.lightGray,
     borderRadius: 6,
     paddingVertical: 8,
-    paddingHorizontal: 14
+    paddingHorizontal: 14,
   },
   quantitySelectorText: {
     fontSize: moderateScale(14),
     fontWeight: '500',
     fontFamily: 'FacultyGlyphic-Regular',
     color: COLORS.primaryText,
-    marginRight: 8
+    marginRight: 8,
   },
   subtotalText: {
     fontSize: moderateScale(17),
     fontFamily: 'FacultyGlyphic-Regular',
     fontWeight: '600',
-    color: COLORS.primaryText
+    color: COLORS.primaryText,
   },
-  mutatingSpinner: { marginRight: moderateScale(10) }, // Para alinear el spinner a la derecha
-  // --- Estilos de la Modal (sin cambios funcionales) ---
+  mutatingSpinner: { marginRight: moderateScale(10) },
+
   modalHandle: { backgroundColor: '#ccc', width: 40 },
   modalContentContainer: {
     flex: 1,
     paddingHorizontal: 20,
     paddingTop: 10,
-    paddingBottom: 20
+    paddingBottom: 20,
   },
   modalRemoveButton: {
     flexDirection: 'row',
     alignItems: 'center',
-    paddingVertical: 12
+    paddingVertical: 12,
   },
   modalRemoveIcon: { marginRight: 10 },
   modalRemoveButtonText: {
     fontSize: 16,
     color: 'red',
     fontWeight: '500',
-    fontFamily: 'FacultyGlyphic-Regular'
+    fontFamily: 'FacultyGlyphic-Regular',
   },
   modalSeparator: {
     height: 1,
     backgroundColor: COLORS.separator,
-    marginVertical: 15
+    marginVertical: 15,
   },
   modalQuantityList: {},
   modalQuantityItem: {
@@ -288,20 +293,20 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     paddingVertical: 12,
     borderBottomWidth: StyleSheet.hairlineWidth,
-    borderBottomColor: '#eee'
+    borderBottomColor: '#eee',
   },
   modalQuantityItemSelected: {},
   modalQuantityText: {
     fontSize: 15,
     color: COLORS.primaryText,
     fontFamily: 'FacultyGlyphic-Regular',
-    fontWeight: '500'
+    fontWeight: '500',
   },
   modalQuantityTextSelected: {
     fontWeight: '500',
     color: COLORS.accent,
-    fontFamily: 'FacultyGlyphic-Regular'
-  }
+    fontFamily: 'FacultyGlyphic-Regular',
+  },
 });
 
 export default CartListItem;

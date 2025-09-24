@@ -5,34 +5,34 @@ import {
   View,
   Text,
   ViewStyle,
-  StyleProp
+  StyleProp,
 } from 'react-native';
 import { useTranslation } from 'react-i18next';
 import { COLORS } from '../../constants/colors';
-import { moderateScale } from '../../utils/scaling'; // Asumiendo que usas tu helper de escalado
+import { moderateScale } from '../../utils/scaling';
 
 interface LoadingIndicatorProps {
   /**
-   * El tamaño del indicador. Puede ser 'small', 'large' o un número para el radio.
+   * The size of the indicator. Can be 'small', 'large', or a number for the radius.
    * @default 'large'
    */
   size?: 'small' | 'large' | number;
   /**
-   * El color del indicador.
+   * The color of the indicator.
    * @default COLORS.primary
    */
   color?: string;
   /**
-   * Texto opcional para mostrar debajo del indicador.
+   * Optional text to display below the indicator.
    */
   text?: string;
   /**
-   * Estilo personalizado para el contenedor del componente.
+   * Custom style for the component container.
    */
   style?: StyleProp<ViewStyle>;
   /**
-   * Si es `true`, el componente ocupará todo el espacio disponible y se centrará.
-   * Útil para un estado de carga de pantalla completa.
+   * If `true`, the component will take up all available space and be centered.
+   * Useful for a full-screen loading state.
    * @default false
    */
   fullscreen?: boolean;
@@ -40,10 +40,10 @@ interface LoadingIndicatorProps {
 
 const LoadingIndicator: React.FC<LoadingIndicatorProps> = ({
   size = 'large',
-  color = COLORS.primaryBackground, // Usamos un color primario por defecto
+  color = COLORS.primaryBackground,
   text,
   style,
-  fullscreen = false
+  fullscreen = false,
 }) => {
   const { t } = useTranslation();
   const loadingText = text || t('common:loading');
@@ -51,7 +51,7 @@ const LoadingIndicator: React.FC<LoadingIndicatorProps> = ({
   return (
     <View style={[styles.container, fullscreen && styles.fullscreen, style]}>
       <ActivityIndicator size={size} color={color} />
-      {/* Mostramos el texto solo si se proporciona la prop 'text' o si no es fullscreen */}
+      {/* We only show the text if the 'text' prop is provided or if it is not fullscreen */}
       {text && <Text style={[styles.text, { color }]}>{loadingText}</Text>}
     </View>
   );
@@ -61,8 +61,9 @@ const styles = StyleSheet.create({
   container: {
     justifyContent: 'center',
     alignItems: 'center',
-    padding: moderateScale(10)
+    padding: moderateScale(10),
   },
+  // eslint-disable-next-line react-native/no-color-literals
   fullscreen: {
     flex: 1,
     position: 'absolute',
@@ -70,14 +71,14 @@ const styles = StyleSheet.create({
     left: 0,
     right: 0,
     bottom: 0,
-    backgroundColor: 'rgba(255, 255, 255, 0.8)', // Un fondo semitransparente
-    zIndex: 10
+    backgroundColor: 'rgba(255, 255, 255, 0.8)', // A semi-transparent background
+    zIndex: 10,
   },
   text: {
     marginTop: moderateScale(10),
     fontSize: moderateScale(16),
-    fontFamily: 'FacultyGlyphic-Regular' // Tu fuente personalizada
-  }
+    fontFamily: 'FacultyGlyphic-Regular', // Tu fuente personalizada
+  },
 });
 
 export default LoadingIndicator;

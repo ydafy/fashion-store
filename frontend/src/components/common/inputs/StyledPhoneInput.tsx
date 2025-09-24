@@ -112,6 +112,7 @@ const styles = StyleSheet.create({
   errorBorder: {
     borderColor: COLORS.error,
   },
+  // eslint-disable-next-line react-native/no-color-literals
   textContainer: {
     backgroundColor: 'transparent',
     paddingVertical: 0,

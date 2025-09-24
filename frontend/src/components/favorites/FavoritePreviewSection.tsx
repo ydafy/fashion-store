@@ -16,16 +16,14 @@ import {
   useNavigation,
   CompositeNavigationProp,
 } from '@react-navigation/native';
-import { BottomTabNavigationProp } from '@react-navigation/bottom-tabs';
 import { NativeStackNavigationProp } from '@react-navigation/native-stack';
 
 import {
-  MainTabParamList,
   ProfileStackParamList,
   RootStackParamList,
 } from '../../types/navigation';
 import { useFavorites } from '../../contexts/FavoritesContext';
-// ✨ 1. Importamos el nuevo tipo FavoriteItem que definimos en FavoriteBlock2x2
+
 import FavoriteBlock2x2, { FavoriteItem } from './FavoriteBlock2x2';
 import FavoritePreviewItemSkeleton from '../skeletons/FavoritePreviewItemSkeleton';
 import { Product } from '../../types/product';
@@ -42,7 +40,6 @@ const MAX_PREVIEW_ITEMS = 12;
 const screenWidth = Dimensions.get('window').width;
 const SECTION_HORIZONTAL_PADDING = scale(20);
 
-// ✨ 2. Tipo de navegación mejorado para evitar 'as any'
 type FavoritePreviewNavigationProp = CompositeNavigationProp<
   NativeStackNavigationProp<ProfileStackParamList>,
   NativeStackNavigationProp<RootStackParamList>
@@ -56,18 +53,18 @@ const FavoritePreviewSection: React.FC = () => {
   const carouselRef = useRef<ICarouselInstance>(null);
   const carouselProgress = useSharedValue<number>(0);
 
-  // ✨ 3. Lógica de preparación de datos actualizada para usar 'variantId'
+  //  Updated data prep logic to use 'variantId'
   const itemBlocksForCarousel = useMemo(() => {
-    // Asumimos que favoriteEntries ahora tiene { productId: string, variantId: string }
+    // We assume that favoriteEntries now has { productId: string, variantId: string }
     const itemsToDisplay = favoriteEntries
       .map((entry) => {
         const product = favoriteProducts.find((p) => p.id === entry.productId);
-        // Creamos un objeto que cumple con la interfaz 'FavoriteItem'
+        // We create an object that complies with the 'FavoriteItem' interface
         return product
           ? { ...product, favoritedVariantId: entry.variantId }
           : null;
       })
-      .filter((item): item is FavoriteItem => item !== null) // Type guard para asegurar el tipo
+      .filter((item): item is FavoriteItem => item !== null) // Type guard to ensure the type
       .slice(0, MAX_PREVIEW_ITEMS);
 
     const blocks: FavoriteItem[][] = [];
@@ -78,11 +75,10 @@ const FavoritePreviewSection: React.FC = () => {
   }, [favoriteEntries, favoriteProducts]);
 
   const handleNavigateToFavorites = () => {
-    // Ahora la navegación es segura y tipada
     navigation.navigate('FavoritesScreen');
   };
 
-  // ✨ 4. Handler de navegación actualizado para usar 'variantId'
+  //  Navigation handler updated to use 'variantId'
   const handleNavigateToProductDetail = (
     product: Product,
     variantId: string,
@@ -163,7 +159,6 @@ const FavoritePreviewSection: React.FC = () => {
   );
 };
 
-// --- ✨ 6. Estilos Refinados y Responsivos ✨ ---
 const styles = StyleSheet.create({
   outerContainer: {
     marginBottom: moderateScale(30),

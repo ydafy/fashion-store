@@ -1,16 +1,17 @@
 import React from 'react';
 import { View, FlatList, StyleSheet, Dimensions } from 'react-native';
 import { useTranslation } from 'react-i18next';
-import { useNavigation } from '@react-navigation/native';
-import { NativeStackNavigationProp } from '@react-navigation/native-stack';
 
-import { RootStackParamList } from '../../types/navigation'; // Asegúrate de importar tu RootStackParamList
+//import { useNavigation } from '@react-navigation/native';
+//import { NativeStackNavigationProp } from '@react-navigation/native-stack';
+//import { RootStackParamList } from '../../types/navigation';
+
 import { Product } from '../../types/product';
 import ProductCard from '../product/productCard';
 import ProductCardSkeleton from '../skeletons/ProductCardSkeleton';
 import SectionHeader from '../common/SectionHeader';
 import EmptyState from '../common/EmptyState';
-import { moderateScale, scale, verticalScale } from '../../utils/scaling';
+import { scale, verticalScale } from '../../utils/scaling';
 
 const { width: screenWidth } = Dimensions.get('window');
 const PRODUCT_CARD_SPACING = scale(15);
@@ -27,8 +28,8 @@ const RecommendedProductsSection: React.FC<RecommendedProductsSectionProps> = ({
   isLoading,
 }) => {
   const { t } = useTranslation(['home', 'common']); // ✨ 1. Añadimos 'common' para el texto "Ver todo"
-  const navigation =
-    useNavigation<NativeStackNavigationProp<RootStackParamList>>();
+
+  //const navigation = useNavigation<NativeStackNavigationProp<RootStackParamList>>();
 
   const sectionTitle = title || t('home:recommended.titleDefault');
 

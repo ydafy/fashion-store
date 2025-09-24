@@ -6,63 +6,63 @@ import {
   Dimensions,
   StyleProp,
   TextStyle,
-  ViewStyle
+  ViewStyle,
 } from 'react-native';
 import Carousel, {
   ICarouselInstance,
-  TAnimationStyle
+  TAnimationStyle,
 } from 'react-native-reanimated-carousel';
 import Reanimated, { interpolate } from 'react-native-reanimated';
 
-import { COLORS } from '../../constants/colors'; // Ajusta la ruta
+import { COLORS } from '../../constants/colors';
 
 interface DynamicBrandTextProps {
   texts: string[];
-  interval?: 3500; // Tiempo en ms para el autoplay
-  textStyle?: StyleProp<TextStyle>; // Estilo para el texto
-  containerStyle?: StyleProp<ViewStyle>; // Estilo para el contenedor del carrusel
+  interval?: 3500; // Time in ms for autoplay
+  textStyle?: StyleProp<TextStyle>; // Style for the text
+  containerStyle?: StyleProp<ViewStyle>; // Style for the carousel container
 }
 
 const screenWidth = Dimensions.get('window').width;
 
 const DynamicBrandText: React.FC<DynamicBrandTextProps> = ({
   texts,
-  interval = 3000, // Default 3 segundos
+  interval = 3000,
   textStyle,
-  containerStyle
+  containerStyle,
 }) => {
   const carouselRef = useRef<ICarouselInstance>(null);
 
   if (!texts || texts.length === 0) {
-    return null; // No renderizar nada si no hay textos
+    return null;
   }
-  // ✨ Definir la función de animación personalizada ✨
+  // Define the custom animation function
   const customAnimationStyle: TAnimationStyle = useCallback((value: number) => {
-    'worklet'; // Importante para Reanimated
+    'worklet'; // Important for Reanimated
 
     // value:
-    // 0: elemento actual en el centro
-    // -1: elemento anterior (que se va por la izquierda/arriba)
-    // 1: elemento siguiente (que entra por la derecha/abajo)
+    // 0: current element in the center
+    // -1: previous element (moving from the left/up)
+    // 1: next element (moving from the right/down)
 
     const scale = interpolate(
       value,
-      [-1, 0, 1], // Rango de entrada: de slide anterior a actual a siguiente
-      [0.8, 1, 0.8] // Rango de salida: escala (más pequeño al entrar/salir, normal en centro)
+      [-1, 0, 1], // Input range: from previous slide to current slide to next slide
+      [0.8, 1, 0.8], // Output range: scale (smallest on entry/exit, normal in center)
     );
     const opacity = interpolate(
       value,
-      [-0.75, 0, 0.75], // Rango de entrada para opacidad (fade in/out en los extremos)
-      [0, 1, 0] // Rango de salida: opacidad
+      [-0.75, 0, 0.75], // Input range for opacity (fade in/out at the ends)
+      [0, 1, 0], // Output range: opacity
     );
-    // El zIndex del ejemplo original podría ser útil si los elementos se solapan mucho,
-    // pero para texto simple con fade, quizás no sea necesario.
+    // The zIndex from the original example might be useful if the elements overlap a lot,
+    // but for simple faded text, it might not be necessary.
     // const zIndex = interpolate(value, [-1, 0, 1], [10, 20, 10]);
 
     return {
       transform: [{ scale }],
-      opacity
-      // zIndex, // Opcional
+      opacity,
+      // zIndex, // Optional
     };
   }, []);
 
@@ -70,16 +70,15 @@ const DynamicBrandText: React.FC<DynamicBrandTextProps> = ({
     <View style={[styles.carouselContainer, containerStyle]}>
       <Carousel
         ref={carouselRef}
-        loop // Para que vuelva al inicio después del último
-        width={screenWidth * 0.8} // Ancho del carrusel (ajusta según el diseño de tu tarjeta)
-        // Debería ser un poco menor que el ancho de la tarjeta AuthScreenContainer
-        height={50} // Altura estimada para una línea de texto grande (ajusta)
+        loop
+        width={screenWidth * 0.8}
+        height={50}
         autoPlay={true}
         autoPlayInterval={interval}
         data={texts}
         customAnimation={customAnimationStyle}
-        scrollAnimationDuration={900} // Duración de la animación de scroll/fade
-        // mode="parallax" // Prueba diferentes modos
+        scrollAnimationDuration={900}
+        // mode="parallax" // Different modes
         // modeConfig={{
         //   parallaxScrollingScale: 0.9,
         //   parallaxScrollingOffset: 50,
@@ -93,34 +92,32 @@ const DynamicBrandText: React.FC<DynamicBrandTextProps> = ({
           </View>
         )}
       />
-      {/* No renderizaremos Pagination.Basic para un título */}
+      {/* We will not render Pagination.Basic for a title */}
     </View>
   );
 };
 
 const styles = StyleSheet.create({
   carouselContainer: {
-    alignItems: 'center', // Centra el carrusel si su width es menor que el contenedor
+    alignItems: 'center', // Center the carousel if its width is smaller than the container
     justifyContent: 'center',
-    marginBottom: 25, // Espacio debajo del carrusel de texto
-    // backgroundColor: 'lightpink', // Para debug
-    height: 50 // Debe coincidir con la altura del Carousel
+    marginBottom: 25,
+    height: 50,
   },
   textItemContainer: {
     flex: 1,
     justifyContent: 'center',
-    alignItems: 'center'
-    // backgroundColor: 'lightblue', // Para debug
+    alignItems: 'center',
   },
   brandTextBase: {
-    fontSize: 34, // Tamaño base (se puede sobrescribir con textStyle)
+    fontSize: 34,
     // fontWeight: 'bold', // Usa variante de fuente
     fontFamily: 'FacultyGlyphic-Regular',
     color: COLORS.primaryText,
-    textAlign: 'center'
-    // Ajustar letterSpacing si es necesario para el look "WOMEN'S CLOTHING"
+    textAlign: 'center',
+    // Adjust letter spacing if needed for the "women's clothing" look
     // letterSpacing: 1,
-  }
+  },
 });
 
 export default DynamicBrandText;

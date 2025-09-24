@@ -37,7 +37,6 @@ export const getProducts = async (
   const lang = i18n.language;
   const headers = { 'Accept-Language': lang };
 
-  console.log(`[ProductService] Fetching products from: ${url}`);
   const response = await fetch(url, { headers });
 
   if (!response.ok) {
@@ -53,7 +52,7 @@ export const getProducts = async (
 export const getProductById = async (productId: string): Promise<Product> => {
   const lang = i18n.language;
   const headers = { 'Accept-Language': lang };
-  console.log(`[ProductService] Fetching product by ID: ${productId}`);
+
   const response = await fetch(`${API_BASE_URL}/api/products/${productId}`, {
     headers,
   });

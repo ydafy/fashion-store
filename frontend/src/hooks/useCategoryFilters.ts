@@ -1,7 +1,7 @@
-import { useQuery, QueryFunctionContext } from '@tanstack/react-query';
+import { useQuery } from '@tanstack/react-query';
 import { getAvailableFiltersAPI } from '../services/filter';
 import i18n from '../config/i18n';
-import { AvailableFiltersResponse, FilterGroup } from '../types/filter';
+import { AvailableFiltersResponse } from '../types/filter';
 
 type FiltersQueryKey = [string, string, string | undefined];
 
@@ -21,7 +21,7 @@ export const useCategoryFilters = (categoryId: string | undefined) => {
   >({
     queryKey: ['filters', lang, categoryId],
     queryFn: getAvailableFiltersAPI,
-    enabled: !!categoryId
+    enabled: !!categoryId,
   });
 
   return {
@@ -29,6 +29,6 @@ export const useCategoryFilters = (categoryId: string | undefined) => {
     quickFilters: data?.quickFilters || [],
     modalFilters: data?.modalFilters || [],
     status,
-    error
+    error,
   };
 };

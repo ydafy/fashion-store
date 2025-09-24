@@ -1,9 +1,8 @@
 import React, { ReactNode } from 'react';
 import { View, StyleSheet } from 'react-native';
-import ErrorBoundary, { ErrorBoundaryProps } from 'react-native-error-boundary';
+import ErrorBoundary from 'react-native-error-boundary';
 import { useTranslation } from 'react-i18next';
 
-// Importamos nuestro componente de error existente para la UI de fallback
 import ErrorDisplay from './ErrorDisplay';
 import { scale, verticalScale } from '../../utils/scaling';
 import { COLORS } from '../../constants/colors';
@@ -16,7 +15,7 @@ export type CustomFallbackProps = {
 };
 
 /**
- * Componente Fallback que se muestra cuando ocurre un error de renderizado
+ * Fallback component that is displayed when a rendering error occurs
  */
 const FallbackComponent: React.FC<CustomFallbackProps> = () => {
   const { t } = useTranslation();
@@ -32,12 +31,12 @@ const FallbackComponent: React.FC<CustomFallbackProps> = () => {
 };
 
 /**
- * Handler para errores de renderizado
- * @param error - El error capturado
- * @param stackTrace - El stack trace del error
+ * Handler for rendering errors
+ * @param error - The captured error
+ * @param stackTrace - The error stack trace
  */
 const errorHandler = (error: Error, stackTrace: string) => {
-  // TODO: Integrar con Sentry o similar en el futuro
+  // TODO: Integrate with Sentry or similar in the future
   console.error('=== Render Error ===');
   console.error('Error:', error);
   console.error('Stack Trace:', stackTrace);
@@ -50,7 +49,7 @@ interface CustomErrorBoundaryProps {
 }
 
 /**
- * Error Boundary personalizado que envuelve componentes y maneja errores de renderizado
+ * Custom Error Boundary that wraps components and handles rendering errors
  */
 const CustomErrorBoundary: React.FC<CustomErrorBoundaryProps> = ({
   children,

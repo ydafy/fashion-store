@@ -28,8 +28,8 @@ interface AccordionItemProps {
   children: React.ReactNode;
   initiallyOpen?: boolean;
   style?: StyleProp<ViewStyle>;
-  // --- CAMBIO PRINCIPAL: De `leftIconName` a `icon` ---
-  // Aceptamos un elemento React completo, no solo el nombre del icono.
+
+  // We accept a full React element, not just the icon name.
   icon?: React.ReactElement | null;
   titleStyle?: StyleProp<TextStyle>;
 }
@@ -87,8 +87,8 @@ const AccordionItem: React.FC<AccordionItemProps> = ({
         accessibilityState={{ expanded: openProgress.value === 1 }}
         accessibilityLabel={accessibilityLabel}
       >
-        {/* --- CAMBIO PRINCIPAL: Renderizamos el icono directamente --- */}
-        {/* Si el icono existe, lo envolvemos en una View para darle margen */}
+        {/* --- MAJOR CHANGE: We render the icon directly --- */}
+        {/* If the icon exists, we wrap it in a View to give it margin */}
         {icon && <View style={styles.leftIconWrapper}>{icon}</View>}
         <Text style={[styles.titleText, titleStyle]}>{title}</Text>
         <Animated.View style={animatedIconStyle}>
@@ -118,7 +118,7 @@ const styles = StyleSheet.create({
     borderBottomWidth: 1,
     overflow: 'hidden',
   },
-  // Renombramos 'leftIcon' a 'leftIconWrapper' para mayor claridad
+
   leftIconWrapper: {
     marginRight: scale(12),
   },

@@ -5,22 +5,22 @@ import {
   StyleSheet,
   StyleProp,
   TextStyle,
-  ViewStyle
+  ViewStyle,
 } from 'react-native';
 import { COLORS } from '../../constants/colors';
 
 interface AuthLinkProps {
   text: string;
   onPress: () => void;
-  style?: StyleProp<TextStyle>; // Para estilos de texto adicionales
-  containerStyle?: StyleProp<ViewStyle>; // Para estilos del contenedor TouchableOpacity
+  style?: StyleProp<TextStyle>; // For additional text styles
+  containerStyle?: StyleProp<ViewStyle>; // For TouchableOpacity container styles
 }
 
 const AuthLink: React.FC<AuthLinkProps> = ({
   text,
   onPress,
   style,
-  containerStyle
+  containerStyle,
 }) => {
   return (
     <TouchableOpacity
@@ -35,17 +35,16 @@ const AuthLink: React.FC<AuthLinkProps> = ({
 
 const styles = StyleSheet.create({
   container: {
-    paddingVertical: 8 // Un poco de padding para facilitar el toque
-    // alignItems: 'center', // Descomenta si quieres que el texto esté centrado si el Touchable es más ancho
+    paddingVertical: 8,
   },
   text: {
-    color: COLORS.primaryText, // Color por defecto (oscuro, como en "Sign up")
-    // Para "Forgot password?" podríamos pasar un color diferente vía props.
+    color: COLORS.primaryText,
+
     fontSize: 15,
     fontFamily: 'FacultyGlyphic-Regular',
-    // textDecorationLine: 'underline', // Opcional: si quieres subrayado
-    textAlign: 'center' // Por si el contenedor es más ancho
-  }
+    // textDecorationLine: 'underline',
+    textAlign: 'center',
+  },
 });
 
 export default AuthLink;

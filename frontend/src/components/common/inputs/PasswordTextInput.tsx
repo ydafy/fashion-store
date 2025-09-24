@@ -18,7 +18,7 @@ const PasswordTextInput = forwardRef<TextInput, StyledTextInputProps>(
       <StyledTextInput
         ref={ref}
         secureTextEntry={!isPasswordVisible}
-        {...props} // Pasamos todas las demás props al StyledTextInput
+        {...props} // We pass all the other props to the StyledTextInput
         rightIcon={
           <TouchableOpacity onPress={togglePasswordVisibility}>
             {isPasswordVisible ? (

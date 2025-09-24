@@ -73,19 +73,22 @@ const AddressListItem: React.FC<AddressListItemProps> = ({
       />
 
       <View style={styles.textContainer}>
-        {/* ✨ 1. NUEVO CONTENEDOR PARA EL LABEL Y LA ESTRELLA ✨ */}
         <View style={styles.labelContainer}>
           <Text style={[styles.label, isSelected && styles.selectedLabelText]}>
             {address.label}
           </Text>
           {address.isDefault && (
-            <StarIcon
-              size={moderateScale(16)}
-              color={COLORS.warning}
-              weight="fill"
-              style={styles.starIcon}
+            <View
+              accessibilityRole="image"
               accessibilityLabel={t('address:listItem.isDefault')}
-            />
+            >
+              <StarIcon
+                size={moderateScale(16)}
+                color={COLORS.warning}
+                weight="fill"
+                style={styles.starIcon}
+              />
+            </View>
           )}
         </View>
 
@@ -106,8 +109,8 @@ const AddressListItem: React.FC<AddressListItemProps> = ({
           <ActivityIndicator size="small" color={COLORS.primaryText} />
         ) : (
           <>
-            {/* ✨ 2. BOTÓN PARA MARCAR COMO PREDETERMINADA (ahora aquí) ✨ */}
-            {/* Solo se muestra si NO es la predeterminada */}
+            {/*  BUTTON TO MARK AS DEFAULT */}
+            {/* Only shown if NOT default */}
             {!address.isDefault && (
               <TouchableOpacity
                 style={styles.actionButton}
@@ -127,10 +130,7 @@ const AddressListItem: React.FC<AddressListItemProps> = ({
 
             <TouchableOpacity
               style={styles.actionButton}
-              onPress={(e) => {
-                e.stopPropagation();
-                onEditPress(address);
-              }}
+              onPress={handleSetDefault}
               accessibilityRole="button"
               accessibilityLabel={t('address:listItem.editButtonLabel', {
                 label: address.label,
@@ -166,7 +166,6 @@ const AddressListItem: React.FC<AddressListItemProps> = ({
   );
 };
 
-// --- ✨ 3. AJUSTES FINALES DE ESTILOS ✨ ---
 const styles = StyleSheet.create({
   outerContainer: {
     flexDirection: 'row',
@@ -182,6 +181,7 @@ const styles = StyleSheet.create({
     borderLeftWidth: moderateScale(4),
     borderLeftColor: COLORS.accent,
   },
+  // eslint-disable-next-line react-native/no-color-literals
   mutatingContainer: {
     opacity: 0.6,
     backgroundColor: '#f0f0f0',

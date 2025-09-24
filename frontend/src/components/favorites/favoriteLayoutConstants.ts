@@ -1,30 +1,30 @@
 // src/components/favorites/favoriteLayoutConstants.ts
 import { Dimensions } from 'react-native';
-import { scale } from '../../utils/scaling'; // Asegúrate que la ruta a scaling sea correcta
+import { scale } from '../../utils/scaling';
 
 const screenWidth = Dimensions.get('window').width;
 
-// Padding horizontal que PerfilScreen aplica alrededor de la sección de favoritos
+// Horizontal padding that ProfileScreen applies around the favorites section
 const PROFILE_SCREEN_CONTENT_PADDING_HORIZONTAL = scale(20);
 
-// Ancho total disponible para un slide del carrusel (un bloque 2x2)
+// Total width available for a carousel slide (a 2x2 block)
 export const CAROUSEL_SLIDE_WIDTH =
   screenWidth - PROFILE_SCREEN_CONTENT_PADDING_HORIZONTAL * 2;
 
-// Dimensiones para cada FavoritePreviewItem dentro del bloque 2x2
-export const GAP_BETWEEN_ITEMS_IN_SLIDE_ROW = scale(10); // Espacio horizontal entre los dos ítems de una fila
+// Dimensions for each FavoritePreviewItem within the 2x2 block
+export const GAP_BETWEEN_ITEMS_IN_SLIDE_ROW = scale(10); // Horizontal space between the two items in a row
 export const PREVIEW_ITEM_WIDTH =
   (CAROUSEL_SLIDE_WIDTH - GAP_BETWEEN_ITEMS_IN_SLIDE_ROW) / 2;
-export const PREVIEW_ITEM_ASPECT_RATIO = 1.25; // O 1.0 si quieres cuadrados, o la proporción que desees
+export const PREVIEW_ITEM_ASPECT_RATIO = 1.25; // Or 1.0 if you want squares, or whatever ratio you want
 export const PREVIEW_ITEM_HEIGHT =
   PREVIEW_ITEM_WIDTH * PREVIEW_ITEM_ASPECT_RATIO;
-export const PREVIEW_ITEM_MARGIN_BOTTOM_FOR_ROWS = scale(10); // Espacio vertical entre las dos filas del bloque 2x2
+export const PREVIEW_ITEM_MARGIN_BOTTOM_FOR_ROWS = scale(10); // Vertical space between the two rows of the 2x2 block
 
-// Altura total del carrusel (para 2 filas de ítems)
+// Total height of the carousel (for 2 rows of items)
 export const CAROUSEL_HEIGHT =
   PREVIEW_ITEM_HEIGHT * 2 + PREVIEW_ITEM_MARGIN_BOTTOM_FOR_ROWS;
 
-// Constantes para los skeletons y placeholders si son diferentes, o pueden usar las de arriba
+// Constants for skeletons and placeholders if they are different, or you can use the ones above
 export const SKELETON_ITEM_WIDTH = PREVIEW_ITEM_WIDTH;
 export const SKELETON_ITEM_HEIGHT = PREVIEW_ITEM_HEIGHT;
 export const SKELETON_ITEM_MARGIN_BOTTOM = PREVIEW_ITEM_MARGIN_BOTTOM_FOR_ROWS;

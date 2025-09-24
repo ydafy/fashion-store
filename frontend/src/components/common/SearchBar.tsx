@@ -4,39 +4,39 @@ import {
   TextInput,
   TouchableOpacity,
   StyleSheet,
-  Platform
+  Platform,
 } from 'react-native';
 import { Ionicons } from '@expo/vector-icons';
-import { StackNavigationProp } from '@react-navigation/stack'; // 👈 Importa StackNavigationProp
-import { RootStackParamList } from '../../types/navigation'; // 👈 Importa tus tipos
+import { StackNavigationProp } from '@react-navigation/stack';
+import { RootStackParamList } from '../../types/navigation';
+import { COLORS } from '../../constants/colors';
 
 interface SearchBarProps {
   searchQuery: string;
   setSearchQuery: (query: string) => void;
   placeholder?: string;
-  navigation: StackNavigationProp<RootStackParamList>; // 👈 AÑADE la prop navigation
-  onSubmit?: (query: string) => void; // 👈 AÑADE la prop onSubmit opcional
+  navigation: StackNavigationProp<RootStackParamList>;
+  onSubmit?: (query: string) => void;
 }
 
 const SearchBar: React.FC<SearchBarProps> = ({
   searchQuery,
   setSearchQuery,
   placeholder = 'Buscar...',
-  navigation, // 👈 Recibe navigation
-  onSubmit // 👈 Recibe onSubmit
+  onSubmit,
 }) => {
   const handleSearchSubmit = () => {
-    // Quita espacios extra al inicio/final antes de "enviar"
+    // Remove extra spaces at the beginning/end before "send"
     const trimmedQuery = searchQuery.trim();
     if (trimmedQuery && onSubmit) {
-      // Si hay texto y se pasó una función onSubmit
-      onSubmit(trimmedQuery); // Llama a la función onSubmit con el texto
+      // If there is text and an onSubmit function was passed
+      onSubmit(trimmedQuery); // Call the onSubmit function with the text
     } else if (trimmedQuery) {
-      // Acción por defecto si no se pasa onSubmit (puedes quitarla si no la necesitas)
+      // Default action if onSubmit is not passed (you can remove it if you don't need it)
       console.log('SearchBar onSubmit (default):', trimmedQuery);
     }
-    // Aquí podrías también cerrar el teclado si es necesario
-    // Keyboard.dismiss(); // Necesitarías importar Keyboard de 'react-native'
+    // You could also close the keyboard here if necessary
+    // Keyboard.dismiss(); // You'd need to import Keyboard from 'react-native'
   };
 
   return (
@@ -55,8 +55,8 @@ const SearchBar: React.FC<SearchBarProps> = ({
         onChangeText={setSearchQuery}
         autoCapitalize="none"
         autoCorrect={false}
-        returnKeyType="search" // 👈 Cambia el botón del teclado a "Buscar" (o "done", "go")
-        onSubmitEditing={handleSearchSubmit} // 👈 LLAMA a handleSearchSubmit al presionar Enter/Buscar
+        returnKeyType="search"
+        onSubmitEditing={handleSearchSubmit}
       />
       {searchQuery.length > 0 && (
         <TouchableOpacity
@@ -74,24 +74,24 @@ const styles = StyleSheet.create({
   searchBarContainer: {
     flexDirection: 'row',
     alignItems: 'center',
-    backgroundColor: '#f0f0f0',
+    backgroundColor: COLORS.primaryBackground,
     borderRadius: 10,
     paddingHorizontal: 12,
-    paddingVertical: Platform.OS === 'ios' ? 10 : 8
+    paddingVertical: Platform.OS === 'ios' ? 10 : 8,
   },
   searchIcon: {
-    marginRight: 8
+    marginRight: 8,
   },
   searchInput: {
     flex: 1,
     fontSize: 16,
-    color: '#222121', // Usa tu color de texto principal
-    fontFamily: 'FacultyGlyphic-Regular' // Aplica tu fuente si quieres
+    color: COLORS.primaryText,
+    fontFamily: 'FacultyGlyphic-Regular',
   },
   clearIcon: {
     marginLeft: 8,
-    padding: 2
-  }
+    padding: 2,
+  },
 });
 
 export default SearchBar;
